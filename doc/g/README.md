@@ -3,7 +3,7 @@
 ![GitHub-logo](https://github.com/samuelbetio/SBTemplano/blob/master/doc/github-logo.png)
 <br/>
 <br/>
-[![contributions welcome](http://samuelbetio.github.io/SBTemplano/doc/s/contributions.svg)] (https://github.com/samuelbetio/SBTemplano/issues)    
+[![contributions welcome]] (http://samuelbetio.github.io/SBTemplano/doc/s/contributions.svg) (https://github.com/samuelbetio/SBTemplano/issues)    
 
 If you have questions, please [open an issue](https://github.com/samuelbetio/SBTemplano/issues) and let us know so we can share that knowledge with the world - we _guarantee_ you're not the only one with that question! :blush:
 
