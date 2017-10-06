@@ -20,7 +20,7 @@ Our contribution steps in a _nutshell_:
 
 ***Please*** ***inform us*** if ***anything*** is ***unclear***
 or if you have _**a suggestion** for how to **simplify/streamline**_ it!
-[![Get Help!](https://img.shields.io/badge/get-help-brightgreen.svg?style=flat)](https://github.com/samuelbetio/SBTemplano/issues)
+[![Get Help!](http://samuelbetio.github.io/SBTemplano/doc/svg/get-help-brightgreen.svg)](https://github.com/samuelbetio/SBTemplano/issues)
 
 # Contents Guide
 + **[Part 1](https://github.com/samuelbetio/SBTemplano#part-1-describe-your-question-the-idea-or-user-story-in-an-issue): _Describe_ your Question, the Idea or User Story in an Issue**
