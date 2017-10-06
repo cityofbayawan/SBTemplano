@@ -1,0 +1,1318 @@
+
+<!DOCTYPE html>
+<html lang="ceb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>JW.org Apps</title>
+
+    <link id="apiLink" rel="api" href="/api/"/>
+    <link id="assetsLink" rel="api" href="https://assets1.jw.org/ui/"/>
+    <link rel="stylesheet" href="https://assets1.jw.org/ui/stylesheets/apps-20c0133341.css"/>
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 -->
+    <link rel="apple-touch-icon" href="https://assets1.jw.org/ui/images/icon_homeButton.png"/>
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 -->
+    <link rel="icon" href="https://assets1.jw.org/ui/images/icon_favicon.png"/>
+    <!-- For IE 9 and below. ICO should be 32x32 -->
+    <!--[if IE]><link rel="shortcut icon" href="https://assets1.jw.org/ui/images/favicon.ico" type="image/x-icon"/><![endif]-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+</head>
+<body>
+<a id="skipToContent" href="" class="show-for-sr">Adto sa content</a>
+
+<div id="regionSiteMark">
+    <div class="wrapper hide-for-print">
+        <div class="wrapperPage">
+            <a href="http://www.jw.org/ceb/" id="siteMark" title="Adto sa sinugdan" target="_blank"><img src="https://assets1.jw.org/ui/images/siteMarkApps_web.png"/></a>
+        </div>
+    </div>
+</div>
+<div id="regionHeader">
+    <div class="wrapper hide-for-print">
+        <div class="wrapperPage clearfix">
+            <header>
+                <h2 id="siteName">Mga Saksi ni Jehova</h2>
+            </header>
+        </div>
+    </div>
+</div>
+<div id="regionPrimaryNav" ng-class="classMenu">
+    <div class="wrapper hide-for-print">
+        <div class="wrapperPage clearfix">
+
+            <div id="primaryNav" class="clearfix">
+                <nav role="navigation">
+                    <ul class="clearfix">
+                         
+<li jwo-feature-link="LOOKUP"
+     style="display:none;" >
+    <span><a href="/CV_LOOKUP">PANGITAA</a></span>
+</li>
+  
+<li jwo-feature-link="CONG"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_CONG">KONGREGASYON</a></span>
+</li>
+  
+<li jwo-feature-link="TRVLOVRSR"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_TRVLOVRSR">CIRCUIT OVERSEER</a></span>
+</li>
+  
+<li jwo-feature-link="MEMBER"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_MEMBER">MEMBER</a></span>
+</li>
+  
+<li jwo-feature-link="CONV"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_CONV">CONVENTION</a></span>
+</li>
+  
+<li jwo-feature-link="CIRCUIT"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_CIRCUIT">CIRCUIT</a></span>
+</li>
+  
+<li jwo-feature-link="ASSEMHALL"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_ASSEMHALL">ASSEMBLY HALL</a></span>
+</li>
+  
+<li jwo-feature-link="LASSN"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_LASSN">LEGAL ASSOCIATION</a></span>
+</li>
+  
+<li jwo-feature-link="DOCUMENTS"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_DOCUMENTS">DOCUMENTS</a></span>
+</li>
+  
+<li jwo-feature-link="TRANSLATION"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_TRANSLATION">TRANSLATION</a></span>
+</li>
+  
+<li jwo-feature-link="INBOXLANDING"
+     style="display:none;" >
+    <span><a href="/ui/CV/inbox.html#/{domainKey}/inbox/setup">INBOX</a></span>
+</li>
+  
+<li jwo-feature-link="INBOX"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_INBOX">INBOX</a></span>
+</li>
+  
+<li jwo-feature-link="ADMIN"
+     style="display:none;" >
+    <span><a href="/CV_{domainKey}_ADMIN">ADMINISTRATION</a></span>
+</li>
+ 
+                        <li class="siteLinks">
+                            <a href="/CV_LOGIN1" jwo-feature-link="LOGIN1" feature-link-anonymous>LOG IN</a>
+                            <a href="/CV_LOGOUT" jwo-feature-link="LOGOUT" feature-link-authenticated>LOG OUT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="wrapperPage grid column row-medium grid-main-center nowrap print-block">
+        
+        
+            
+                
+            
+        
+         <div class="grid-item" id="showHideMenu">
+             <button ng-click="classMenu['hide-for-medium-down'] = false" ng-show="classMenu['hide-for-medium-down']">IPAKITA ANG MENU</button>
+             <button ng-click="classMenu['hide-for-medium-down'] = true" ng-hide="classMenu['hide-for-medium-down']">ITAGO ANG MENU</button>
+         </div>
+         <main class="main-content grid-item large-13">
+             <jwo-select-domain></jwo-select-domain>
+             <div ui-view id="skipToHere" tabindex="-1">
+                 <div id="loadingIndicator" class="loading large page">
+                     <div></div>
+                 </div>
+                 <div id="systemFailureMessage" class="hide">
+                     Dili maproseso. Palihog sulayi pag-usab.
+                 </div>
+             </div>
+         </main>
+    </div>
+</div>
+<div class="wrapper hide-for-print">
+    <div class="wrapperPage">
+        <div id="regionFooter">
+            <div id="footerNav" class="popup-container">
+                <jwo-select-language></jwo-select-language>
+                <div class="float-right" jwo-state>
+                    <a href="/CV_HELP?txtHelp={helpCode}" class="button dark small" jwo-window-open="default" jwo-window-open-name="help_window">GIYA</a>
+                    <a href="/CV_{domainKey}_CONTACTUS" class="button dark small" jwo-window-open="simple" jwo-window-open-name="contact_window" jwo-feature-link="CONTACTUS">KONTAKA KAMI</a>
+                </div>
+            </div>
+            <div id="footerCopyright">
+                <p>
+                    <a href="/CV_LEGAL?txtAction=SHOW:LEGALTERMS">Copyright</a>
+                    &copy; 2017 Watch Tower Bible and Tract Society of Pennsylvania.
+                    <a href="/CV_LEGAL?txtAction=SHOW:LEGALTERMS">Kondisyones sa Paggamit</a> &nbsp;|&nbsp;
+                    <a href="/CV_LEGAL?txtAction=SHOW:LEGALPRIVACY">Polisa sa Pribasiya</a>
+                    <span class="user" jwo-usercode></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<zf-notification-static id="msgCouldNotCompleteRequest" color="warning" title="Warning:">
+    Dili maproseso. Palihog sulayi pag-usab.
+</zf-notification-static>
+<zf-notification-static id="msgTemporarilyOffLine" color="warning" title="Warning:">
+    Temporaryo ming off-line. Palihog sulayi pag-usab paglabayg pipila ka minutos.
+</zf-notification-static>
+<script type="text/ng-template" id="core/google-maps/coordinates"><span dir="ltr" class="inline-block" ng-if="$ctrl.location">{{ $ctrl.lat }}&nbsp;{{ $ctrl.lng }}</span></script>
+<script type="text/ng-template" id="core/google-maps/directions"><a class="p800" ng-if="::$ctrl.link" ng-href="{{::$ctrl.link.url}}" target="{{::$ctrl.link.target}}"
+   ng-click="$event.stopPropagation()">
+   <jwo-icon data-icon="directions" data-size="20" data-class="p800"></jwo-icon>
+   Direksiyon
+</a></script>
+<script type="text/ng-template" id="core/google-maps/distance"><span ng-bind-html="$ctrl.distance"></span></script>
+<script type="text/ng-template" id="core/google-maps/geocode-type-ahead"><jwo-autocomplete class="autocomplete--jumbo" autocomplete-options="::{cache: false, hideIfEmpty: true}"
+                  ng-if="$ctrl.map" input-id="{{::$ctrl.inputId}}" input-name="{{::$ctrl.inputName}}"
+                  placeholder="Itayp ang adres o lokasyon" ng-model="$ctrl.selectedItem"
+                  search-text="$ctrl.searchText" api="$ctrl.internalApi"
+                  on-selected-item-change="$ctrl.onAutocompleteChange(item)">
+
+   <!-- Shows as a first result user's location -->
+   <jwo-autocomplete-items items="::$ctrl.userLocationDataSource" item-text="item.address"
+                           items-options="::{hideOnSearch: true}">
+      <jwo-icon data-icon="my-location" data-size="20" data-class="g700"></jwo-icon>
+      <span>{{::item.address}}</span>
+   </jwo-autocomplete-items>
+
+   <!-- Show recent results -->
+   <jwo-autocomplete-items items="::$ctrl.recentResultsDataSource" item-text="item.address"
+                           items-options="::{hideOnSearch: true}">
+      <jwo-icon data-icon="history" data-size="20" data-class="g700"></jwo-icon>
+      <span>{{::item.address}}</span>
+   </jwo-autocomplete-items>
+
+   <!-- Show results of reverse geocode -->
+   <jwo-autocomplete-items items="::$ctrl.reverseGeocodeDataSource" item-text="item.address">
+      <jwo-icon data-icon="pin" data-size="20" data-class="g700"></jwo-icon>
+      <span jwo-autocomplete-highlight>{{::item.address}}</span>
+   </jwo-autocomplete-items>
+
+   <!-- Show results of geocode -->
+   <jwo-autocomplete-items items="::$ctrl.dataSource" item-text="item.address">
+      <jwo-icon data-icon="pin" data-size="20" data-class="g700"></jwo-icon>
+      <span jwo-autocomplete-highlight>{{::item.address}}</span>
+   </jwo-autocomplete-items>
+</jwo-autocomplete></script>
+<script type="text/ng-template" id="core/google-maps/user-location"><gm-marker ng-if="$ctrl.enabled" position="$ctrl.markerLocation" options="$ctrl.markerOptions"
+           gm-then="$ctrl.initButton(marker)"></gm-marker>
+<gm-circle ng-if="$ctrl.enabled" gm-then="$ctrl.onCircleInit(circle)"
+           center="$ctrl.markerLocation" options="$ctrl.circleOptions"></gm-circle>
+
+<jwo-map-control position="RIGHT_BOTTOM">
+   <button ng-show="$ctrl.enabled" ng-click="$ctrl.goToUserLocation()" class="user-location-button"></button>
+</jwo-map-control>
+</script>
+<script id="google-maps-literals" type="application/json">{"OptYourLocation":"Imong lokasyon","Txt1Kilometer":"1 kilometro","Txt1Mile":"1 mile","TxtKilometersNumbersAbove1":"%1$s kilometers","TxtMiles_NumbersAbove1":"%1$s miles","TxtWordNumberOrDate":"(%1$s)"}</script>
+<script type="text/ng-template" id="core/select-language">
+PINULONGAN SA SITE
+<a href="#" zf-popup-toggle="selectLanguage" class="button picker-button secondary">Cebuano</a>
+
+<jwo-popup id="selectLanguage" class="picker-panel picker-panel-language"
+           pin-at="top left" pin-to="bottom left" rtl-pin-at="top right" rtl-pin-to="bottom right">
+    <section class="block-list simple">
+        <ul>
+            <li class="grid-content" ng-repeat="lang in vm.languages track by lang.languageCode" dir="{{ ::lang.scriptDirection }}">
+                <a href="" dir="{{ ::lang.scriptDirection }}" lang="{{ ::lang.jwoLocaleCode }}" class="lang-{{ ::lang.jwoLocaleCode }}" ng-click="vm.selectLanguage(lang)">{{ ::lang.languageLocalName }}</a>
+            </li>
+        </ul>
+    </section>
+</jwo-popup>
+</script>
+<script type="text/ng-template" id="core/select-domain"><div class="clearfix">
+   <div class="float-right popup-container hide-for-print" ng-hide="::vm.hidden">
+      <a class="button picker-button secondary z-depth-0" href="#" zf-popup-toggle="domain-picker-panel">Usbon ang Domain</a>
+      <jwo-popup id="domain-picker-panel" class="picker-panel" pin-at="bottom right" pin-to="top right">
+         <section class="block-list simple">
+               <div ng-repeat="domainType in vm.domainTypes">
+                  <header>{{ domainType.domainHeadingLabel }}</header>
+                  <ul>
+                     <li ng-repeat="domain in domainType.domains track by domain.domainKey" ng-class="domain.cssClass">
+                           <a ng-href="{{ domain.loginLink }}">{{ domain.domainName }}</a>
+                     </li>
+                  </ul>
+               </div>
+         </section>
+      </jwo-popup>
+   </div>
+   <div class="text-right float-right padding-horizontal-1">
+      <small>
+         {{ ::vm.localName|formatName:'SHORT_NAME_MID' }}<br>
+         {{ vm.currentDomainLabel }}
+      </small>
+   </div>
+</div></script>
+<script type="text/ng-template" id="core/media-player"><section class="card clearfix">
+    <p class="show-for-sr">
+        <a ng-click="vm.play()">I-play</a>
+        <a ng-click="vm.pause()">I-pause</a>
+        <a ng-click="vm.setMute(true)">I-disable ang audio</a>
+        <a ng-click="vm.setMute(false)">I-enable ang audio</a>
+    </p>
+    <videogular vg-player-ready="vm.onPlayerReady($API)" vg-theme="vm.config.theme">
+        <vg-media vg-src="vm.SelectedVideo.sources"></vg-media>
+        <vg-controls vg-autohide="true">
+            <vg-play-pause-button></vg-play-pause-button>
+            <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+            <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-time-display>{{ (totalTime || "00:00") | date:'mm:ss' }}</vg-time-display>
+            <vg-quality quality-sources="vm.config.files" default-quality="vm.SelectedVideo"></vg-quality>
+            <vg-volume>
+                <vg-mute-button></vg-mute-button>
+                <vg-volume-bar></vg-volume-bar>
+            </vg-volume>
+            <vg-fullscreen-button></vg-fullscreen-button>
+        </vg-controls>
+    </videogular>
+    <div class="card-section tile">
+        <label>
+            Pagpilig Pinulongan
+            <select ng-model="vm.SelectedLangCode" ng-disabled="!vm.SelectedLangCode"
+                    ng-options="Lang.code as Lang.name for Lang in vm.playlist.languages"
+                    ng-change="vm.changeVideoLanguage()">
+            </select>
+        </label>
+    </div>
+</section></script>
+<script type="text/ng-template" id="core/type-ahead"><div class="search-select" ng-class="{'showing-results': vm.showingResults}">
+
+   <div ng-class="{'focus': vm.inputIsFocused, 'imitate-select-styles': vm.selectedResults.length < vm.typeAhead.selectLimit || vm.noChip}"
+        ng-click="vm.clickImitationSelect($event)">
+      <input type="text"
+             id="{{::vm.id}}"
+             placeholder="{{::vm.placeholder}}"
+             ng-model="vm.searchTextFunc"
+             ng-model-options="{ debounce: vm.debounce, getterSetter : true }"
+             ng-show="!vm.selectLimitReached"
+             ng-focus="vm.inputIsFocused"
+             class="ng-pristine ng-untouched ng-valid ng-isolate-scope"
+             ng-disabled="vm.disabled"/>
+
+      <div class="chip chip--removable" ng-if="!vm.noChip" ng-repeat="element in vm.selectedResults track by $index">
+          <jwo-type-ahead-template-value template="vm.typeAhead.selectedTemplate"></jwo-type-ahead-template-value>
+         <button type="button" class="chip-remove" ng-click="vm.removeResult(element)"></button>
+      </div>
+
+      <input type="text"
+             ng-value="vm.selectedValue(vm.selectedResults[0])"
+             ng-if="vm.noChip && !vm.showingResults && vm.selectedResults.length > 0"
+             ng-click="vm.removeResult(vm.selectedResults[0])">
+   </div>
+
+   <div class="result-options" ng-show="vm.showingResults">
+      <div class="block-list ng-scope" ng-repeat="opts in vm.typeAhead.groups | filter: {_visible : true}">
+         <header class="result-options__header" ng-show="opts.heading">
+            {{ opts.heading }}
+         </header>
+         <ul>
+            <li ng-repeat="element in opts.getValues()|limitTo:opts.maxResult" class="ng-scope">
+               <a href="" ng-click="vm.pickResult($event, element)">
+                  <jwo-type-ahead-template-value template="vm.typeAhead.optionTemplate"></jwo-type-ahead-template-value>
+               </a>
+            </li>
+         </ul>
+
+         <footer ng-show="opts.hasMoreResultsFound()">
+            Daghan rag migawas nga resulta. Para mogamay, pagtayp pag ubang detalye.
+         </footer>
+         <footer ng-show="opts.hasNoResultsFound() && !opts.hideOnSearch && vm.searchText">
+            Walay nakita. Pagtayp ug lain.
+         </footer>
+         <footer ng-show="!opts.hideOnSearch && opts.getValues().length === 0 && !vm.searchText">
+            I-type sa ibabaw ang gipangita nga mga pulong aron makita ang mga resulta.
+         </footer>
+         <footer ng-show="opts.hasNoResultsFound() && opts.hideOnSearch">
+            Walay nakitang resulta.
+         </footer>
+         <footer class="loading small"  ng-show="opts._isLoading">
+            <div></div>
+         </footer>
+      </div>
+   </div>
+   <div class="select-limit"
+        ng-if="vm.typeAhead.selectLimit > 1">
+      <small ng-bind-html="'%1$s&amp;nbsp;/&amp;nbsp;%2$s'| sprintf: vm.selectedResults.length: vm.typeAhead.selectLimit">
+      </small>
+   </div>
+
+   <div ng-transclude></div>
+
+</div>
+</script>
+<script type="text/ng-template" id="core/form-person-name"><fieldset ng-form="personName" class="fieldset-secondary">
+   <legend ng-transclude="jwoFormPersonNameHeading"></legend>
+   <p ng-transclude="jwoFormPersonNameMessage"></p>
+   <jwo-form-person-name-part ng-repeat-start="index in $ctrl.indexRange track by $index"
+                              ng-if="$ctrl.format.firstName.index == index" part="firstName"
+                              label="{{ $ctrl.format.firstName.label }}" required="true"></jwo-form-person-name-part>
+
+   <jwo-form-person-name-part ng-if="$ctrl.format.middleName.index == index" part="middleName"
+                              label="{{ $ctrl.format.middleName.label }}"></jwo-form-person-name-part>
+
+   <jwo-form-person-name-part ng-if="$ctrl.format.lastName.index == index" part="lastName"
+                              label="{{ $ctrl.format.lastName.label }}" required="true"></jwo-form-person-name-part>
+
+   <jwo-form-person-name-part ng-if="$ctrl.format.nameSuffix.index == index" part="nameSuffix"
+                              label="{{ $ctrl.format.nameSuffix.label }}"
+                              ng-repeat-end></jwo-form-person-name-part>
+</fieldset>
+
+<fieldset ng-form="transltdName" class="fieldset-secondary" ng-if="$ctrl.format.transltdRequired">
+   <legend ng-transclude="jwoFormPersonNameTransltdHeading"></legend>
+   <p ng-transclude="jwoFormPersonNameTransltdMessage"></p>
+   <jwo-form-person-name-part ng-repeat-start="index in $ctrl.indexRange track by $index"
+                              ng-if="$ctrl.format.firstName.index == index" part="firstName" transltd="true"
+                              label="{{ $ctrl.format.firstName.label }}" required="true"></jwo-form-person-name-part>
+
+   <jwo-form-person-name-part ng-if="$ctrl.format.middleName.index == index" part="middleName" transltd="true"
+                              label="{{ $ctrl.format.middleName.label }}"></jwo-form-person-name-part>
+
+   <jwo-form-person-name-part ng-if="$ctrl.format.lastName.index == index" part="lastName" transltd="true"
+                              label="{{ $ctrl.format.lastName.label }}" required="true"></jwo-form-person-name-part>
+
+   <jwo-form-person-name-part ng-if="$ctrl.format.nameSuffix.index == index" part="nameSuffix" transltd="true"
+                              label="{{ $ctrl.format.nameSuffix.label }}"
+                              ng-repeat-end></jwo-form-person-name-part>
+</fieldset></script>
+<script type="text/ng-template" id="core/form-person-name-part"><div ng-class="{error: $ctrl.hasSyncError || $ctrl.hasAsyncError }">
+   <label for="{{ $ctrl.inputId }}" ng-bind-html="$ctrl.label"></label>
+   <input type="text" id="{{ $ctrl.inputId }}" name="{{ $ctrl.inputName }}"
+          ng-model="$ctrl.modelValue" ng-required="$ctrl.required"
+          aria-describedby="{{ $ctrl.errorId }}" />
+   <div id="{{ $ctrl.errorId }}" ng-if="$ctrl.hasSyncError || $ctrl.hasAsyncError" ng-messages="$ctrl.ngModel.$error">
+      <div ng-if="$ctrl.hasSyncError" ng-messages-include="core/form-person-name-part-sync-messages"></div>
+      <div ng-if="$ctrl.hasAsyncError" ng-messages-include="core/form-person-name-part-async-messages"></div>
+   </div>
+</div>
+</script>
+<script type="text/ng-template" id="core/form-person-name-part-sync-messages"><p class="form-message" ng-message="required">Kinahanglan</p></script>
+<script type="text/ng-template" id="core/form-person-name-part-async-messages"><p class="form-message" ng-message="REQUIRED">Kinahanglan</p>
+<p class="form-message" ng-message="NOT_ALL_ROMAN_CHAR">Dili husto ang gisulat. Roman characters lang ang puwedeng gamiton.</p>
+<p class="form-message" ng-message="INVALID_CHAR">May sayop nga pagkasulat.</p>
+<p class="form-message" ng-message="INVALID_CHARSET"
+     ng-bind-html="'Dili husto ang gisulat. Kini lang nga mga script ang puwedeng gamiton: %1$s' | sprintf : $ctrl.allowedCharsets.join(', ')"></p>
+<p class="form-message" ng-message="NOT_ALL_UPPER_CASE">Kinahanglang dagkog letra tanan.</p>
+<p class="form-message" ng-message="ALL_UPPER_OR_LOWER_CASE">Dili puwedeng puros dagko o puros gagmay nga letra.</p>
+<p class="form-message" ng-message="ALL_UPPER_OR_LOWER_CASE_ABBR">Dili puwedeng puros dagko o puros gagmay nga letra. (Ang abbreviation puwedeng puros dagkong letra.)</p>
+<p class="form-message" ng-message="ALL_LOWER_CASE">Dili puwedeng puros gagmayng letra.</p>
+</script>
+<script type="text/ng-template" id="core/button"><button ng-if="!$ctrl.disabled && !$ctrl.loading" ng-click="$ctrl.onClick({$event: $event})"
+        class="button hide-for-print" ng-attr-type="{{$ctrl.type}}"
+        ng-class="{secondary: $ctrl.secondary, 'z-depth-0': !$ctrl.raised, flat: $ctrl.flat, link: $ctrl.link}">
+   <ng-transclude></ng-transclude>
+</button>
+
+<button ng-if="$ctrl.disabled && !$ctrl.loading" ng-attr-type="{{$ctrl.type}}"
+        class="button hide-for-print" disabled ng-class="{flat: $ctrl.flat, link: $ctrl.link}">
+   <ng-transclude></ng-transclude>
+</button>
+
+<button ng-if="$ctrl.loading" ng-attr-type="{{$ctrl.type}}"
+        class="button hide-for-print secondary wait" disabled ng-class="{flat: $ctrl.flat, link: $ctrl.link}">
+   <div class="loading small">
+      <div></div>
+   </div>
+   <span>Palihog hulata...</span>
+</button></script>
+<script type="text/ng-template" id="core/notification"><section class="notification is-active" aria-live="polite" aria-atomic="true"
+     ng-class="{alert: $ctrl.error, info: $ctrl.info, success: $ctrl.success, warning: $ctrl.warning, confirm: $ctrl.confirm}">
+   <div class="notification-icon" ng-if="!$ctrl.default">
+      <img ng-if="$ctrl.error"   src="https://assets1.jw.org/ui/images/icon_error.png"   alt="Sayop" />
+      <img ng-if="$ctrl.info"    src="https://assets1.jw.org/ui/images/icon_info_blue.png"    alt="Para sa Imong Kasayoran" />
+      <img ng-if="$ctrl.success" src="https://assets1.jw.org/ui/images/icon_success.png" alt="OK na" />
+      <img ng-if="$ctrl.warning" src="https://assets1.jw.org/ui/images/icon_warning.png" alt="Pasidaan" />
+      <img ng-if="$ctrl.confirm" src="https://assets1.jw.org/ui/images/icon_confirm.png" alt="I-confirm nga husto ang mosunod nga impormasyon." />
+   </div>
+   <div class="notification-content" ng-transclude></div>
+</section>
+</script>
+<script type="text/ng-template" id="core/modal"><div zf-modal id="{{ $ctrl.id }}" class="collapse" overlay-close="false" ng-keydown="$ctrl.onOverlayKeyDown($event)">
+   <div jwo-modal-focus="$ctrl.headFocus" tabindex="0" ng-keydown="$ctrl.onHeadKeyDown($event)"></div>
+   <div class="grid-block vertical">
+      <div class="title-bar">
+         <div class="title" ng-transclude="jwoModalTitle"></div>
+         <span class="right"><a href="" ng-click="$ctrl.onClose()" class="close-button">×</a></span>
+      </div>
+      <div class="grid-content padding">
+         <div class="padding-vertical-1" ng-transclude="jwoModalContent"></div>
+      </div>
+   </div>
+   <div jwo-modal-focus="$ctrl.footFocus" tabindex="0" ng-keydown="$ctrl.onFootKeyDown($event)"></div>
+</div></script>
+<script type="text/ng-template" id="core/new-modal"><div class="jwo-modal"
+     ng-class="{'jwo-modal--fixed-height': !!$ctrl.fixedHeight, 'jwo-modal--small': !!$ctrl.small, 'jwo-modal--xsmall': !!$ctrl.xsmall}">
+   <div class="jwo-modal__backdrop" ng-click="$ctrl.onClose()"></div>
+   <article class="jwo-modal__window">
+      <div tabindex="0"></div>
+      <header class="jwo-modal__header">
+         <div class="jwo-modal__header-title" ng-transclude="jwoModalTitle"></div>
+         <div class="jwo-modal__header-controls">
+            <button class="jwo-modal__header-control jwo-modal__header-control--close-x"
+                    ng-click="$ctrl.onClose()"
+                    aria-label="Isira"></button>
+         </div>
+      </header>
+      <div class="jwo-modal__content" ng-transclude="jwoModalContent"
+           ng-class="{'jwo-modal__content--no-padding': !!$ctrl.noPadding, 'jwo-modal__content--no-scrolling' : !!$ctrl.noScrolling}" ></div>
+      <footer class="jwo-modal__footer" ng-transclude="jwoModalFooter"
+              ng-if="$ctrl.showFooter && $ctrl.hasFooter"></footer>
+      <footer class="jwo-modal__footer" ng-if="$ctrl.showFooter && $ctrl.hasFooterControls">
+         <div class="jwo-modal__footer-controls" ng-transclude="jwoModalFooterControls"></div>
+      </footer>
+      <div tabindex="0"></div>
+   </article>
+</div></script>
+<script type="text/ng-template" id="core/pagination"><div class="pagination-container grid no-bleed collapse grid-main-between grid-cross-center" ng-if="$ctrl.totalPages > 1">
+    <p class="grid-item pagination-results" ng-bind-html="'Mga Resulta: %d' | sprintf: $ctrl.totalItems"></p>
+    <ul class="grid-item pagination" lang="en">
+        <li class="pagination-item" ng-if="$ctrl.showFirstPage" ng-class="{active: $ctrl.currentPage == 1}">
+            <a href="" class="pagination-link" ng-click="$ctrl.goToPage(1)" ng-if="$ctrl.currentPage != 1">1</a>
+            <span ng-if="$ctrl.currentPage == 1">1</span>
+        </li>
+        <li class="pagination-item ellipsis" ng-if="$ctrl.showFirstEllipsis">&hellip;</li>
+        <li class="pagination-item" ng-repeat="page in $ctrl.pages" ng-class="{active: $ctrl.currentPage == page}">
+            <a href="" class="pagination-link" ng-click="$ctrl.goToPage(page)" ng-if="$ctrl.currentPage != page">
+                {{ page }}
+            </a>
+            <span ng-if="$ctrl.currentPage == page">{{ page }}</span>
+        </li>
+        <li class="pagination-item ellipsis" ng-if="$ctrl.showLastEllipsis">&hellip;</li>
+        <li class="pagination-item" ng-if="$ctrl.showLastPage" ng-class="{active: $ctrl.currentPage == $ctrl.totalPages}">
+            <a href="" class="pagination-link" ng-click="$ctrl.goToPage($ctrl.totalPages)"
+               ng-if="$ctrl.currentPage != $ctrl.totalPages">
+                {{ $ctrl.totalPages }}
+            </a>
+            <span ng-if="$ctrl.currentPage == $ctrl.totalPages">{{ $ctrl.totalPages }}</span>
+        </li>
+    </ul>
+</div>
+</script>
+<script type="text/ng-template" id="core/state-change-indicator"><div ng-if="$ctrl.loading" class="loading-indicator">
+    <div class="loading large page"><div></div></div>
+</div>
+
+<ng-transclude ng-if="!$ctrl.loading"></ng-transclude></script>
+<script type="text/ng-template" id="core/accordion-pane"><dt ng-click="$ctrl.toggle()" class="accordion__header grid no-bleed nowrap grid-main-between grid-cross-start"
+    role="heading" aria-level="4" tabindex="-1">
+<div class="grid-item">
+   <button type="button" id="jwo-accordion-pane-header-{{ $id }}" class="accordion__header-button"
+           aria-expanded="{{ $ctrl.ariaExpanded }}" aria-controls="jwo-accordion-pane-{{ $id }}"
+           ng-bind-html="$ctrl.header"></button>
+</div>
+<div class="grid-item">
+   <i class="icon-inline" ng-if="$ctrl.expanded">
+      <img src="https://assets1.jw.org/ui/images/icon_arrow_up.png" alt=""/>
+   </i>
+   <i class="icon-inline" ng-if="!$ctrl.expanded">
+      <img src="https://assets1.jw.org/ui/images/icon_arrow_down.png" alt=""/>
+   </i>
+</div>
+</dt>
+
+<dd id="jwo-accordion-pane-{{ $id }}" class="accordion__panel" ng-show="$ctrl.expanded"
+    role="region" aria-labelledby="jwo-accordion-pane-header-{{ $id }}" ng-transclude></dd></script>
+<script type="text/ng-template" id="core/autocomplete"><!-- TODO: pass tabindex from outer component to the input element -->
+
+<div class="autocomplete__container">
+   <input disabled type="search" class="autocomplete__autofill" ng-model="$ctrl.autofillText" aria-hidden="true"
+          dir="auto">
+   <input type="search" id="{{::$ctrl.inputId}}" name="{{::$ctrl.inputName}}" class="autocomplete__input"
+          ng-model="$ctrl.searchText" ng-change="$ctrl.onInputTextChange()" ng-disabled="$ctrl.disabled" ng-trim="false"
+          ng-focus="$ctrl.onFocus()" ng-blur="$ctrl.onBlur()" ng-keydown="$ctrl.onKeyDown($event)"
+          ng-keyup="$ctrl.updateAutofill()" ng-click="$ctrl.updateAutofill()"
+          role="combobox" aria-autocomplete="list" aria-haspopup="{{$ctrl.model.opened}}" autocomplete="off"
+          aria-label="{{::$ctrl.placeholder}}" aria-expanded="{{$ctrl.model.opened}}"
+          aria-owns="{{::$ctrl.inputId}}-dropdown" aria-activedescendant="{{$ctrl.activeDescendant}}"
+          dir="auto" jwo-dir-auto>
+</div>
+
+<!-- TODO: confirm character to use -->
+<button class="autocomplete__button" type="button" aria-hidden ng-click="$ctrl.onClear($event)"
+        tabindex="-1" ng-mouseenter="$ctrl.disableBlur()" ng-mouseleave="$ctrl.enableBlur()"
+        ng-show="$ctrl.config.clearButton && $ctrl.isFocused && $ctrl.searchText.length">
+   &#10006;
+</button>
+
+<!-- TODO: confirm character to use -->
+<button class="autocomplete__button" type="button" aria-hidden ng-click="$ctrl.onOpen()" tabindex="-1"
+        ng-if="::$ctrl.config.dropdownButton" ng-hide="$ctrl.model.opened || $ctrl.isFocused">
+   &#x25BC;
+</button>
+
+<!-- This contains the jwo-autocomplete-items components that have the data sources -->
+<ng-transclude hidden></ng-transclude>
+
+<!-- This is appended to body so that it is displayed as a float -->
+<jwo-autocomplete-dropdown class="autocomplete__dropdown" dropdown-show="$ctrl.model.opened"
+                           ng-mouseenter="$ctrl.disableBlur()" ng-mouseleave="$ctrl.enableBlur()"
+                           id="{{::$ctrl.inputId}}-dropdown" role="listbox">
+
+   <section ng-repeat="group in ::$ctrl.model.groups track by $index" ng-show="group.visible">
+      <h5 class="autocomplete__header" ng-show="::group.heading">{{::group.heading}}</h5>
+
+      <ul class="autocomplete__list" id="{{::group.groupId}}">
+         <li ng-repeat="item in group.items track by $ctrl.trackBy($id, item, group)"
+             class="autocomplete__item" role="option">
+            <a href="" class="autocomplete__item__link" jwo-autocomplete-template="::group.template"
+               item-text="::group.itemText" ng-click="$ctrl.select(item, group.itemText)"></a>
+         </li>
+      </ul>
+
+      <p class="autocomplete__footer" ng-show="group.emptySearch && !group.hideOnSearch">
+         I-type sa ibabaw ang gipangita nga mga pulong aron makita ang mga resulta.
+      </p>
+      <p class="autocomplete__footer" ng-show="group.emptySearch && group.hideOnSearch">
+         Walay nakitang resulta.
+      </p>
+      <p class="autocomplete__footer" ng-show="group.noResultsFound">
+         Walay nakita. Pagtayp ug lain.
+      </p>
+      <p class="autocomplete__footer" ng-show="group.hasMoreResults">
+         Daghan rag migawas nga resulta. Para mogamay, pagtayp pag ubang detalye.
+      </p>
+
+      <div class="autocomplete__footer" ng-show="group.isLoading">
+         <div class="loading small">
+            <div></div>
+         </div>
+      </div>
+   </section>
+
+   <p class="autocomplete__footer" ng-show="!$ctrl.model.hasVisibleGroups && $ctrl.model.emptySearch">
+      I-type sa ibabaw ang gipangita nga mga pulong aron makita ang mga resulta.
+   </p>
+   <p class="autocomplete__footer" ng-show="!$ctrl.model.hasVisibleGroups && !$ctrl.model.emptySearch">
+      Walay nakita. Pagtayp ug lain.
+   </p>
+</jwo-autocomplete-dropdown></script> <!-- TODO: This is a WIP #34073 -->
+<script type="text/ng-template" id="core/date-picker/icon-calendar-url">https://assets1.jw.org/ui/images/icon_calendar.gif</script>
+<script type="text/ng-template" id="core/icon"><!-- While this layout is repetitive, it is necessary due to IE limitations
+with SVGs which prevent ngIf and ngClass from functioning properly
+on SVG elements. -->
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'error'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
+    <path d="M24,1C11.318,1,1,11.318,1,24s10.318,23,23,23s23-10.318,23-23S36.682,1,24,1z M23,14c0-0.552,0.448-1,1-1
+      s1,0.448,1,1v13c0,0.552-0.448,1-1,1s-1-0.448-1-1V14z M24,35c-1.105,0-2-0.895-2-2s0.895-2,2-2c1.105,0,2,0.895,2,2
+      S25.105,35,24,35z"></path>
+    </g></svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'warning'" >
+    <svg class="nc-icon glyph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"><g>
+    <path d="M46.886,45.536l-22-42c-0.345-0.659-1.427-0.659-1.771,0l-22,42c-0.163,0.31-0.151,0.682,0.03,0.981
+      S1.65,47,2,47h44c0.35,0,0.674-0.183,0.855-0.482S47.048,45.846,46.886,45.536z M23,20c0-0.552,0.448-1,1-1s1,0.448,1,1v13
+      c0,0.552-0.448,1-1,1s-1-0.448-1-1V20z M24,41c-1.105,0-2-0.895-2-2s0.895-2,2-2s2,0.895,2,2S25.105,41,24,41z"></path>
+    </g></svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'check'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <g>
+      <path d="M20,34c-0.512,0-1.023-0.195-1.414-0.586L9.172,24L12,21.171l8,8l16-16L38.828,16L21.414,33.414
+        C21.023,33.805,20.512,34,20,34z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'check-circle'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <g>
+      <path d="M24,1C11.3,1,1,11.3,1,24s10.3,23,23,23s23-10.3,23-23S36.7,1,24,1z M36.7,16.7l-16,16
+        C20.5,32.9,20.3,33,20,33s-0.5-0.1-0.7-0.3l-8-8c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l7.3,7.3l15.3-15.3c0.4-0.4,1-0.4,1.4,0
+        S37.1,16.3,36.7,16.7z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'add'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M46,19H29V2c0-0.6-0.4-1-1-1h-8c-0.6,0-1,0.4-1,1v17H2c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1h17v17
+        c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1V29h17c0.6,0,1-0.4,1-1v-8C47,19.4,46.6,19,46,19z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'add-circle'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M24,1C11.3,1,1,11.3,1,24s10.3,23,23,23s23-10.3,23-23S36.7,1,24,1z M34,25h-9v9c0,0.6-0.4,1-1,1s-1-0.4-1-1
+        v-9h-9c-0.6,0-1-0.4-1-1s0.4-1,1-1h9v-9c0-0.6,0.4-1,1-1s1,0.4,1,1v9h9c0.6,0,1,0.4,1,1S34.6,25,34,25z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'remove'" >
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <g>
+      <path d="M46,19H2c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1h44c0.6,0,1-0.4,1-1v-8C47,19.4,46.6,19,46,19z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'remove-circle'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M24,1C11.3,1,1,11.3,1,24s10.3,23,23,23s23-10.3,23-23S36.7,1,24,1z M34,25H14c-0.6,0-1-0.4-1-1s0.4-1,1-1
+        h20c0.6,0,1,0.4,1,1S34.6,25,34,25z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'close'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M37.293,7.595L23.858,21.03L10.423,7.595c-0.391-0.39-1.024-0.391-1.414,0L7.594,9.009
+        c-0.391,0.391-0.391,1.024,0,1.414L21.03,23.858L7.594,37.293c-0.391,0.391-0.391,1.024,0,1.414l1.414,1.414
+        c0.391,0.39,1.024,0.39,1.414,0l13.435-13.435l13.435,13.435c0.391,0.39,1.024,0.391,1.414,0l1.414-1.414
+        c0.391-0.391,0.391-1.024,0-1.414L26.686,23.858l13.435-13.435c0.391-0.391,0.391-1.024,0-1.414l-1.414-1.414
+        C38.317,7.204,37.683,7.204,37.293,7.595z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'menu'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <rect data-color="color-2" x="2" y="22" width="44" height="4"></rect>
+      <rect x="2" y="8" width="44" height="4"></rect>
+      <rect x="2" y="36" width="44" height="4"></rect>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'person'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M9,35.375V38c0,0.553,0.447,1,1,1h28c0.553,0,1-0.447,1-1v-2.625c0-2.845-1.691-5.383-4.309-6.468
+        C31.636,27.642,28.039,27,24,27s-7.636,0.642-10.691,1.907C10.691,29.992,9,32.53,9,35.375z"></path>
+      <path d="M24,24c5.151,0,9-5.279,9-10c0-4.963-4.037-9-9-9s-9,4.037-9,9C15,18.721,18.849,24,24,24z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'help'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M24,1C11.317,1,1,11.318,1,24s10.317,23,23,23s23-10.318,23-23S36.683,1,24,1z M24,37c-1.105,0-2-0.895-2-2
+        s0.895-2,2-2s2,0.895,2,2S25.105,37,24,37z M25,25.925V29c0,0.552-0.447,1-1,1s-1-0.448-1-1v-4c0-0.552,0.447-1,1-1
+        c2.663,0,5-2.336,5-5s-2.337-5-5-5c-1.853,0-3.859,1.395-4.668,3.243c-0.22,0.506-0.809,0.739-1.316,0.516
+        c-0.506-0.221-0.737-0.811-0.516-1.317C18.625,13.868,21.358,12,24,12c3.794,0,7,3.206,7,7C31,22.456,28.341,25.423,25,25.925z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'search'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M45.707,40.293l-8.851-8.851C38.838,28.443,40,24.856,40,21c0-10.477-8.523-19-19-19S2,10.523,2,21
+        s8.523,19,19,19c3.856,0,7.443-1.162,10.442-3.144l8.851,8.851C40.488,45.902,40.744,46,41,46s0.512-0.098,0.707-0.293l4-4
+        C46.098,41.316,46.098,40.684,45.707,40.293z M21,38c-9.389,0-17-7.611-17-17c0-9.389,7.611-17,17-17s17,7.611,17,17
+        C38,30.389,30.389,38,21,38z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'attach-file'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M23.245,46.981C15.187,46.584,9,39.633,9,31.565V12.322C9,6.598,13.24,1.587,18.94,1.05 C25.48,0.434,31,5.585,31,12l0,17.755c0,3.557-2.55,6.732-6.078,7.185C20.654,37.489,17,34.163,17,30V13c0-0.552,0.448-1,1-1h2
+          c0.552,0,1,0.448,1,1l0,16.882c0,1.451,0.978,2.784,2.402,3.06C25.317,33.314,27,31.85,27,30l0-17.755
+          c0-3.557-2.55-6.732-6.078-7.185C16.654,4.511,13,7.837,13,12l0,19.678c0,5.725,4.24,10.736,9.94,11.272
+          C29.48,43.566,35,38.415,35,32V7c0-0.552,0.448-1,1-1h2c0.552,0,1,0.448,1,1v25C39,40.522,31.858,47.406,23.245,46.981z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'attachment'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M17.13,46.186c-4.172,0-8.346-1.725-11.342-5.177C0.582,35.013,1.2,25.909,6.814,20.295L21.852,5.257
+        C25.9,1.209,32.442,0.664,36.851,4.315c5.059,4.189,5.321,11.734,0.785,16.271L23.68,34.541c-1.213,1.213-2.786,2.057-4.494,2.209
+        c-2.107,0.187-4.12-0.55-5.592-2.022c-1.472-1.472-2.208-3.485-2.021-5.592c0.151-1.708,0.996-3.281,2.209-4.494l12.541-12.541
+        c0.391-0.391,1.024-0.391,1.414,0l1.414,1.414c0.391,0.391,0.391,1.024,0,1.414L16.423,27.656c-0.566,0.567-0.879,1.32-0.879,2.122
+        c0,0.801,0.312,1.555,0.879,2.12c1.133,1.136,3.108,1.133,4.243,0.001l13.973-13.973c2.514-2.514,2.955-6.56,0.781-9.374
+        c-2.631-3.406-7.564-3.64-10.511-0.695L9.352,23.414c-2.077,2.078-3.222,4.84-3.222,7.778c0,3.071,1.25,5.949,3.509,8.056
+        c4.374,4.079,11.289,3.703,15.518-0.526l18.136-18.136c0.391-0.391,1.024-0.391,1.414,0L46.121,22c0.391,0.391,0.391,1.024,0,1.414
+        L27.736,41.799C24.812,44.724,20.971,46.186,17.13,46.186z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'download'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <path d="M38.9,21c-1-7.9-7.8-14-15.9-14C14.7,7,7.8,13.3,7.1,21.5C3.5,22.7,1,26.1,1,30c0,5,4,9,9,9h28c5,0,9-4,9-9
+C47,25.3,43.4,21.5,38.9,21z M30.7,28.7l-6,6c-0.1,0.1-0.2,0.2-0.3,0.2C24.3,35,24.1,35,24,35s-0.3,0-0.4-0.1
+c-0.1-0.1-0.2-0.1-0.3-0.2l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l4.3,4.3V18c0-0.6,0.4-1,1-1s1,0.4,1,1v13.6l4.3-4.3
+c0.4-0.4,1-0.4,1.4,0S31.1,28.3,30.7,28.7z"></path>
+    </svg>
+  </span>
+
+<span class="{{ ::class }}" ng-if="::icon === 'upload'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path d="M38.9,21c-1-7.9-7.8-14-15.9-14C14.7,7,7.8,13.3,7.1,21.5C3.5,22.7,1,26.1,1,30c0,5,4,9,9,9h28c5,0,9-4,9-9
+C47,25.3,43.4,21.5,38.9,21z M30.7,24.7C30.5,24.9,30.3,25,30,25s-0.5-0.1-0.7-0.3L25,20.4V34c0,0.6-0.4,1-1,1s-1-0.4-1-1V20.4
+l-4.3,4.3c-0.4,0.4-1,0.4-1.4,0s-0.4-1,0-1.4l6-6c0.1-0.1,0.2-0.2,0.3-0.2c0.2-0.1,0.5-0.1,0.8,0c0.1,0.1,0.2,0.1,0.3,0.2l6,6
+C31.1,23.7,31.1,24.3,30.7,24.7z"></path>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'priority-high'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <circle data-color="color-2" cx="24" cy="42" r="3"></circle>
+      <path d="M24,35c1.104,0,2-0.896,2-2V4c0-1.104-0.896-2-2-2s-2,0.896-2,2v29C22,34.104,22.896,35,24,35z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'settings'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M46.083,20.004l-5.69-0.475c-0.376-1.381-0.927-2.707-1.643-3.956l3.691-4.363
+        c0.336-0.396,0.312-0.985-0.056-1.353l-4.243-4.242c-0.367-0.366-0.956-0.393-1.353-0.057L32.426,9.25
+        c-1.25-0.716-2.576-1.267-3.956-1.643l-0.474-5.69C27.953,1.398,27.52,1,27,1h-6c-0.52,0-0.953,0.398-0.997,0.917l-0.474,5.69
+        c-1.38,0.376-2.706,0.927-3.956,1.643l-4.363-3.691c-0.396-0.336-0.985-0.31-1.353,0.057L5.615,9.857
+        c-0.368,0.367-0.392,0.956-0.056,1.353l3.691,4.363c-0.717,1.25-1.267,2.576-1.643,3.956l-5.69,0.475C1.399,20.047,1,20.479,1,21v6
+        c0,0.521,0.399,0.953,0.917,0.996l5.69,0.475c0.376,1.381,0.927,2.707,1.643,3.956l-3.691,4.361
+        c-0.336,0.397-0.312,0.985,0.056,1.354l4.243,4.243c0.368,0.367,0.957,0.394,1.353,0.057l4.363-3.691
+        c1.25,0.716,2.576,1.267,3.956,1.643l0.474,5.69C20.047,46.602,20.48,47,21,47h6c0.52,0,0.953-0.398,0.997-0.917l0.474-5.69
+        c1.38-0.376,2.706-0.927,3.956-1.643l4.363,3.691c0.397,0.337,0.986,0.311,1.353-0.057l4.243-4.243
+        c0.368-0.368,0.392-0.956,0.056-1.354l-3.691-4.361c0.716-1.249,1.267-2.575,1.643-3.956l5.69-0.475C46.601,27.953,47,27.521,47,27
+        v-6C47,20.479,46.601,20.047,46.083,20.004z M24,31c-3.86,0-7-3.141-7-7s3.14-7,7-7s7,3.141,7,7S27.86,31,24,31z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'chevron-up'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <path d="M24.707,8.293c-0.391-0.391-1.023-0.391-1.414,0l-22,22c-0.391,0.391-0.391,1.023,0,1.414l7,7
+c0.391,0.391,1.023,0.391,1.414,0L24,24.414l14.293,14.293C38.488,38.902,38.744,39,39,39s0.512-0.098,0.707-0.293l7-7
+c0.391-0.391,0.391-1.023,0-1.414L24.707,8.293z"></path>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'chevron-right'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g ng-attr-transform="{{ ::'ltr' === 'rtl' ?  'matrix(-1,0,0,1,48,0)' : undefined }}">
+      <path d="M17.707,1.293c-0.391-0.391-1.023-0.391-1.414,0l-7,7c-0.391,0.391-0.391,1.023,0,1.414L23.586,24
+L9.293,38.293c-0.391,0.391-0.391,1.023,0,1.414l7,7C16.488,46.902,16.744,47,17,47s0.512-0.098,0.707-0.293l22-22
+c0.391-0.391,0.391-1.023,0-1.414L17.707,1.293z"></path>
+     </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'chevron-down'">
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <path d="M46.707,16.293l-7-7c-0.391-0.391-1.023-0.391-1.414,0L24,23.586L9.707,9.293
+c-0.391-0.391-1.023-0.391-1.414,0l-7,7c-0.391,0.391-0.391,1.023,0,1.414l22,22C23.488,39.902,23.744,40,24,40
+s0.512-0.098,0.707-0.293l22-22C47.098,17.316,47.098,16.684,46.707,16.293z"></path>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'chevron-left'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g ng-attr-transform="{{ ::'ltr' === 'rtl' ?  'matrix(-1,0,0,1,48,0)' : undefined }}">
+      <path d="M38.707,8.293l-7-7c-0.391-0.391-1.023-0.391-1.414,0l-22,22c-0.391,0.391-0.391,1.023,0,1.414l22,22
+C30.488,46.902,30.744,47,31,47s0.512-0.098,0.707-0.293l7-7c0.391-0.391,0.391-1.023,0-1.414L24.414,24L38.707,9.707
+C39.098,9.316,39.098,8.684,38.707,8.293z"></path>
+     </g>
+     </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'notifications'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M42.8,39.4c0-0.1-3.8-5.8-3.8-13.4V16c0-8.3-6.7-15-15-15S9,7.7,9,16v10c0,7.6-3.8,13.4-3.8,13.4
+        c-0.2,0.3-0.2,0.7,0,1C5.3,40.8,5.6,41,6,41h36c0.4,0,0.7-0.2,0.9-0.5C43.1,40.1,43,39.8,42.8,39.4z"></path>
+      <path data-color="color-2" d="M17.7,43c1.1,2.4,3.5,4,6.3,4s5.2-1.6,6.3-4H17.7z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'notifications-empty'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g transform="translate(0, 0)">
+      <path fill="none" data-color="color-2" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,40
+        c0,3.3-2.7,6-6,6s-6-2.7-6-6" stroke-linejoin="miter"></path>
+      <path fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M38,26c0-5.1,0-10,0-10
+        c0-7.7-6.3-14-14-14S10,8.3,10,16c0,0,0,4.9,0,10c0,8-4,14-4,14h36C42,40,38,34,38,26z" stroke-linejoin="miter"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'open-new'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g ng-attr-transform="{{ ::'ltr' === 'rtl' ?  'matrix(-1,0,0,1,48,0)' : undefined }}">
+      <path data-color="color-2" d="M46,1H30c-0.404,0-0.769,0.244-0.924,0.617c-0.155,0.374-0.069,0.804,0.217,1.09L36.586,10
+        L23.293,23.293c-0.391,0.391-0.391,1.023,0,1.414C23.488,24.902,23.744,25,24,25s0.512-0.098,0.707-0.293L38,11.414l7.293,7.293
+        C45.484,18.898,45.74,19,46,19c0.129,0,0.259-0.025,0.383-0.076C46.756,18.769,47,18.404,47,18V2C47,1.448,46.552,1,46,1z"></path>
+      <path d="M46,47H2c-0.552,0-1-0.448-1-1V2c0-0.552,0.448-1,1-1h16c0.552,0,1,0.448,1,1s-0.448,1-1,1H3v42h42l0-15
+        c0-0.552,0.448-1,1-1l0,0c0.552,0,1,0.448,1,1l0,16C47,46.552,46.552,47,46,47z"></path>
+      </g>
+
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'trash'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+        <path data-color="color-2" d="M42,9h-9.059C32.442,4.507,28.625,1,24,1s-8.442,3.507-8.941,8H6c-2.757,0-5,2.243-5,5
+          c0,0.552,0.447,1,1,1h44c0.007,0,0.015,0,0.02,0c0.553,0,1-0.448,1-1c0-0.077-0.008-0.151-0.024-0.223C46.878,11.124,44.683,9,42,9z
+          M24,3c3.519,0,6.432,2.613,6.92,6H17.08C17.568,5.613,20.481,3,24,3z"></path>
+        <path d="M41,17H7v28c0,1.105,0.895,2,2,2h30c1.105,0,2-0.895,2-2V17z M17,39c0,0.552-0.447,1-1,1s-1-0.448-1-1V25
+          c0-0.552,0.447-1,1-1s1,0.448,1,1V39z M25,39c0,0.552-0.447,1-1,1s-1-0.448-1-1V25c0-0.552,0.447-1,1-1s1,0.448,1,1V39z M33,39
+          c0,0.552-0.447,1-1,1s-1-0.448-1-1V25c0-0.552,0.447-1,1-1s1,0.448,1,1V39z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'filter'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M42,1H6C5.4,1,5,1.4,5,2v8c0,0.3,0.1,0.6,0.3,0.8L19,22.5V44c0,0.3,0.2,0.7,0.5,0.9C19.6,45,19.8,45,20,45
+        c0.2,0,0.3,0,0.4-0.1l8-4c0.3-0.2,0.6-0.5,0.6-0.9V22.5l13.7-11.7c0.2-0.2,0.3-0.5,0.3-0.8V2C43,1.4,42.6,1,42,1z"></path>
+    </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'menu-left'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M1.367,23.226l11-9c0.3-0.245,0.713-0.295,1.062-0.13C13.777,14.262,14,14.614,14,15v7h32
+        c0.552,0,1,0.448,1,1v2c0,0.552-0.448,1-1,1H14v7c0,0.386-0.223,0.738-0.572,0.904c-0.349,0.165-0.762,0.115-1.062-0.13l-11-9
+        C1.135,24.584,1,24.3,1,24S1.135,23.416,1.367,23.226z"></path>
+      <path data-color="color-2" d="M46,9H21c-0.552,0-1-0.448-1-1s0.448-1,1-1h25c0.552,0,1,0.448,1,1S46.552,9,46,9z"></path>
+      <path data-color="color-2" d="M46,41H21c-0.552,0-1-0.448-1-1s0.448-1,1-1h25c0.552,0,1,0.448,1,1S46.552,41,46,41z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'menu-right'" >
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <path d="M46.633,23.226l-11-9c-0.3-0.245-0.713-0.295-1.062-0.13C34.223,14.262,34,14.614,34,15v7H2
+        c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h32v7c0,0.386,0.223,0.738,0.572,0.904c0.349,0.165,0.762,0.115,1.062-0.13l11-9
+        C46.865,24.584,47,24.3,47,24S46.865,23.416,46.633,23.226z"></path>
+      <path data-color="color-2" d="M27,9H2C1.448,9,1,8.552,1,8s0.448-1,1-1h25c0.552,0,1,0.448,1,1S27.552,9,27,9z"></path>
+      <path data-color="color-2" d="M27,41H2c-0.552,0-1-0.448-1-1s0.448-1,1-1h25c0.552,0,1,0.448,1,1S27.552,41,27,41z"></path>
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'logo'">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+    id="Layer_1" x="0" y="0" viewBox="0 0 80 80" xml:space="preserve" enable-background="new 0 0 80 80">
+      <style type="text/css">
+          .st1 {
+             fill: #FFFFFF;
+          }
+      </style>
+      <g id="XMLID_378_">
+          <rect id="XMLID_379_" width="80" height="80" />
+          <path id="XMLID_380_" class="st1" d="M22.7 41.2c-1.6 0-3-0.2-4.1-0.7 -1.1-0.5-2.1-1.1-3.1-1.8l1.5-2.8c0.9 0.7 1.7 1.2 2.6 1.6 0.9 0.4 1.8 0.6 2.8 0.6 1.4 0 2.4-0.5 3.2-1.5 0.7-1 1.1-2.4 1.1-4.1V13.3h3.5v19c0 2.7-0.6 4.8-1.8 6.4C27.2 40.4 25.3 41.2 22.7 41.2M39.9 40.9h3l6.5-20.6 5.9 20.6h3.1l6.7-27.5h-3.7c0 0-4.4 19.9-4.7 20.9L51 14.4h-3l-6.1 19.9 -4.4-20.9h-3.8L39.9 40.9zM27.5 66c1-0.5 1.8-1.1 2.5-2 0.7-0.9 1.2-1.9 1.6-3.1 0.4-1.2 0.6-2.5 0.6-4 0-1.4-0.2-2.8-0.6-3.9 -0.4-1.2-0.9-2.2-1.7-3 -0.7-0.8-1.6-1.5-2.5-1.9 -1-0.5-2.1-0.7-3.3-0.7 -1.2 0-2.3 0.2-3.3 0.7 -1 0.5-1.9 1.1-2.6 1.9 -0.7 0.8-1.3 1.9-1.7 3 -0.4 1.2-0.6 2.5-0.6 4 0 1.4 0.2 2.8 0.5 3.9 0.4 1.2 0.9 2.2 1.6 3.1 0.7 0.8 1.5 1.5 2.5 2 1 0.5 2.2 0.7 3.5 0.7C25.4 66.7 26.5 66.5 27.5 66zM26.6 49.7c0.7 0.4 1.4 1 1.9 1.7 0.5 0.7 0.9 1.5 1.2 2.5 0.3 0.9 0.4 2 0.4 3.1 0 1.2-0.2 2.2-0.4 3.2 -0.3 1-0.7 1.8-1.2 2.5 -0.5 0.7-1.2 1.3-1.9 1.7C25.8 64.8 25 65 24.2 65c-0.9 0-1.7-0.2-2.5-0.6 -0.7-0.4-1.4-1-1.9-1.7 -0.5-0.7-0.9-1.6-1.2-2.5 -0.3-1-0.4-2-0.4-3.2 0-1.1 0.1-2.2 0.4-3.1 0.3-0.9 0.7-1.8 1.2-2.5 0.5-0.7 1.2-1.3 1.9-1.6 0.7-0.4 1.6-0.6 2.5-0.6C25 49.1 25.9 49.3 26.6 49.7zM48.8 66.4l-5.2-8.1 0.3-0.1c0.6-0.1 1.2-0.4 1.7-0.6 0.5-0.3 1-0.6 1.4-1 0.4-0.4 0.7-0.9 0.9-1.5 0.2-0.6 0.3-1.2 0.3-1.9 0-0.9-0.2-1.8-0.5-2.4 -0.3-0.7-0.8-1.2-1.4-1.7 -0.6-0.4-1.3-0.8-2.1-1 -0.8-0.2-1.6-0.3-2.4-0.3h-6.1v18.7h2v-7.8h3.8l4.9 7.8H48.8zM37.6 49.4h4c1.3 0 2.4 0.3 3.2 1 0.8 0.7 1.2 1.6 1.2 2.8 0 1.2-0.4 2.1-1.3 2.7 -0.8 0.6-1.9 0.9-3.4 0.9h-3.8V49.4zM61 66.5c0.6-0.1 1.1-0.3 1.6-0.5 0.5-0.2 0.9-0.5 1.3-0.7 0.4-0.2 0.7-0.5 1-0.8v-8h-6.4v1.7H63v5.4l-0.1 0.1c-0.3 0.3-0.8 0.6-1.4 0.9C60.8 64.8 60 65 59.2 65c-0.9 0-1.8-0.2-2.5-0.6 -0.8-0.4-1.4-0.9-2-1.6 -0.6-0.7-1-1.5-1.3-2.5 -0.3-1-0.5-2-0.5-3.2 0-1.1 0.2-2.2 0.5-3.2 0.3-1 0.8-1.8 1.3-2.5 0.6-0.7 1.2-1.3 2-1.6 0.8-0.4 1.6-0.6 2.4-0.6 1 0 1.9 0.2 2.7 0.6 0.7 0.3 1.3 0.8 1.9 1.2l1.2-1.6c-0.8-0.6-1.6-1.1-2.5-1.5 -0.9-0.4-2-0.5-3.2-0.5 -1.2 0-2.4 0.2-3.4 0.7 -1 0.5-1.9 1.2-2.6 2 -0.7 0.9-1.3 1.9-1.7 3 -0.4 1.2-0.6 2.5-0.6 3.8 0 1.5 0.2 2.8 0.6 4 0.4 1.2 1 2.2 1.7 3.1 0.7 0.8 1.6 1.5 2.7 2 1 0.5 2.2 0.7 3.5 0.7C59.8 66.7 60.4 66.6 61 66.5zM14.7 63.5h-2.9v2.9h2.9V63.5z"
+          />
+      </g>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'pattern'">
+   <svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <rect id="Artboard1" x="0" y="0" width="48" height="48" style="fill:none;"/><clipPath id="_clip1">
+    <rect x="0" y="0" width="48" height="48"/></clipPath><g clip-path="url(#_clip1)">
+    <rect x="0" y="0" width="48" height="48" style="fill:#5175b3;"/>
+    <path d="M25.561,7.643l-14.255,0l0,32.712l8.484,0l0,-10.444l5.773,0c6.139,0 11.134,-4.994 11.134,-11.133c0,-6.139 -4.997,-11.135 -11.136,-11.135Zm-12.145,2.112l4.262,0l0,18.136c-1.66,0.238 -3.144,1.02 -4.262,2.168l0,-20.304Zm0,28.49l0,-3.011c0,-2.571 1.835,-4.718 4.262,-5.21l0,8.221l-4.262,0l0,0Zm12.145,-10.444l-5.773,0l0,-18.046l5.773,0c4.976,0 9.023,4.049 9.023,9.025c0,4.976 -4.047,9.021 -9.023,9.021Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'language'">
+    <svg version="1.1"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+      x="0px" y="0px" viewBox="21 23 214 192" enable-background="new 21 23 214 192"
+      xml:space="preserve">
+    <defs>
+    </defs>
+    <rect display="none" fill="#D1D3D4" width="612" height="792"/>
+    <path d="M144.669,112.987c-2.917,3.234-4.405,6.647-4.405,10.199c0,2.184,0.734,3.93,2.202,5.299
+      c1.469,1.369,3.363,2.063,5.676,2.063c2.907,0,6.29-1.23,10.14-3.671c-1.468-7.997-2.342-15.062-2.609-21.134
+      C151.257,107.352,147.605,109.732,144.669,112.987z"/>
+    <path d="M164.096,103.879c0.536,6.747,1.092,12.164,1.707,16.312c3.085-3.135,6.151-8.83,9.207-17.046
+      c-0.417-0.06-1.141-0.119-2.094-0.119C169.83,103.025,166.894,103.304,164.096,103.879z"/>
+    <polygon points="77.508,114.178 95.843,114.178 86.586,89.254 "/>
+    <path d="M223.577,23.354H32.433c-5.854,0-10.616,4.742-10.616,10.596v138.054c0,5.854,4.762,10.616,10.616,10.616
+      h72.747l-9.872,32.027l70.772-32.027h57.497c5.864,0,10.606-4.763,10.606-10.616V33.949
+      C234.184,28.096,229.441,23.354,223.577,23.354z M85.901,52.702h17.065L88.055,69.966h-9.624L85.901,52.702z M106.072,140.749
+      l-5.873-15.26H73.34l-5.536,15.26H53.407l26.164-67.172h14.356l26.908,67.172H106.072z M195.746,134.24
+      c-4.563,5.179-10.478,9.227-17.76,12.184l-4.861-8.096c14.01-5.597,20.994-12.105,20.994-19.507c0-3.115-0.973-5.993-2.917-8.612
+      c-1.965-2.619-4.515-4.425-7.67-5.477c-3.998,11.668-9.188,20.142-15.587,25.439c0.536,1.746,1.31,3.453,2.342,5.14l-8.335,3.572
+      l-1.319-3.394c-4.117,2.619-8.682,3.949-13.722,3.949c-4.236,0-7.839-1.469-10.735-4.366c-2.927-2.957-4.386-6.688-4.386-11.212
+      c0-5.933,2.113-11.291,6.35-16.033c4.228-4.803,9.883-8.354,16.947-10.696c-0.09-2.063-0.109-5.278-0.109-9.584l-18.019,2.143
+      l-1.002-8.434l19.13-2.282l0.675-11.509l8.989,0.556c-0.397,2.262-0.755,5.517-1.102,9.763l27.691-3.313l1.191,8.532l-29.161,3.751
+      l0.169,8.572c2.302-0.754,5.715-1.131,10.239-1.131c7.72,0,14.466,2.262,20.211,6.807c5.725,4.544,8.603,10.259,8.603,17.125
+      C202.593,123.683,200.33,129.061,195.746,134.24z"/>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'language-sign'">
+    <svg version="1.1"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+      x="0px" y="0px" viewBox="270 25 319 211" enable-background="new 270 25 319 211"
+      xml:space="preserve">
+    <defs>
+    </defs>
+    <rect display="none" fill="#D1D3D4" width="612" height="792"/>
+    <path d="M362.602,72.192c8.1,0,14.678-6.754,14.678-15.104c0-8.299-6.578-15.062-14.678-15.062
+      c-8.117,0-14.674,6.763-14.674,15.062C347.928,65.438,354.484,72.192,362.602,72.192z"/>
+    <path d="M349.67,98.942c-0.008,4.521-0.311,9.093-0.961,13.69c-1.338,9.411-4.024,18.271-7.756,26.465h44.016
+      c2.805-7.03,4.84-14.518,5.939-22.359c0.535-3.804,0.85-7.582,0.945-11.352c-8.809,9.67-22.994,16.054-39.134,16.795
+      c-0.237-0.621-1.454-4.96,7.427-7.944c0.014-0.026,0.048-0.035,0.057-0.035v-0.008c12.426-4.813,21.217-15.01,21.764-27.233
+      c0.194-3.735-0.465-7.358-1.707-10.774c-0.031,0-1.242,0.811-3.105,1.69c-29.084,12.802-53.867-2.147-62.175-15.769
+      c0,0-3.89-0.819-2.472,4.899C315.213,78.075,329.641,93.223,349.67,98.942z"/>
+    <path d="M429.714,25.412H288.38c-7.091,0-17.667,10.386-17.667,17.667v97.166c0,7.281,10.576,17.667,17.667,17.667
+      h35.333l59.357,26.595l-6.357-26.595h53c7.1,0,17.667-10.386,17.667-17.667V43.079C447.381,35.797,436.813,25.412,429.714,25.412z
+      M438.547,140.245c0,4.856-4.105,8.834-8.833,8.834H288.38c-4.723,0-8.833-3.978-8.833-8.834V43.079c0-4.866,4.11-8.834,8.833-8.834
+      l141.333-0.043c4.728,0,8.833,3.934,8.833,8.799V140.245z"/>
+    <path d="M512.992,147.31c-2.467,2.812-3.727,5.771-3.727,8.867c0,1.89,0.621,3.408,1.863,4.599
+      c1.242,1.198,2.847,1.794,4.805,1.794c2.459,0,5.314-1.062,8.574-3.191c-1.242-6.953-1.983-13.087-2.208-18.374
+      C518.564,142.402,515.477,144.48,512.992,147.31z"/>
+    <path d="M529.434,139.382c0.44,5.866,0.914,10.584,1.432,14.182c2.614-2.726,5.211-7.678,7.79-14.82
+      c-0.354-0.052-0.958-0.095-1.769-0.095C534.281,138.649,531.797,138.89,529.434,139.382z"/>
+    <polygon points="456.18,148.336 471.689,148.336 463.857,126.667 "/>
+    <path d="M571.047,69.579H429.714c-4.956,0-17.667,12.577-17.667,17.666v97.167c0,5.098,12.711,17.667,17.667,17.667
+      h49.868l-8.342,33.607l59.858-33.607h39.948c4.96,0,17.667-12.569,17.667-17.667V87.245
+      C588.714,82.156,576.007,69.579,571.047,69.579z M462.623,97.769h12.224l-10.679,11.913h-6.902L462.623,97.769z M480.35,171.446
+      l-4.969-13.267h-22.729l-4.685,13.267h-12.18l22.135-58.408h12.146l22.764,58.408H480.35z M556.201,165.779
+      c-3.873,4.503-8.859,8.022-15.018,10.602l-4.115-7.039c11.844-4.865,17.753-10.532,17.753-16.968c0-2.709-0.819-5.202-2.476-7.487
+      c-1.648-2.27-3.813-3.848-6.479-4.762c-3.391,10.152-7.772,17.52-13.189,22.126c0.457,1.51,1.112,3.002,1.984,4.46l-7.049,3.114
+      l-1.112-2.959c-3.485,2.286-7.35,3.434-11.61,3.434c-3.59,0-6.625-1.269-9.084-3.796c-2.477-2.563-3.719-5.806-3.719-9.748
+      c0-5.149,1.795-9.808,5.383-13.939c3.572-4.167,8.352-7.255,14.329-9.291c-0.077-1.803-0.087-4.589-0.087-8.333l-15.242,1.863
+      l-0.854-7.332l16.183-1.984l0.577-10.015l7.609,0.482c-0.346,1.976-0.647,4.797-0.94,8.497l23.421-2.881l1.018,7.418l-24.672,3.261
+      l0.146,7.445c1.941-0.647,4.831-0.983,8.661-0.983c6.53,0,12.232,1.975,17.089,5.917c4.848,3.951,7.281,8.92,7.281,14.89
+      C561.99,156.609,560.074,161.276,556.201,165.779z"/>
+    </svg>
+  </span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'my-location'" >
+   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+   </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'directions'" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+        <g>
+            <path d="M43.41 22.59l-18-18c-.78-.78-2.05-.78-2.82 0l-18 18c-.78.78-.78 2.05 0 2.83l18 17.99v.01c.78.78 2.05.78 2.83 0l18-18c.78-.79.78-2.05-.01-2.83zM28 29v-5h-8v6h-4v-8c0-1.11.89-2 2-2h10v-5l7 7-7 7z"></path>
+        </g>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'history'" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+        <g>
+            <path d="M25.99 6C16.04 6 8 14.06 8 24H2l7.79 7.79.14.29L18 24h-6c0-7.73 6.27-14 14-14s14 6.27 14 14-6.27 14-14 14c-3.87 0-7.36-1.58-9.89-4.11l-2.83 2.83C16.53 39.98 21.02 42 25.99 42 35.94 42 44 33.94 44 24S35.94 6 25.99 6zM24 16v10l8.56 5.08L34 28.65l-7-4.15V16h-3z"></path>
+        </g>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'language_signer'" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="102px" height="121px" viewBox="0 0 102 121">
+        <path d="M64.639,37.984c10.32,0,18.699-8.374,18.699-18.727c0-10.287-8.379-18.673-18.699-18.673
+            c-10.348,0-18.699,8.386-18.699,18.673C45.939,29.61,54.291,37.984,64.639,37.984z"/>
+        <path d="M48.158,71.147c-0.012,5.604-0.389,11.271-1.225,16.973c-1.701,11.668-5.127,22.65-9.881,32.812h56.086
+            c3.574-8.716,6.166-17.999,7.568-27.72c0.686-4.719,1.086-9.401,1.203-14.076C90.686,91.126,72.611,99.039,52.047,99.96
+            c-0.301-0.77-1.852-6.15,9.465-9.851c0.016-0.031,0.059-0.042,0.068-0.042v-0.011c15.834-5.968,27.037-18.609,27.73-33.764
+            c0.252-4.629-0.592-9.123-2.176-13.357c-0.037,0-1.578,1.005-3.957,2.096c-37.057,15.871-68.633-2.664-79.223-19.55
+            c0,0-4.955-1.017-3.146,6.075C4.256,45.278,22.641,64.058,48.158,71.147z"/>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'list'" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+        <g ng-attr-transform="{{ ::'ltr' === 'rtl' ?  'matrix(-1,0,0,1,16,0)' : undefined }}">
+            <path d="M15,0H7C6.4,0,6,0.4,6,1v2c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z"></path>
+            <path d="M15,6H7C6.4,6,6,6.4,6,7v2c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1V7C16,6.4,15.6,6,15,6z"></path>
+            <path d="M15,12H7c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1v-2C16,12.4,15.6,12,15,12z"></path>
+            <path d="M3,0H1C0.4,0,0,0.4,0,1v2c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1V1C4,0.4,3.6,0,3,0z"></path>
+            <path d="M3,6H1C0.4,6,0,6.4,0,7v2c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1V7C4,6.4,3.6,6,3,6z"></path>
+            <path d="M3,12H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1v-2C4,12.4,3.6,12,3,12z"></path>
+        </g>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'pin_multi'" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -23 86 86" width="48" height="48">
+        <g transform="matrix(1.3510844,0,0,1.3510844,-8.1858301,-21.962757)">
+            <path d="M42,1c-2.904,0-5.988,0.673-8.812,1.884C41.832,6.456,49,14.865,49,26 c0,7.331-6.009,16.633-11.901,23.995c2.464,2.916,4.097,4.612,4.183,4.701C41.47,54.89,41.729,55,42,55c0.002,0,0.003,0,0.005,0 c0.273-0.001,0.533-0.114,0.721-0.312C43.554,53.813,63,33.133,63,21.091C63,8.515,52.323,1,42,1z"></path>
+            <path d="M24,3C12.893,3,1,12.242,1,26c0,12.963,21.394,33.836,22.304,34.718C23.498,60.906,23.749,61,24,61 s0.502-0.094,0.696-0.282C25.606,59.836,47,38.963,47,26C47,12.242,35.107,3,24,3z M24,34c-4.418,0-8-3.582-8-8s3.582-8,8-8 s8,3.582,8,8S28.418,34,24,34z"></path>
+            <circle fill="#ffffff" stroke-opacity="0" cx="24" cy="26" r="9"/>
+        </g>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'pin'" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -23 86 86" width="36" height="36">
+        <g transform="matrix(1.3793415,0,0,1.3793415,-11.045707,-23.519172)">
+            <path d="M32,1C20.694,1,9,9.639,9,24.095C9,39.24,30.383,60.797,31.293,61.707C31.48,61.895,31.735,62,32,62 s0.52-0.105,0.707-0.293C33.617,60.797,55,39.24,55,24.095C55,9.639,43.306,1,32,1z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8 s8,3.582,8,8S36.418,32,32,32z"></path>
+            <circle fill="#ffffff" stroke-opacity="0" cx="32" cy="24" r="9"/>
+        </g>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'share'" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+        <g ng-attr-transform="{{ ::'ltr' === 'rtl' ?  'matrix(-1,0,0,1,48,0)' : undefined }}">
+            <path d="M38,29c-2.755,0-5.22,1.247-6.872,3.203l-12.371-6.186c0.322-1.368,0.335-2.693-0.027-4.146l12.329-6.165 C32.71,17.713,35.204,19,38,19c4.962,0,9-4.037,9-9s-4.038-9-9-9s-9,4.037-9,9c0,0.735,0.1,1.445,0.27,2.129l-12.329,6.165 C15.29,16.287,12.795,15,10,15c-4.962,0-9,4.037-9,9s4.038,9,9,9c2.836,0,5.36-1.326,7.01-3.384l12.287,6.144 C29.109,36.477,29,37.225,29,38c0,4.963,4.038,9,9,9s9-4.037,9-9S42.962,29,38,29z"></path>
+        </g>
+    </svg>
+</span>
+
+<span class="{{ ::class }} icon" ng-if="::icon === 'info'" >
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+        <g transform="translate(0, 0)">
+            <path d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z M9,12H7V7h2V12z M8,6C7.4,6,7,5.6,7,5s0.4-1,1-1
+            s1,0.4,1,1S8.6,6,8,6z"></path>
+        </g>
+    </svg>
+</span></script>
+<script type="text/ng-template" id="core/profile-popup"><div aria-atomic="false" class="clearfix">
+   <div class="float-right popup-container hide-for-print">
+      <button  aria-label-by="settings-button" class="button button--icon-only flat" zf-popup-toggle="profile-popup">
+         <span id="settings-button" aria-label="ITAGO ANG MENU" ng-if="$ctrl.isActive"></span>
+         <span id="settings-button" aria-label="IPAKITA ANG MENU" ng-if="!$ctrl.isActive"></span>
+         <jwo-icon data-icon="settings" data-size="20" data-class="g0"></jwo-icon>
+      </button>
+
+      <jwo-popup tabindex="-1" on-toggle="$ctrl.onToggle(active)" id="profile-popup" class="picker-panel" ng-click="$ctrl.closePopup()"
+                 pin-at="bottom right" pin-to="top right" rtl-pin-at="bottom left" rtl-pin-to="top left">
+
+         <section role="menu"
+             aria-hidden="{{ !$ctrl.isActive }}"
+             aria-live="assertive"
+             class="block-list simple">
+
+            <ul>
+               <li role="menuitem" ng-if="$ctrl.isLogged">
+                  <span>{{ ::$ctrl.localName | formatName:'SHORT_NAME_MID' }}</span>
+               </li>
+
+               <li role="menuitem" ng-if="$ctrl.isLogged && $ctrl.currentDomainKey">
+                  <span>{{ $ctrl.currentDomainLabel }}</span>
+               </li>
+
+               <li role="menuitem" ng-if="$ctrl.hasMultipleDomains" jwo-feature-link="DOMAINSWITCH" feature-link-authenticated aria-label="Usbon ang Domain">
+                  <a tabindex="{{ $ctrl.isActive ? 0 : -1 }}"> Usbon ang Domain</a>
+               </li>
+
+               <li role="menuitem" class="with-icons" jwo-feature-link="LOGIN1" feature-link-anonymous ng-if="$ctrl.isLogged === false">
+                  <a tabindex="{{ $ctrl.isActive ? 0 : -1 }}">
+                     <jwo-icon data-icon="person" data-size="20" data-class="p500"></jwo-icon>
+                     Log In
+                  </a>
+               </li>
+
+               <li role="menuitem" class="with-icons" jwo-feature-link="LOGOUT" feature-link-authenticated ng-if="$ctrl.isLogged === true">
+                  <a tabindex="{{ $ctrl.isActive ? 0 : -1 }}">
+                     <jwo-icon data-icon="person" data-size="20" data-class="p500"></jwo-icon>
+                     LOG OUT
+                  </a>
+               </li>
+
+               <li role="menuitem" class="with-icons" jwo-state aria-label="Giya">
+                  <a tabindex="{{ $ctrl.isActive ? 0 : -1 }}" href="/CV_HELP?txtHelp={helpCode}" jwo-window-open="default" jwo-window-open-name="help_window">
+                     <jwo-icon data-icon="help" data-size="20" data-class="p500"></jwo-icon>
+                     Giya
+                  </a>
+               </li>
+            </ul>
+         </section>
+      </jwo-popup>
+   </div>
+</div></script>
+<script type="text/ng-template" id="core/copy-trigger"><span class="copy-trigger">
+   <ng-transclude></ng-transclude>
+   <small class="copy-message copy-message-success hide">Copied to clipboard</small>
+   <small class="copy-message copy-message-failure hide">Wala makopya ang text.</small>
+</span></script>
+<script id="formPersonNameLabels" type="application/json">{"ALTLABEL_1":"County","ALTLABEL_2":"Department/Region","ALTLABEL_3":"Estado/Probinsiya","ALTLABEL_4":"Prefecture","ALTLABEL_5":"My County","ALTLABEL_6":"My Department/Region","ALTLABEL_7":"My State/Province","ALTLABEL_8":"My Prefecture","ALTLABEL_9":"Apelyido","ALTLABEL_10":"Mga Apelyido","ALTLABEL_11":"Middle Name","ALTLABEL_12":"Ngalan sa Bilding/Apartment","ALTLABEL_13":"Community","ALTLABEL_14":"District","ALTLABEL_15":"Lungsod","ALTLABEL_16":"Neighborhood","ALTLABEL_17":"Postal Location","ALTLABEL_18":"Suburb","ALTLABEL_19":"Canton","ALTLABEL_20":"County","ALTLABEL_21":"Department","ALTLABEL_22":"District","ALTLABEL_23":"Neighborhood","ALTLABEL_24":"Adres Linya 1","ALTLABEL_25":"Apartment/Andana","ALTLABEL_26":"Ngalan sa Bilding","ALTLABEL_27":"Kalye","ALTLABEL_28":"Adres Linya 2","ALTLABEL_29":"Dugang Linya sa Adres","ALTLABEL_30":"Apartment/Andana","ALTLABEL_31":"Ngalan sa Bilding","ALTLABEL_32":"Ngalan sa Lugar","ALTLABEL_33":"Kalye","ALTLABEL_34":"Suburb/Neighborhood","ALTLABEL_35":"Adres Linya 3","ALTLABEL_36":"Dugang Linya sa Adres","ALTLABEL_37":"Apartment/Andana","ALTLABEL_38":"Ngalan sa Lugar","ALTLABEL_39":"Kalye","ALTLABEL_40":"Suburb/Neighborhood","TxtFirstName":"Ngalan","TxtSuffix":"Suffix (Jr., III, uban pa)"}</script>
+<script id="charsetNames" type="application/json">{"TEXTCHARSETNAME_ARMENIAN":"Armenian","TEXTCHARSETNAME_CHINESE":"Chinese","TEXTCHARSETNAME_JAPANESE":"Japanese","TEXTCHARSETNAME_KOREAN":"Korean","TEXTCHARSETNAME_CYRILLIC":"Cyrillic","TEXTCHARSETNAME_THAI":"Thai","TEXTCHARSETNAME_VIETNAMESE":"Vietnamese","TEXTCHARSETNAME_LATIN":"Latin","TEXTCHARSETNAME_DEVANAGARI":"Devanagari","TEXTCHARSETNAME_GREEK":"Greek"}</script>
+<script id="selectLanguageData" type="application/json">[{"languageCode":"AF","languageLocalName":"Afrikaans","jwoLocaleCode":"af","scriptDirection":"ltr","languageISO2Code":"af","publicSiteActiveFlag":true},{"languageCode":"AP","languageLocalName":"Aymara","jwoLocaleCode":"ay","scriptDirection":"ltr","languageISO2Code":"ay","publicSiteActiveFlag":true},{"languageCode":"AN","languageLocalName":"català","jwoLocaleCode":"cat","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"CV","languageLocalName":"Cebuano","jwoLocaleCode":"ceb","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"B","languageLocalName":"čeština","jwoLocaleCode":"cs","scriptDirection":"ltr","languageISO2Code":"cs","publicSiteActiveFlag":true},{"languageCode":"CN","languageLocalName":"Chichewa","jwoLocaleCode":"ny","scriptDirection":"ltr","languageISO2Code":"ny","publicSiteActiveFlag":true},{"languageCode":"TB","languageLocalName":"Chitumbuka","jwoLocaleCode":"tum","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"CIN","languageLocalName":"Cinyanja","jwoLocaleCode":"nya","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"W","languageLocalName":"Cymraeg","jwoLocaleCode":"cy","scriptDirection":"ltr","languageISO2Code":"cy","publicSiteActiveFlag":true},{"languageCode":"D","languageLocalName":"Dansk","jwoLocaleCode":"da","scriptDirection":"ltr","languageISO2Code":"da","publicSiteActiveFlag":true},{"languageCode":"X","languageLocalName":"Deutsch","jwoLocaleCode":"de","scriptDirection":"ltr","languageISO2Code":"de","publicSiteActiveFlag":true},{"languageCode":"ST","languageLocalName":"eesti","jwoLocaleCode":"et","scriptDirection":"ltr","languageISO2Code":"et","publicSiteActiveFlag":true},{"languageCode":"E","languageLocalName":"English","jwoLocaleCode":"en","scriptDirection":"ltr","languageISO2Code":"en","publicSiteActiveFlag":true},{"languageCode":"S","languageLocalName":"español","jwoLocaleCode":"es","scriptDirection":"ltr","languageISO2Code":"es","publicSiteActiveFlag":true},{"languageCode":"BQ","languageLocalName":"Euskara","jwoLocaleCode":"eu","scriptDirection":"ltr","languageISO2Code":"eu","publicSiteActiveFlag":true},{"languageCode":"F","languageLocalName":"Français","jwoLocaleCode":"fr","scriptDirection":"ltr","languageISO2Code":"fr","publicSiteActiveFlag":true},{"languageCode":"GLC","languageLocalName":"Galego","jwoLocaleCode":"gl","scriptDirection":"ltr","languageISO2Code":"gl","publicSiteActiveFlag":true},{"languageCode":"GI","languageLocalName":"guarani","jwoLocaleCode":"gug","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"C","languageLocalName":"hrvatski","jwoLocaleCode":"hr","scriptDirection":"ltr","languageISO2Code":"hr","publicSiteActiveFlag":true},{"languageCode":"YW","languageLocalName":"Ikinyarwanda","jwoLocaleCode":"rw","scriptDirection":"ltr","languageISO2Code":"rw","publicSiteActiveFlag":true},{"languageCode":"RU","languageLocalName":"Ikirundi","jwoLocaleCode":"run","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"IL","languageLocalName":"Iloko","jwoLocaleCode":"ilo","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"IN","languageLocalName":"Indonesia","jwoLocaleCode":"id","scriptDirection":"ltr","languageISO2Code":"id","publicSiteActiveFlag":true},{"languageCode":"I","languageLocalName":"Italiano","jwoLocaleCode":"it","scriptDirection":"ltr","languageISO2Code":"it","publicSiteActiveFlag":true},{"languageCode":"JA","languageLocalName":"Jawa","jwoLocaleCode":"jv","scriptDirection":"ltr","languageISO2Code":"jv","publicSiteActiveFlag":true},{"languageCode":"SW","languageLocalName":"Kiswahili","jwoLocaleCode":"sw","scriptDirection":"ltr","languageISO2Code":"sw","publicSiteActiveFlag":true},{"languageCode":"ZS","languageLocalName":"Kiswahili (Congo)","jwoLocaleCode":"swc","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"LT","languageLocalName":"Latviešu","jwoLocaleCode":"lv","scriptDirection":"ltr","languageISO2Code":"lv","publicSiteActiveFlag":true},{"languageCode":"L","languageLocalName":"lietuvių","jwoLocaleCode":"lt","scriptDirection":"ltr","languageISO2Code":"lt","publicSiteActiveFlag":true},{"languageCode":"VE","languageLocalName":"Luvenda","jwoLocaleCode":"ve","scriptDirection":"ltr","languageISO2Code":"ve","publicSiteActiveFlag":true},{"languageCode":"H","languageLocalName":"magyar","jwoLocaleCode":"hu","scriptDirection":"ltr","languageISO2Code":"hu","publicSiteActiveFlag":true},{"languageCode":"MG","languageLocalName":"Malagasy","jwoLocaleCode":"mg","scriptDirection":"ltr","languageISO2Code":"mg","publicSiteActiveFlag":true},{"languageCode":"MT","languageLocalName":"Malti","jwoLocaleCode":"mt","scriptDirection":"ltr","languageISO2Code":"mt","publicSiteActiveFlag":true},{"languageCode":"MPD","languageLocalName":"mapudungun","jwoLocaleCode":"arn","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"ML","languageLocalName":"Melayu","jwoLocaleCode":"ms","scriptDirection":"ltr","languageISO2Code":"ms","publicSiteActiveFlag":true},{"languageCode":"O","languageLocalName":"Nederlands","jwoLocaleCode":"nl","scriptDirection":"ltr","languageISO2Code":"nl","publicSiteActiveFlag":true},{"languageCode":"N","languageLocalName":"Norsk","jwoLocaleCode":"no","scriptDirection":"ltr","languageISO2Code":"no","publicSiteActiveFlag":true},{"languageCode":"NZ","languageLocalName":"Nzema","jwoLocaleCode":"nzi","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"KY","languageLocalName":"Oshikwanyama","jwoLocaleCode":"kj","scriptDirection":"ltr","languageISO2Code":"kj","publicSiteActiveFlag":true},{"languageCode":"P","languageLocalName":"polski","jwoLocaleCode":"pl","scriptDirection":"ltr","languageISO2Code":"pl","publicSiteActiveFlag":true},{"languageCode":"T","languageLocalName":"Português","jwoLocaleCode":"pt","scriptDirection":"ltr","languageISO2Code":"pt","publicSiteActiveFlag":true},{"languageCode":"QUB","languageLocalName":"Quechua (Bolivia)","jwoLocaleCode":"qu","scriptDirection":"ltr","languageISO2Code":"qu","publicSiteActiveFlag":true},{"languageCode":"M","languageLocalName":"Română","jwoLocaleCode":"ro","scriptDirection":"ltr","languageISO2Code":"ro","publicSiteActiveFlag":true},{"languageCode":"CA","languageLocalName":"Shona","jwoLocaleCode":"sn","scriptDirection":"ltr","languageISO2Code":"sn","publicSiteActiveFlag":true},{"languageCode":"AL","languageLocalName":"shqip","jwoLocaleCode":"sq","scriptDirection":"ltr","languageISO2Code":"sq","publicSiteActiveFlag":true},{"languageCode":"V","languageLocalName":"slovenčina","jwoLocaleCode":"sk","scriptDirection":"ltr","languageISO2Code":"sk","publicSiteActiveFlag":true},{"languageCode":"SV","languageLocalName":"slovenščina","jwoLocaleCode":"sl","scriptDirection":"ltr","languageISO2Code":"sl","publicSiteActiveFlag":true},{"languageCode":"SBO","languageLocalName":"srpski (latinica)","jwoLocaleCode":"sr-latn","scriptDirection":"ltr","languageISO2Code":"sr","publicSiteActiveFlag":true},{"languageCode":"FI","languageLocalName":"suomi","jwoLocaleCode":"fi","scriptDirection":"ltr","languageISO2Code":"fi","publicSiteActiveFlag":true},{"languageCode":"Z","languageLocalName":"Svenska","jwoLocaleCode":"sv","scriptDirection":"ltr","languageISO2Code":"sv","publicSiteActiveFlag":true},{"languageCode":"TH","languageLocalName":"Tahiti","jwoLocaleCode":"ty","scriptDirection":"ltr","languageISO2Code":"ty","publicSiteActiveFlag":true},{"languageCode":"MP","languageLocalName":"Tok Pisin","jwoLocaleCode":"tpi","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"TK","languageLocalName":"Türkçe","jwoLocaleCode":"tr","scriptDirection":"ltr","languageISO2Code":"tr","publicSiteActiveFlag":true},{"languageCode":"VLC","languageLocalName":"valencià","jwoLocaleCode":"jw-vlc","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"VT","languageLocalName":"Việt","jwoLocaleCode":"vi","scriptDirection":"ltr","languageISO2Code":"vi","publicSiteActiveFlag":true},{"languageCode":"G","languageLocalName":"Ελληνική","jwoLocaleCode":"el","scriptDirection":"ltr","languageISO2Code":"el","publicSiteActiveFlag":true},{"languageCode":"BL","languageLocalName":"български","jwoLocaleCode":"bg","scriptDirection":"ltr","languageISO2Code":"bg","publicSiteActiveFlag":true},{"languageCode":"OSS","languageLocalName":"ирон","jwoLocaleCode":"os","scriptDirection":"ltr","languageISO2Code":"os","publicSiteActiveFlag":true},{"languageCode":"KZ","languageLocalName":"кыргыз","jwoLocaleCode":"ky","scriptDirection":"ltr","languageISO2Code":"ky","publicSiteActiveFlag":true},{"languageCode":"U","languageLocalName":"русский","jwoLocaleCode":"ru","scriptDirection":"ltr","languageISO2Code":"ru","publicSiteActiveFlag":true},{"languageCode":"SB","languageLocalName":"српски","jwoLocaleCode":"sr-cyrl","scriptDirection":"ltr","languageISO2Code":"sr","publicSiteActiveFlag":true},{"languageCode":"K","languageLocalName":"українська","jwoLocaleCode":"uk","scriptDirection":"ltr","languageISO2Code":"uk","publicSiteActiveFlag":true},{"languageCode":"GE","languageLocalName":"ქართული","jwoLocaleCode":"ka","scriptDirection":"ltr","languageISO2Code":"ka","publicSiteActiveFlag":true},{"languageCode":"REA","languageLocalName":"Հայերեն","jwoLocaleCode":"hy","scriptDirection":"ltr","languageISO2Code":"hy","publicSiteActiveFlag":true},{"languageCode":"Q","languageLocalName":"עברית","jwoLocaleCode":"he","scriptDirection":"rtl","languageISO2Code":"he","publicSiteActiveFlag":true},{"languageCode":"PR","languageLocalName":"فارسی","jwoLocaleCode":"fa","scriptDirection":"rtl","languageISO2Code":"fa","publicSiteActiveFlag":true},{"languageCode":"AM","languageLocalName":"አማርኛ","jwoLocaleCode":"am","scriptDirection":"ltr","languageISO2Code":"am","publicSiteActiveFlag":true},{"languageCode":"NP","languageLocalName":"नेपाली","jwoLocaleCode":"ne","scriptDirection":"ltr","languageISO2Code":"ne","publicSiteActiveFlag":true},{"languageCode":"TU","languageLocalName":"తెలుగు","jwoLocaleCode":"te","scriptDirection":"ltr","languageISO2Code":"te","publicSiteActiveFlag":true},{"languageCode":"MY","languageLocalName":"മലയാളം","jwoLocaleCode":"ml","scriptDirection":"ltr","languageISO2Code":"ml","publicSiteActiveFlag":true},{"languageCode":"SI","languageLocalName":"ไทย","jwoLocaleCode":"th","scriptDirection":"ltr","languageISO2Code":"th","publicSiteActiveFlag":true},{"languageCode":"BU","languageLocalName":"မြန်မာ","jwoLocaleCode":"mya","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true},{"languageCode":"CHS","languageLocalName":"中文简体（普通话）","jwoLocaleCode":"cmn-hans","scriptDirection":"ltr","languageISO2Code":"zh","publicSiteActiveFlag":true},{"languageCode":"CH","languageLocalName":"中文繁體（國語）","jwoLocaleCode":"cmn-hant","scriptDirection":"ltr","languageISO2Code":"zh","publicSiteActiveFlag":true},{"languageCode":"J","languageLocalName":"日本語","jwoLocaleCode":"ja","scriptDirection":"ltr","languageISO2Code":"ja","publicSiteActiveFlag":true},{"languageCode":"KO","languageLocalName":"한국어","jwoLocaleCode":"ko","scriptDirection":"ltr","languageISO2Code":"ko","publicSiteActiveFlag":true}]</script>
+<script id="timePatternSyntax" type="application/json">{"MONTHDAYSFX_1":"<sup>st</sup>","MONTHDAYSFX_2":"<sup>nd</sup>","MONTHDAYSFX_3":"<sup>rd</sup>","MONTHDAYSFX_4":"<sup>th</sup>","MONTHDAYSFX_5":"<sup>th</sup>","MONTHDAYSFX_6":"<sup>th</sup>","MONTHDAYSFX_7":"<sup>th</sup>","MONTHDAYSFX_8":"<sup>th</sup>","MONTHDAYSFX_9":"<sup>th</sup>","MONTHDAYSFX_10":"<sup>th</sup>","MONTHDAYSFX_11":"<sup>th</sup>","MONTHDAYSFX_12":"<sup>th</sup>","MONTHDAYSFX_13":"<sup>th</sup>","MONTHDAYSFX_14":"<sup>th</sup>","MONTHDAYSFX_15":"<sup>th</sup>","MONTHDAYSFX_16":"<sup>th</sup>","MONTHDAYSFX_17":"<sup>th</sup>","MONTHDAYSFX_18":"<sup>th</sup>","MONTHDAYSFX_19":"<sup>th</sup>","MONTHDAYSFX_20":"<sup>th</sup>","MONTHDAYSFX_21":"<sup>st</sup>","MONTHDAYSFX_22":"<sup>nd</sup>","MONTHDAYSFX_23":"<sup>rd</sup>","MONTHDAYSFX_24":"<sup>th</sup>","MONTHDAYSFX_25":"<sup>th</sup>","MONTHDAYSFX_26":"<sup>th</sup>","MONTHDAYSFX_27":"<sup>th</sup>","MONTHDAYSFX_28":"<sup>th</sup>","MONTHDAYSFX_29":"<sup>th</sup>","MONTHDAYSFX_30":"<sup>th</sup>","MONTHDAYSFX_31":"<sup>st</sup>","MONTHNOMCAPSNAME_1":"ENERO","MONTHNOMCAPSNAME_2":"PEBRERO","MONTHNOMCAPSNAME_3":"MARSO","MONTHNOMCAPSNAME_4":"ABRIL","MONTHNOMCAPSNAME_5":"MAYO","MONTHNOMCAPSNAME_6":"HUNYO","MONTHNOMCAPSNAME_7":"HULYO","MONTHNOMCAPSNAME_8":"AGOSTO","MONTHNOMCAPSNAME_9":"SEPTIYEMBRE","MONTHNOMCAPSNAME_10":"OKTUBRE","MONTHNOMCAPSNAME_11":"NOBYEMBRE","MONTHNOMCAPSNAME_12":"DISYEMBRE","MONTHLOCLONAME_1":"enero","MONTHLOCLONAME_2":"pebrero","MONTHLOCLONAME_3":"marso","MONTHLOCLONAME_4":"abril","MONTHLOCLONAME_5":"mayo","MONTHLOCLONAME_6":"hunyo","MONTHLOCLONAME_7":"hulyo","MONTHLOCLONAME_8":"agosto","MONTHLOCLONAME_9":"septiyembre","MONTHLOCLONAME_10":"oktubre","MONTHLOCLONAME_11":"nobyembre","MONTHLOCLONAME_12":"disyembre","MONTHLOCUPNAME_1":"Enero","MONTHLOCUPNAME_2":"Pebrero","MONTHLOCUPNAME_3":"Marso","MONTHLOCUPNAME_4":"Abril","MONTHLOCUPNAME_5":"Mayo","MONTHLOCUPNAME_6":"Hunyo","MONTHLOCUPNAME_7":"Hulyo","MONTHLOCUPNAME_8":"Agosto","MONTHLOCUPNAME_9":"Septiyembre","MONTHLOCUPNAME_10":"Oktubre","MONTHLOCUPNAME_11":"Nobyembre","MONTHLOCUPNAME_12":"Disyembre","MONTHGENLONAME_1":"enero","MONTHGENLONAME_2":"pebrero","MONTHGENLONAME_3":"marso","MONTHGENLONAME_4":"abril","MONTHGENLONAME_5":"mayo","MONTHGENLONAME_6":"hunyo","MONTHGENLONAME_7":"hulyo","MONTHGENLONAME_8":"agosto","MONTHGENLONAME_9":"septiyembre","MONTHGENLONAME_10":"oktubre","MONTHGENLONAME_11":"nobyembre","MONTHGENLONAME_12":"disyembre","MONTHGENUPNAME_1":"Enero","MONTHGENUPNAME_2":"Pebrero","MONTHGENUPNAME_3":"Marso","MONTHGENUPNAME_4":"Abril","MONTHGENUPNAME_5":"Mayo","MONTHGENUPNAME_6":"Hunyo","MONTHGENUPNAME_7":"Hulyo","MONTHGENUPNAME_8":"Agosto","MONTHGENUPNAME_9":"Septiyembre","MONTHGENUPNAME_10":"Oktubre","MONTHGENUPNAME_11":"Nobyembre","MONTHGENUPNAME_12":"Disyembre","MONTHNOMLONAME_1":"enero","MONTHNOMLONAME_2":"pebrero","MONTHNOMLONAME_3":"marso","MONTHNOMLONAME_4":"abril","MONTHNOMLONAME_5":"mayo","MONTHNOMLONAME_6":"hunyo","MONTHNOMLONAME_7":"hulyo","MONTHNOMLONAME_8":"agosto","MONTHNOMLONAME_9":"septiyembre","MONTHNOMLONAME_10":"oktubre","MONTHNOMLONAME_11":"nobyembre","MONTHNOMLONAME_12":"disyembre","MONTHNOMUPNAME_1":"Enero","MONTHNOMUPNAME_2":"Pebrero","MONTHNOMUPNAME_3":"Marso","MONTHNOMUPNAME_4":"Abril","MONTHNOMUPNAME_5":"Mayo","MONTHNOMUPNAME_6":"Hunyo","MONTHNOMUPNAME_7":"Hulyo","MONTHNOMUPNAME_8":"Agosto","MONTHNOMUPNAME_9":"Septiyembre","MONTHNOMUPNAME_10":"Oktubre","MONTHNOMUPNAME_11":"Nobyembre","MONTHNOMUPNAME_12":"Disyembre","MONTHLOABBR_1":"ene","MONTHLOABBR_2":"peb","MONTHLOABBR_3":"mar","MONTHLOABBR_4":"abr","MONTHLOABBR_5":"mayo","MONTHLOABBR_6":"hun","MONTHLOABBR_7":"hul","MONTHLOABBR_8":"agos","MONTHLOABBR_9":"sept","MONTHLOABBR_10":"okt","MONTHLOABBR_11":"nob","MONTHLOABBR_12":"dis","MONTHUPABBR_1":"Ene","MONTHUPABBR_2":"Peb","MONTHUPABBR_3":"Mar","MONTHUPABBR_4":"Abr","MONTHUPABBR_5":"Mayo","MONTHUPABBR_6":"Hun","MONTHUPABBR_7":"Hul","MONTHUPABBR_8":"Agos","MONTHUPABBR_9":"Sept","MONTHUPABBR_10":"Okt","MONTHUPABBR_11":"Nob","MONTHUPABBR_12":"Dis","WEEKDAYLOCLONAME_1":"lunes","WEEKDAYLOCLONAME_2":"martes","WEEKDAYLOCLONAME_3":"miyerkoles","WEEKDAYLOCLONAME_4":"huwebes","WEEKDAYLOCLONAME_5":"biyernes","WEEKDAYLOCLONAME_6":"sabado","WEEKDAYLOCLONAME_7":"dominggo","WEEKDAYLOCUPNAME_1":"Lunes","WEEKDAYLOCUPNAME_2":"Martes","WEEKDAYLOCUPNAME_3":"Miyerkoles","WEEKDAYLOCUPNAME_4":"Huwebes","WEEKDAYLOCUPNAME_5":"Biyernes","WEEKDAYLOCUPNAME_6":"Sabado","WEEKDAYLOCUPNAME_7":"Dominggo","WEEKDAYSHORTABBR_1":"Lu","WEEKDAYSHORTABBR_2":"Ma","WEEKDAYSHORTABBR_3":"Mi","WEEKDAYSHORTABBR_4":"Hu","WEEKDAYSHORTABBR_5":"Bi","WEEKDAYSHORTABBR_6":"Sa","WEEKDAYSHORTABBR_7":"Do","WEEKDAYLONAME_1":"lunes","WEEKDAYLONAME_2":"martes","WEEKDAYLONAME_3":"miyerkoles","WEEKDAYLONAME_4":"huwebes","WEEKDAYLONAME_5":"biyernes","WEEKDAYLONAME_6":"sabado","WEEKDAYLONAME_7":"dominggo","WEEKDAYUPNAME_1":"<p>\nLunes\n</p>\n","WEEKDAYUPNAME_2":"Martes","WEEKDAYUPNAME_3":"Miyerkoles","WEEKDAYUPNAME_4":"Huwebes","WEEKDAYUPNAME_5":"Biyernes","WEEKDAYUPNAME_6":"Sabado","WEEKDAYUPNAME_7":"Dominggo","WEEKDAYLOABBR_1":"lun.","WEEKDAYLOABBR_2":"mar.","WEEKDAYLOABBR_3":"miyer.","WEEKDAYLOABBR_4":"huwe.","WEEKDAYLOABBR_5":"biyer.","WEEKDAYLOABBR_6":"sab.","WEEKDAYLOABBR_7":"dom.","WEEKDAYUPABBR_1":"Lun.","WEEKDAYUPABBR_2":"Mar.","WEEKDAYUPABBR_3":"Miyer.","WEEKDAYUPABBR_4":"Huwe.","WEEKDAYUPABBR_5":"Biyer.","WEEKDAYUPABBR_6":"Sab.","WEEKDAYUPABBR_7":"Dom.","MERIDIEMSFX_0":"a.m.","MERIDIEMSFX_1":"p.m.","TEXTNUMERALS_1":"1","TEXTNUMERALS_2":"2","TEXTNUMERALS_3":"3","TEXTNUMERALS_4":"4","TEXTNUMERALS_5":"5","TEXTNUMERALS_6":"6","TEXTNUMERALS_7":"7","TEXTNUMERALS_8":"8","TEXTNUMERALS_9":"9","TIMEPATTERNSYNTAX_ABBR_DATE":"%bu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_ABBR_DATE_LIST":"%Y %bu&nbsp;%-e","TIMEPATTERNSYNTAX_ABBR_MONTH_YEAR_DATE":"%bu&nbsp;%Y","TIMEPATTERNSYNTAX_ABBR_MONTH_YEAR_LIST":"%Y&nbsp;%bu","TIMEPATTERNSYNTAX_ABBR_WEEKDAY_DATE":"%au %m/%d","TIMEPATTERNSYNTAX_ABBR_MONTH":"%bu","TIMEPATTERNSYNTAX_ABBR_MONTH_DAY_CAPS":"%bu <br /> %d","TIMEPATTERNSYNTAX_LONG_DATE":"%Bnu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_LONG_DATE_DAY":"%Au, %Bnu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_LONG_DATE_DAY_MID":"%Au, %Bnu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_LONG_DATE_DAY_TIME":"%Au, %Bnu&nbsp;%-e, %Y, %l:%M %p","TIMEPATTERNSYNTAX_LONG_DATE_MID":"%Bnu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_LONG_DATE_LIST":"%Bnu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_LONG_DATE_PERIODICAL":"%Bnu&nbsp;%-e, %Y","TIMEPATTERNSYNTAX_LONG_DATE_TIME_GMT":"%Bnu&nbsp;%-e, %Y at %l:%M %p GMT","TIMEPATTERNSYNTAX_MONTH_DAY_MID":"%Bnu&nbsp;%-e","TIMEPATTERNSYNTAX_MONTH_SELECT":"%Bnu","TIMEPATTERNSYNTAX_MONTH_YEAR_DATE":"%Bnu %Y","TIMEPATTERNSYNTAX_MONTH_YEAR_DATE_LIST":"%Bnu&nbsp;%Y","TIMEPATTERNSYNTAX_MONTH_YEAR_DATE_MID":"%Bnu %Y","TIMEPATTERNSYNTAX_MONTH_YEAR_DATE_PERIODICAL":"%Bnu&nbsp;%Y","TIMEPATTERNSYNTAX_ISSUE_NUMBER":"Num.&nbsp;%1$s %Y","TIMEPATTERNSYNTAX_ISSUE_NUMBER_CAPS":"NUM.&nbsp;%1$s %Y","TIMEPATTERNSYNTAX_ISSUE_NUMBER_LIST":"%Y Num.&nbsp;%1$s","TIMEPATTERNSYNTAX_MONTH_YEAR_DATE_CAPS":"%Bnc&nbsp;%Y","TIMEPATTERNSYNTAX_NUMERIC_DATE":"%Y-%m-%d","TIMEPATTERNSYNTAX_NUMERIC_DATE_SHORT":"%Y-%m","TIMEPATTERNSYNTAX_NUMERIC_DATETIME_GMT":"%Y-%m-%d %H:%M:%S GMT","TIMEPATTERNSYNTAX_TIME_CLOCK":"%I:%M %p","TIMEPATTERNSYNTAX_TIME_GMT":"%H:%M:%S GMT","TIMEPATTERNSYNTAX_WEEKDAY_MID":"%Au","TIMEPATTERNSYNTAX_WEEKDAY_MONTH_DAY":"%Au, %Bnu&nbsp;%-e","TIMEPATTERNSYNTAX_WEEKDAY_SELECT":"%Au","TIMEPATTERNSYNTAX_WEEKDAY_TIME":"%Au, %l:%M&nbsp;%p"}</script>
+<script id="namePatternSyntax" type="application/json">{"NAMEPATTERNSYNTAX_SHORT_NAME_MID":"%F %L","NAMEPATTERNSYNTAX_SHORT_NAME_LIST":"%L, %F","NAMEPATTERNSYNTAX_FULL_NAME_MID":"%F %M %L, %S","NAMEPATTERNSYNTAX_FULL_NAME_LIST":"%L, %F %M %S"}</script>
+<script id="changeStampSyntax" type="application/json">{"TxtLastUpdatedByBranchOfficeDate":"Na-update sa sangang buhatan niadtong %s","TxtLastUpdatedByNameOnDate":"Na-update ni %1$s niadtong %2$s"}</script>
+<script id="prvlgTypeLabelData" type="application/json">{"PRVLGTYPELABEL_E-FR":"Regular Pioneer","PRVLGTYPELABEL_E-FC":"Circuit Overseer","PRVLGTYPELABEL_E-BAS":"Assembly Hall Servant","PRVLGTYPELABEL_E-FSI":"Special Pioneer","PRVLGTYPELABEL_E-FS":"Special Pioneer","PRVLGTYPELABEL_E-FTS":"Special Pioneer","PRVLGTYPELABEL_R-201":"Coordinator","PRVLGTYPELABEL_R-202":"Secretary","PRVLGTYPELABEL_SS-3":"Elder","PRVLGTYPELABEL_E-FI":"Field Instructor","PRVLGTYPELABEL_E-CW":"Circuit Overseer’s Wife","PRVLGTYPELABEL_E-CWF":"Circuit Overseer’s Wife","PRVLGTYPELABEL_E-FCF":"Circuit Overseer","PRVLGTYPELABEL_E-FIF":"Field Instructor","PRVLGTYPELABEL_E-FMF":"Field Missionary","PRVLGTYPELABEL_E-IW":"Field Instructor’s Wife","PRVLGTYPELABEL_E-IWF":"Field Instructor’s Wife","PRVLGTYPELABEL_E-BCF":"Construction Servant","PRVLGTYPELABEL_E-BCS":"Construction Servant","PRVLGTYPELABEL_E-BCL":"Construction Servant","PRVLGTYPELABEL_E-BSS":"Bible School Facility Servant","PRVLGTYPELABEL_E-FTF":"Temporary Field Missionary","PRVLGTYPELABEL_E-FCB":"Circuit Overseer"}</script>
+<script id="orgUnitTypeNameData" type="application/json">{"ORGUNITTYPENAME_BRANCH":"Sangang Buhatan","ORGUNITTYPENAME_CONG":"Kongregasyon","ORGUNITTYPENAME_GEOLOC":"Lokasyon","ORGUNITTYPENAME_CIRCUITPART":"Seksiyon sa Sirkito","ORGUNITTYPENAME_ASMBLHALL":"Assembly Hall","ORGUNITTYPENAME_FLDVOLS":"Mga Field Member","ORGUNITTYPENAME_MTGPLACE":"Tigomanan","ORGUNITTYPENAME_HLC":"Hospital Liaison Committee","ORGUNITTYPENAME_CONVENTION":"Kombensiyon","ORGUNITTYPENAME_CONVVENUE":"Venue sa Kombensiyon","ORGUNITTYPENAME_CIRCUIT":"Sirkito","ORGUNITTYPENAME_CONGGROUP":"Grupo sa Kongregasyon","ORGUNITTYPENAME_LGLASCTN":"Legal Association","ORGUNITTYPENAME_DRC":"Disaster Relief Committee","ORGUNITTYPENAME_CEG":"Convention Equipment Pool Committee","ORGUNITTYPENAME_WEBSVC":"Web Service","ORGUNITTYPENAME_LDC":"Local Design/Construction","ORGUNITTYPENAME_ASSEMBLY":"Asembliya"}</script>
+
+
+<script type="text/ng-template" id="public/donations/components/info-request/info-request-editor"><fieldset class="field__group--no-style margin-bottom-2">
+   <legend class="field__label">Unsa pa nga impormasyon ang gusto nimong masayran?</legend>
+   <p class="field__block margin-top-0">
+      <label class="field__label--not-bold" ng-repeat="donationMethod in $ctrl.infoRequest.donationMethods track by donationMethod.code">
+         <input type="checkbox" name="donatioMethod_{{donationMethod.code}}"
+                aria-describedby="donationMethodMsg" ng-model="donationMethod.selected"
+                ng-change="$ctrl.onViewValueChange()"/>
+         <span ng-bind-html="donationMethod.label"></span>
+      </label>
+   </p>
+   <p id="donationMethodMsg" class="error form-message"
+      ng-if="$ctrl.form.$submitted && $ctrl.form.$error.minDonationMethods">
+      <img src="https://assets1.jw.org/ui/images/icon_error_small.png" alt=""/>
+      Pagpili bisag usa lang ka opsiyon.
+   </p>
+</fieldset>
+
+<div class="medium-8" jwo-field-block>
+   <label for="fullName">Tibuok Ngalan</label>
+   <input jwo-field-input type="text" id="fullName" name="fullName" autocomplete="name" ng-model="$ctrl.infoRequest.fullName"
+          ng-change="$ctrl.onViewValueChange()"/>
+   <div jwo-field-messages>
+      <p jwo-field-message="required">
+         <img src="https://assets1.jw.org/ui/images/icon_error_small.png" alt=""/>
+         Kinahanglan
+      </p>
+   </div>
+</div>
+
+<div class="medium-8" jwo-field-block>
+   <label for="email">E-mail</label>
+   <input jwo-field-input type="email" id="email" name="email" autocomplete="email" ng-model="$ctrl.infoRequest.email"
+          ng-change="$ctrl.onViewValueChange()"/>
+   <div jwo-field-messages>
+      <p jwo-field-message="required">
+         <img src="https://assets1.jw.org/ui/images/icon_error_small.png" alt=""/>
+         Kinahanglan
+      </p>
+      <p jwo-field-message="email">
+         <img src="https://assets1.jw.org/ui/images/icon_error_small.png" alt=""/>
+         Mali ang format sa e-mail address.
+      </p>
+   </div>
+</div>
+
+<div class="char-counter-container medium-8" jwo-field-block>
+   <label for="comments">Comments</label>
+   <textarea jwo-field-input id="comments" name="comments" autocomplete="off" ng-model="$ctrl.infoRequest.comments"
+             ng-change="$ctrl.onViewValueChange()"></textarea>
+   <small class="char-counter" jwo-literal>
+      %1$s&nbsp;/&nbsp;%2$s
+      <jwo-literal-arg for="$ctrl.form.comments.$viewValue.length || 0"></jwo-literal-arg>
+      <jwo-literal-arg for="$ctrl.COMMENTS_MAX_CHARS"></jwo-literal-arg>
+   </small>
+</div></script>
+<script type="text/ng-template" id="public/donations/components/info-request/info-request-sender"><h1>Pangayog Impormasyon Kon Unsaon Pag-donate</h1>
+
+<jwo-notification type="error" ng-if="$ctrl.showInvalidFormMessage">
+   <h1>Koreksiyoni ang mga Sayop nga Gi-highlight sa Ubos</h1>
+</jwo-notification>
+
+<jwo-notification type="error" ng-if="$ctrl.showRequiredCatpchaMessage">
+   <h1>Koreksiyoni ang Sayop</h1>
+   <ul class="margin-bottom-0">
+      <li>Kinahanglang kompletohon nimo ang CAPTCHA verification aron makapadayon.</li>
+   </ul>
+</jwo-notification>
+
+<h2 class="font-increase-20 accent-color margin-top-2 margin-bottom-1">
+   Para sa: <span ng-bind-html="$ctrl.infoRequest.location.label"></span>
+</h2>
+
+<p>Palihog ihatag ang mosunod nga detalye ug kontakon ka namo para sa dugang impormasyon kon unsaon pag-donate.</p>
+
+<form name="$ctrl.form" novalidate ng-submit="$ctrl.onSubmit()">
+
+   <jwo-info-request-editor info-request="$ctrl.infoRequest" validation-report="$ctrl.validationReport"
+                            on-change="$ctrl.setNewInfoRequest(infoRequest)"></jwo-info-request-editor>
+
+   <div jwo-field-block>
+      <div class="grid nowrap">
+         <div class="grid-item">
+            <p>
+               <input type="checkbox" id="agree" name="agree" ng-model="$ctrl.agree" jwo-field-input required/>
+            </p>
+         </div>
+         <div class="grid-item padding-left-0">
+            <p>
+               <label for="agree" class="plain-text-label">
+                  Mouyon ko sa <em>Kondisyones sa Paggamit</em> ug sa <em>Privacy and Cookies Policy</em> alang niini nga website.
+                  <br />
+                  <a href="{{$ctrl.termsOfUse.href}}" target="_blank">Kondisyones sa Paggamit</a>
+                  &nbsp;|&nbsp;
+                  <a href="{{$ctrl.privacy.href}}" target="_blank">Polisa sa Pribasiya</a>
+               </label>
+            </p>
+         </div>
+      </div>
+      <div jwo-field-messages>
+         <p jwo-field-message="required"><img src="https://assets1.jw.org/ui/images/icon_error_small.png" alt=""/> Kinahanglan</p>
+      </div>
+   </div>
+
+   <fieldset>
+      <legend>Verification</legend>
+      <p>Para sa seguridad, sunda ang mga prompt sa ubos aron sa pagpamatuod nga tawo gyod ka.</p>
+      <jwo-captcha name="captcha" ng-model="$ctrl.captchaResponse"></jwo-captcha>
+   </fieldset>
+
+   <p class="stepper-nav">
+      <jwo-button type="button" secondary="true" disabled="$ctrl.sending || $ctrl.sent" on-click="$ctrl.onCancel()">
+         I-cancel
+      </jwo-button>
+      <jwo-button loading="$ctrl.sending" disabled="$ctrl.sent">Submit</jwo-button>
+   </p>
+</form></script>
+<script type="application/json" id="CNTCTCNTRYNAME" >{"CNTCTCNTRYNAME_ABW":"Aruba","CNTCTCNTRYNAME_AFG":"Afghanistan","CNTCTCNTRYNAME_AGO":"Angola","CNTCTCNTRYNAME_AIA":"Anguilla","CNTCTCNTRYNAME_ALA":"Åland Islands","CNTCTCNTRYNAME_ALB":"Albania","CNTCTCNTRYNAME_AND":"Andorra","CNTCTCNTRYNAME_ANT":"Netherlands Antilles","CNTCTCNTRYNAME_ARE":"United Arab Emirates","CNTCTCNTRYNAME_ARG":"Argentina","CNTCTCNTRYNAME_ARM":"Armenia","CNTCTCNTRYNAME_ASM":"American Samoa","CNTCTCNTRYNAME_ATA":"Antarctica","CNTCTCNTRYNAME_ATF":"French Southern Territories","CNTCTCNTRYNAME_ATG":"Antigua and Barbuda","CNTCTCNTRYNAME_AUS":"Australia","CNTCTCNTRYNAME_AUT":"Austria","CNTCTCNTRYNAME_AZE":"Azerbaijan","CNTCTCNTRYNAME_BDI":"Burundi","CNTCTCNTRYNAME_BEL":"Belgium","CNTCTCNTRYNAME_BEN":"Benin","CNTCTCNTRYNAME_BFA":"Burkina Faso","CNTCTCNTRYNAME_BGD":"Bangladesh","CNTCTCNTRYNAME_BGR":"Bulgaria","CNTCTCNTRYNAME_BHR":"Bahrain","CNTCTCNTRYNAME_BHS":"Bahamas","CNTCTCNTRYNAME_BIH":"Bosnia and Herzegovina","CNTCTCNTRYNAME_BLM":"Saint Barthélemy","CNTCTCNTRYNAME_BLR":"Belarus","CNTCTCNTRYNAME_BLZ":"Belize","CNTCTCNTRYNAME_BMU":"Bermuda","CNTCTCNTRYNAME_BOL":"Bolivia","CNTCTCNTRYNAME_BRA":"Brazil","CNTCTCNTRYNAME_BRB":"Barbados","CNTCTCNTRYNAME_BRN":"Brunei Darussalam","CNTCTCNTRYNAME_BTN":"Bhutan","CNTCTCNTRYNAME_BVT":"Bouvet Island","CNTCTCNTRYNAME_BWA":"Botswana","CNTCTCNTRYNAME_CAF":"Central African Republic","CNTCTCNTRYNAME_CAN":"Canada","CNTCTCNTRYNAME_CCK":"Cocos (Keeling) Islands","CNTCTCNTRYNAME_CHE":"Switzerland","CNTCTCNTRYNAME_CHL":"Chile","CNTCTCNTRYNAME_CHN":"China","CNTCTCNTRYNAME_CIV":"Côte d'Ivoire","CNTCTCNTRYNAME_CMR":"Cameroon","CNTCTCNTRYNAME_COD":"Congo, The Democratic Republic of the","CNTCTCNTRYNAME_COG":"Congo","CNTCTCNTRYNAME_COK":"Cook Islands","CNTCTCNTRYNAME_COL":"Colombia","CNTCTCNTRYNAME_COM":"Comoros","CNTCTCNTRYNAME_CPV":"Cape Verde","CNTCTCNTRYNAME_CRI":"Costa Rica","CNTCTCNTRYNAME_CUB":"Cuba","CNTCTCNTRYNAME_CXR":"Christmas Island","CNTCTCNTRYNAME_CYM":"Cayman Islands","CNTCTCNTRYNAME_CYP":"Cyprus","CNTCTCNTRYNAME_CZE":"Czech Republic","CNTCTCNTRYNAME_DEU":"Germany","CNTCTCNTRYNAME_DJI":"Djibouti","CNTCTCNTRYNAME_DMA":"Dominica","CNTCTCNTRYNAME_DNK":"Denmark","CNTCTCNTRYNAME_DOM":"Dominican Republic","CNTCTCNTRYNAME_DZA":"Algeria","CNTCTCNTRYNAME_ECU":"Ecuador","CNTCTCNTRYNAME_EGY":"Egypt","CNTCTCNTRYNAME_ERI":"Eritrea","CNTCTCNTRYNAME_ESH":"Western Sahara","CNTCTCNTRYNAME_ESP":"Spain","CNTCTCNTRYNAME_EST":"Estonia","CNTCTCNTRYNAME_ETH":"Ethiopia","CNTCTCNTRYNAME_FIN":"Finland","CNTCTCNTRYNAME_FJI":"Fiji","CNTCTCNTRYNAME_FLK":"Falkland Islands (Malvinas)","CNTCTCNTRYNAME_FRA":"France","CNTCTCNTRYNAME_FRO":"Faroe Islands","CNTCTCNTRYNAME_FSM":"Micronesia, Federated States of","CNTCTCNTRYNAME_GAB":"Gabon","CNTCTCNTRYNAME_GBR":"United Kingdom","CNTCTCNTRYNAME_GEO":"Georgia","CNTCTCNTRYNAME_GGY":"Guernsey","CNTCTCNTRYNAME_GHA":"Ghana","CNTCTCNTRYNAME_GIB":"Gibraltar","CNTCTCNTRYNAME_GIN":"Guinea","CNTCTCNTRYNAME_GLP":"Guadeloupe","CNTCTCNTRYNAME_GMB":"Gambia","CNTCTCNTRYNAME_GNB":"Guinea-Bissau","CNTCTCNTRYNAME_GNQ":"Equatorial Guinea","CNTCTCNTRYNAME_GRC":"Greece","CNTCTCNTRYNAME_GRD":"Grenada","CNTCTCNTRYNAME_GRL":"Greenland","CNTCTCNTRYNAME_GTM":"Guatemala","CNTCTCNTRYNAME_GUF":"French Guiana","CNTCTCNTRYNAME_GUM":"Guam","CNTCTCNTRYNAME_GUY":"Guyana","CNTCTCNTRYNAME_HKG":"Hong Kong","CNTCTCNTRYNAME_HMD":"Heard Island and McDonald Islands","CNTCTCNTRYNAME_HND":"Honduras","CNTCTCNTRYNAME_HRV":"Croatia","CNTCTCNTRYNAME_HTI":"Haiti","CNTCTCNTRYNAME_HUN":"Hungary","CNTCTCNTRYNAME_IDN":"Indonesia","CNTCTCNTRYNAME_IMN":"Isle of Man","CNTCTCNTRYNAME_IND":"India","CNTCTCNTRYNAME_IOT":"British Indian Ocean Territory","CNTCTCNTRYNAME_IRL":"Ireland","CNTCTCNTRYNAME_IRN":"Iran, Islamic Republic of","CNTCTCNTRYNAME_IRQ":"Iraq","CNTCTCNTRYNAME_ISL":"Iceland","CNTCTCNTRYNAME_ISR":"Israel","CNTCTCNTRYNAME_ITA":"Italy","CNTCTCNTRYNAME_JAM":"Jamaica","CNTCTCNTRYNAME_JEY":"Jersey","CNTCTCNTRYNAME_JOR":"Jordan","CNTCTCNTRYNAME_JPN":"Japan","CNTCTCNTRYNAME_KAZ":"Kazakhstan","CNTCTCNTRYNAME_KEN":"Kenya","CNTCTCNTRYNAME_KGZ":"Kyrgyzstan","CNTCTCNTRYNAME_KHM":"Cambodia","CNTCTCNTRYNAME_KIR":"Kiribati","CNTCTCNTRYNAME_KNA":"Saint Kitts and Nevis","CNTCTCNTRYNAME_KOR":"Korea, Republic of","CNTCTCNTRYNAME_KWT":"Kuwait","CNTCTCNTRYNAME_LAO":"Lao People's Democratic Republic","CNTCTCNTRYNAME_LBN":"Lebanon","CNTCTCNTRYNAME_LBR":"Liberia","CNTCTCNTRYNAME_LBY":"Libya","CNTCTCNTRYNAME_LCA":"Saint Lucia","CNTCTCNTRYNAME_LIE":"Liechtenstein","CNTCTCNTRYNAME_LKA":"Sri Lanka","CNTCTCNTRYNAME_LSO":"Lesotho","CNTCTCNTRYNAME_LTU":"Lithuania","CNTCTCNTRYNAME_LUX":"Luxembourg","CNTCTCNTRYNAME_LVA":"Latvia","CNTCTCNTRYNAME_MAC":"Macao","CNTCTCNTRYNAME_MAF":"Saint Martin (French part)","CNTCTCNTRYNAME_MAR":"Morocco","CNTCTCNTRYNAME_MCO":"Monaco","CNTCTCNTRYNAME_MDA":"Moldova, Republic of","CNTCTCNTRYNAME_MDG":"Madagascar","CNTCTCNTRYNAME_MDV":"Maldives","CNTCTCNTRYNAME_MEX":"Mexico","CNTCTCNTRYNAME_MHL":"Marshall Islands","CNTCTCNTRYNAME_MKD":"Macedonia, The Former Yugoslav Republic of","CNTCTCNTRYNAME_MLI":"Mali","CNTCTCNTRYNAME_MLT":"Malta","CNTCTCNTRYNAME_MMR":"Myanmar","CNTCTCNTRYNAME_MNE":"Montenegro","CNTCTCNTRYNAME_MNG":"Mongolia","CNTCTCNTRYNAME_MNP":"Northern Mariana Islands","CNTCTCNTRYNAME_MOZ":"Mozambique","CNTCTCNTRYNAME_MRT":"Mauritania","CNTCTCNTRYNAME_MSR":"Montserrat","CNTCTCNTRYNAME_MTQ":"Martinique","CNTCTCNTRYNAME_MUS":"Mauritius","CNTCTCNTRYNAME_MWI":"Malawi","CNTCTCNTRYNAME_MYS":"Malaysia","CNTCTCNTRYNAME_MYT":"Mayotte","CNTCTCNTRYNAME_NAM":"Namibia","CNTCTCNTRYNAME_NCL":"New Caledonia","CNTCTCNTRYNAME_NER":"Niger","CNTCTCNTRYNAME_NFK":"Norfolk Island","CNTCTCNTRYNAME_NGA":"Nigeria","CNTCTCNTRYNAME_NIC":"Nicaragua","CNTCTCNTRYNAME_NIU":"Niue","CNTCTCNTRYNAME_NLD":"Netherlands","CNTCTCNTRYNAME_NOR":"Norway","CNTCTCNTRYNAME_NPL":"Nepal","CNTCTCNTRYNAME_NRU":"Nauru","CNTCTCNTRYNAME_NZL":"New Zealand","CNTCTCNTRYNAME_OMN":"Oman","CNTCTCNTRYNAME_PAK":"Pakistan","CNTCTCNTRYNAME_PAN":"Panama","CNTCTCNTRYNAME_PCN":"Pitcairn","CNTCTCNTRYNAME_PER":"Peru","CNTCTCNTRYNAME_PHL":"Philippines","CNTCTCNTRYNAME_PLW":"Palau","CNTCTCNTRYNAME_PNG":"Papua New Guinea","CNTCTCNTRYNAME_POL":"Poland","CNTCTCNTRYNAME_PRI":"Puerto Rico","CNTCTCNTRYNAME_PRK":"Korea, Democratic People's Republic of","CNTCTCNTRYNAME_PRT":"Portugal","CNTCTCNTRYNAME_PRY":"Paraguay","CNTCTCNTRYNAME_PSE":"Palestinian Territory, Occupied","CNTCTCNTRYNAME_PYF":"French Polynesia","CNTCTCNTRYNAME_QAT":"Qatar","CNTCTCNTRYNAME_REU":"Réunion","CNTCTCNTRYNAME_ROU":"Romania","CNTCTCNTRYNAME_RUS":"Russian Federation","CNTCTCNTRYNAME_RWA":"Rwanda","CNTCTCNTRYNAME_SAU":"Saudi Arabia","CNTCTCNTRYNAME_SDN":"Sudan","CNTCTCNTRYNAME_SEN":"Senegal","CNTCTCNTRYNAME_SGP":"Singapore","CNTCTCNTRYNAME_SGS":"South Georgia and the South Sandwich Islands","CNTCTCNTRYNAME_SHN":"Saint Helena","CNTCTCNTRYNAME_SJM":"Svalbard and Jan Mayen","CNTCTCNTRYNAME_SLB":"Solomon Islands","CNTCTCNTRYNAME_SLE":"Sierra Leone","CNTCTCNTRYNAME_SLV":"El Salvador","CNTCTCNTRYNAME_SMR":"San Marino","CNTCTCNTRYNAME_SOM":"Somalia","CNTCTCNTRYNAME_SPM":"Saint Pierre and Miquelon","CNTCTCNTRYNAME_SRB":"Serbia","CNTCTCNTRYNAME_STP":"São Tomé and Príncipe","CNTCTCNTRYNAME_SUR":"Suriname","CNTCTCNTRYNAME_SVK":"Slovakia","CNTCTCNTRYNAME_SVN":"Slovenia","CNTCTCNTRYNAME_SWE":"Sweden","CNTCTCNTRYNAME_SWZ":"Swaziland","CNTCTCNTRYNAME_SYC":"Seychelles","CNTCTCNTRYNAME_SYR":"Syrian Arab Republic","CNTCTCNTRYNAME_TCA":"Turks and Caicos Islands","CNTCTCNTRYNAME_TCD":"Chad","CNTCTCNTRYNAME_TGO":"Togo","CNTCTCNTRYNAME_THA":"Thailand","CNTCTCNTRYNAME_TJK":"Tajikistan","CNTCTCNTRYNAME_TKL":"Tokelau","CNTCTCNTRYNAME_TKM":"Turkmenistan","CNTCTCNTRYNAME_TLS":"Timor-Leste","CNTCTCNTRYNAME_TON":"Tonga","CNTCTCNTRYNAME_TTO":"Trinidad and Tobago","CNTCTCNTRYNAME_TUN":"Tunisia","CNTCTCNTRYNAME_TUR":"Turkey","CNTCTCNTRYNAME_TUV":"Tuvalu","CNTCTCNTRYNAME_TWN":"Taiwan","CNTCTCNTRYNAME_TZA":"Tanzania, United Republic of","CNTCTCNTRYNAME_UGA":"Uganda","CNTCTCNTRYNAME_UKR":"Ukraine","CNTCTCNTRYNAME_UMI":"United States Minor Outlying Islands","CNTCTCNTRYNAME_URY":"Uruguay","CNTCTCNTRYNAME_USA":"United States","CNTCTCNTRYNAME_UZB":"Uzbekistan","CNTCTCNTRYNAME_VAT":"Vatican City State","CNTCTCNTRYNAME_VCT":"Saint Vincent and the Grenadines","CNTCTCNTRYNAME_VEN":"Venezuela","CNTCTCNTRYNAME_VGB":"Virgin Islands, British","CNTCTCNTRYNAME_VIR":"Virgin Islands, U.S.","CNTCTCNTRYNAME_VNM":"Viet Nam","CNTCTCNTRYNAME_VUT":"Vanuatu","CNTCTCNTRYNAME_WLF":"Wallis and Futuna","CNTCTCNTRYNAME_WSM":"Samoa","CNTCTCNTRYNAME_YEM":"Yemen","CNTCTCNTRYNAME_ZAF":"South Africa","CNTCTCNTRYNAME_ZMB":"Zambia","CNTCTCNTRYNAME_ZWE":"Zimbabwe","CNTCTCNTRYNAME_BES":"Bonaire, Saint Eustatius and Saba","CNTCTCNTRYNAME_CUW":"Curaçao","CNTCTCNTRYNAME_SXM":"Sint Maarten (Dutch Part)","CNTCTCNTRYNAME_SSD":"Republic of South Sudan","CNTCTCNTRYNAME_SU":"Soviet Union","CNTCTCNTRYNAME_ABK":"Abkhazia","CNTCTCNTRYNAME_KVO":"Kosovo"}</script>
+<script type="application/json" id="DONLNDNGPAGESECDESC" >{"DONLNDNGPAGESECDESC_ONLINE":"Online Donation","DONLNDNGPAGESECDESC_EBC":"Electronic Bank Transfer","DONLNDNGPAGESECDESC_CHECK":"Tseke o Money Order","DONLNDNGPAGESECDESC_KHALL":"Local Kingdom Hall","DONLNDNGPAGESECDESC_JWRWRDS":"JW Donations — Rewards Program","DONLNDNGPAGESECDESC_CNDDONARR":"Conditional Donation Arrangement","DONLNDNGPAGESECDESC_CHARPLAN":"Charitable Planning"}</script>
+<script type="application/json" id="LblOther" >{"LblOther":"Uban Pa"}</script>
+
+<script id="navLinks" type="application/json">{"home":{"href":"/ceb/"},"copyright":{"featureCode":"LEGAL","href":"/CV_LEGAL?txtAction=SHOW:LEGALTERMS","isPublic":true},"privacy":{"featureCode":"LEGAL","href":"/CV_LEGAL?txtAction=SHOW:LEGALPRIVACY","isPublic":true},"termsOfUse":{"featureCode":"LEGAL","href":"/CV_LEGAL?txtAction=SHOW:LEGALTERMS","isPublic":true},"help":{"featureCode":"HELP","href":"/CV_HELP?txtHelp={helpCode}","isPublic":true},"login":{"featureCode":"LOGIN1","href":"/CV_LOGIN1","isPublic":true,"helpCode":"LOGIN1"},"logout":{"featureCode":"LOGOUT","href":"/CV_LOGOUT","isPublic":true,"helpCode":"LOGIN1"},"domainSwitch":{"featureCode":"USERDOMAIN","href":"/CV_{domainKey}_USERDOMAIN?txtAction=SETDEFAULT"},"domainSwitchPage":{"href":""},"contactBranch":{"featureCode":"CONTACTUS","href":"/CV_{domainKey}_CONTACTUS"},"notFound":{"featureCode":"NOTFOUND","href":"404.html","isPublic":true},"donate":{"featureCode":"DONATE","href":"/CV_DONATE","isPublic":true},"donInfoRequest":{"featureCode":"DONINFOREQUEST","href":"/ui/CV/public-donations.html#/information-request","isPublic":true},"languageSwitch":{"href":""},"meetingSearch":{"href":""},"public":{"featureCode":"PUBLIC","isPublic":true}}</script>
+<script id="navTabs" type="application/json">[{"featureCode":"LOOKUP","href":"/CV_LOOKUP","isPublic":true,"features":[{"featureCode":"SRCHMTGMAPS","href":"/CV_SRCHMTGMAPS","isPublic":true,"helpCode":"SRCHMTGMAPS"},{"featureCode":"SEARCHCONV","href":"/CV_SEARCHCONV","isPublic":true,"helpCode":"SEARCHCONV"},{"featureCode":"CONVSPKRLIST","href":"/CV_{domainKey}_CONVSPKRLIST","helpCode":"CONVSPKRLIST"},{"featureCode":"SEARCHCNTCT","href":"/CV_{domainKey}_SEARCHCNTCT","helpCode":"SEARCHCNTCT"},{"featureCode":"VWTOCONGMBRSUMM","href":"/CV_{domainKey}_VWTOCONGMBRSUMM","helpCode":"VWTOCONGMBRSUMM"}]},{"featureCode":"CONG","href":"/CV_{domainKey}_CONG","features":[{"featureCode":"ENTFLDSVC","href":"/CV_{domainKey}_ENTFLDSVC","helpCode":"ENTFLDSVC"},{"featureCode":"ENTFOLLOWUPREQCONG","href":"/CV_{domainKey}_ENTFOLLOWUPREQCONG","helpCode":"ENTFOLLOWUPREQCONG"},{"featureCode":"ENTRMEMRPT","href":"/CV_{domainKey}_ENTRMEMRPT","helpCode":"ENTRMEMRPT"},{"featureCode":"ENTCONGANL","href":"/CV_{domainKey}_ENTCONGANL","helpCode":"ENTCONGANL"},{"featureCode":"REPORTHIST","href":"/CV_{domainKey}_REPORTHIST","helpCode":"REPORTHIST"},{"featureCode":"VWCONGSRVNTSUMM","href":"/CV_{domainKey}_VWCONGSRVNTSUMM","helpCode":"VWCONGSRVNTSUMM"},{"featureCode":"VWCONGPIOSUMM","href":"/CV_{domainKey}_VWCONGPIOSUMM","helpCode":"VWCONGPIOSUMM"},{"featureCode":"VWCONGMBRHIST","href":"/CV_{domainKey}_VWCONGMBRHIST","helpCode":"VWCONGMBRHIST"},{"featureCode":"ENTCONGCNTCTS","href":"/CV_{domainKey}_ENTCONGCNTCTS","helpCode":"ENTCONGCNTCTS"},{"featureCode":"ENTMTGTIME","href":"/ui/CV/congregation-profile.html#/{domainKey}/meeting-schedule/dashboard","helpCode":"ENTMTGTIME"},{"featureCode":"ENTMEMTIME","href":"/ui/CV/congregation-profile.html#/{domainKey}/memorial-schedule/dashboard","helpCode":"ENTMEMTIME"},{"featureCode":"ENTLITCOORD","href":"/CV_{domainKey}_ENTLITCOORD","helpCode":"ENTLITCOORD"},{"featureCode":"VWLTFEAITEMS","href":"/CV_{domainKey}_VWLTFEAITEMS","helpCode":"VWLTFEAITEMS"},{"featureCode":"REQLITITEM","href":"/CV_{domainKey}_REQLITITEM","helpCode":"REQLITITEM"},{"featureCode":"BRWSLITCAT","href":"/CV_{domainKey}_BRWSLITCAT","helpCode":"BRWSLITCAT"},{"featureCode":"SRCHLITCAT","href":"/CV_{domainKey}_SRCHLITCAT","helpCode":"SRCHLITCAT"},{"featureCode":"VWCRTLTREQ","href":"/CV_{domainKey}_VWCRTLTREQ","helpCode":"VWCRTLTREQ"},{"featureCode":"ENTINVRPT","href":"/CV_{domainKey}_ENTINVRPT","helpCode":"ENTINVRPT"},{"featureCode":"VWLTREQHST","href":"/ui/CV/congregation-literature.html#/{domainKey}/request-history-search","helpCode":"VWLTREQHST"},{"featureCode":"VWLTSHPHST","href":"/ui/CV/congregation-literature.html#/{domainKey}/shipment-history","helpCode":"VWLTSHPHST"},{"featureCode":"ENTSTNDREQ","href":"/CV_{domainKey}_ENTSTNDREQ","helpCode":"ENTSTNDREQ"},{"featureCode":"ENTSPCLREQ","href":"/CV_{domainKey}_ENTSPCLREQ","helpCode":"ENTSPCLREQ"},{"featureCode":"VWMGREQHST","href":"/CV_{domainKey}_VWMGREQHST","helpCode":"VWMGREQHST"},{"featureCode":"VWMGSHPHST","href":"/CV_{domainKey}_VWMGSHPHST","helpCode":"VWMGSHPHST"},{"featureCode":"XFNDTRANSCONG","href":"/CV_{domainKey}_XFNDTRANSCONG","helpCode":"XFNDTRANSCONG"},{"featureCode":"XFNDHISTCONG","href":"/CV_{domainKey}_XFNDHISTCONG","helpCode":"XFNDHISTCONG"}]},{"featureCode":"TRVLOVRSR","href":"/CV_{domainKey}_TRVLOVRSR","features":[{"featureCode":"COENTCONGVISIT","href":"/CV_{domainKey}_COENTCONGVISIT","helpCode":"COENTCONGVISIT"},{"featureCode":"ENTCOROUTING","href":"/ui/CV/circuit-overseer-reports.html#/{domainKey}/route-sheet","helpCode":"ENTCOROUTING"},{"featureCode":"TOENTFSTIME","href":"/CV_{domainKey}_TOENTFSTIME","helpCode":"TOENTFSTIME"},{"featureCode":"ENTFOLLOWUPREQTO","href":"/CV_{domainKey}_ENTFOLLOWUPREQTO","helpCode":"ENTFOLLOWUPREQTO"},{"featureCode":"TOREPORTHIST","href":"/CV_{domainKey}_TOREPORTHIST","helpCode":"TOREPORTHIST"},{"featureCode":"SEARCHSPKRRATING","href":"/CV_{domainKey}_SEARCHSPKRRATING","helpCode":"SEARCHSPKRRATING"},{"featureCode":"ADDSPKRRATING","href":"/CV_{domainKey}_ADDSPKRRATING","helpCode":"ADDSPKRRATING"},{"featureCode":"SBMSPKRRATING","href":"/CV_{domainKey}_SBMSPKRRATING","helpCode":"SBMSPKRRATING"},{"featureCode":"CORECMD","href":"/CV_{domainKey}_CORECMD","helpCode":"CORECMD"},{"featureCode":"COENTAPPTDEL","href":"/CV_{domainKey}_COENTAPPTDEL","helpCode":"COENTAPPTDEL"},{"featureCode":"COAPPTDELHIST","href":"/CV_{domainKey}_COAPPTDELHIST","helpCode":"COAPPTDELHIST"}]},{"featureCode":"MEMBER","href":"/CV_{domainKey}_MEMBER","features":[{"featureCode":"MBRENTFSTIME","href":"/CV_{domainKey}_MBRENTFSTIME","helpCode":"MBRENTFSTIME"},{"featureCode":"ENTFOLLOWUPREQMBR","href":"/CV_{domainKey}_ENTFOLLOWUPREQMBR","helpCode":"ENTFOLLOWUPREQMBR"},{"featureCode":"MBRREPORTHIST","href":"/CV_{domainKey}_MBRREPORTHIST","helpCode":"MBRREPORTHIST"}]},{"featureCode":"CONV","href":"/CV_{domainKey}_CONV","features":[{"featureCode":"GETINTLCONVGRPID","href":"/CV_{domainKey}_GETINTLCONVGRPID","helpCode":"GETINTLCONVGRPID"},{"featureCode":"VWINTLCONVAPPS","href":"/CV_{domainKey}_VWINTLCONVAPPS","helpCode":"VWINTLCONVAPPS"},{"featureCode":"MNGINTLCONVAPP","href":"/CV_{domainKey}_MNGINTLCONVAPP","helpCode":"MNGINTLCONVAPP"},{"featureCode":"XFERINTLCONVAPP","href":"/CV_{domainKey}_XFERINTLCONVAPP","helpCode":"XFERINTLCONVAPP"},{"featureCode":"SELINTLCONVACCT","href":"/CV_{domainKey}_SELINTLCONVACCT","helpCode":"SELINTLCONVACCT"},{"featureCode":"XFNDTRANSCONV","href":"/CV_{domainKey}_XFNDTRANSCONV","helpCode":"XFNDTRANSCONV"},{"featureCode":"XFNDHISTCONV","href":"/CV_{domainKey}_XFNDHISTCONV","helpCode":"XFNDHISTCONV"}]},{"featureCode":"CIRCUIT","href":"/CV_{domainKey}_CIRCUIT","features":[{"featureCode":"XFNDTRANSCIRC","href":"/CV_{domainKey}_XFNDTRANSCIRC","helpCode":"XFNDTRANSCIRC"},{"featureCode":"XFNDHISTCIRC","href":"/CV_{domainKey}_XFNDHISTCIRC","helpCode":"XFNDHISTCIRC"}]},{"featureCode":"ASSEMHALL","href":"/CV_{domainKey}_ASSEMHALL","features":[{"featureCode":"XFNDTRANSAH","href":"/CV_{domainKey}_XFNDTRANSAH","helpCode":"XFNDTRANSAH"},{"featureCode":"XFNDHISTAH","href":"/CV_{domainKey}_XFNDHISTAH","helpCode":"XFNDHISTAH"}]},{"featureCode":"LASSN","href":"/CV_{domainKey}_LASSN","features":[{"featureCode":"XFNDTRANSLA","href":"/CV_{domainKey}_XFNDTRANSLA","helpCode":"XFNDTRANSLA"},{"featureCode":"XFNDHISTLA","href":"/CV_{domainKey}_XFNDHISTLA","helpCode":"XFNDHISTLA"}]},{"featureCode":"DOCUMENTS","href":"/CV_{domainKey}_DOCUMENTS","helpCode":"DOCUMENTS","features":[{"featureCode":"VIEWFORM","href":"/CV_{domainKey}_VIEWFORM","helpCode":"DOCUMENTS"},{"featureCode":"VIEWLETTER","href":"/CV_{domainKey}_VIEWLETTER","helpCode":"DOCUMENTS"},{"featureCode":"VIEWEVENTMEDIA","href":"/CV_{domainKey}_VIEWEVENTMEDIA","helpCode":"DOCUMENTS"},{"featureCode":"VIEWPRCHSUPPARR","href":"/CV_{domainKey}_VIEWPRCHSUPPARR","helpCode":"DOCUMENTS"},{"featureCode":"VIEWBLDGDESIGN","href":"/CV_{domainKey}_VIEWBLDGDESIGN","helpCode":"DOCUMENTS"},{"featureCode":"VIEWMEDICALINFO","href":"/CV_{domainKey}_VIEWMEDICALINFO","helpCode":"DOCUMENTS"},{"featureCode":"VIEWSITEDOC","href":"/CV_{domainKey}_VIEWSITEDOC","helpCode":"DOCUMENTS"},{"featureCode":"VIEWTRANSLTINFO","href":"/CV_{domainKey}_VIEWTRANSLTINFO","helpCode":"DOCUMENTS"},{"featureCode":"VIEWHELP","href":"/CV_{domainKey}_VIEWHELP","helpCode":"DOCUMENTS"},{"featureCode":"VIEWSIGNLANG","href":"/CV_{domainKey}_VIEWSIGNLANG","helpCode":"DOCUMENTS"},{"featureCode":"APPFORMEDIT","href":"/CV_{domainKey}_APPFORMEDIT","helpCode":"APPFORMEDIT"},{"featureCode":"APPFORMHIST","href":"/CV_{domainKey}_APPFORMHIST","helpCode":"APPFORMHIST"}]},{"featureCode":"TRANSLATION","href":"/CV_{domainKey}_TRANSLATION","features":[{"featureCode":"SRCHTRNSL","href":"/CV_{domainKey}_SRCHTRNSL","helpCode":"SRCHTRNSL"},{"featureCode":"TRNSLPKG","href":"/CV_{domainKey}_TRNSLPKG","helpCode":"TRNSLPKG"},{"featureCode":"IMPORTTRNSL","href":"/CV_{domainKey}_IMPORTTRNSL","helpCode":"IMPORTTRNSL"},{"featureCode":"PENDTRNSL","href":"/CV_{domainKey}_PENDTRNSL","helpCode":"PENDTRNSL"},{"featureCode":"VIEWSCRNSHT","href":"/CV_{domainKey}_VIEWSCRNSHT","helpCode":"VIEWSCRNSHT"},{"featureCode":"SRCHSCRNSHT","href":"/CV_{domainKey}_SRCHSCRNSHT","helpCode":"SRCHSCRNSHT"},{"featureCode":"NEWTXTPKG","href":"/CV_{domainKey}_NEWTXTPKG","helpCode":"NEWTXTPKG"},{"featureCode":"EDITTXTPKG","href":"/CV_{domainKey}_EDITTXTPKG","helpCode":"EDITTXTPKG"},{"featureCode":"EDITPREFLANG","href":"/CV_{domainKey}_EDITPREFLANG","helpCode":"EDITPREFLANG"}]},{"featureCode":"INBOXLANDING","href":"/ui/CV/inbox.html#/{domainKey}/inbox/setup","helpCode":"INBOXLANDING","features":[{"featureCode":"INBOXLANDINGWELCOME","href":"/ui/CV/inbox.html#/{domainKey}/inbox","helpCode":"INBOXLANDING"}]},{"featureCode":"INBOX","href":"/CV_{domainKey}_INBOX","helpCode":"INBOX","features":[{"featureCode":"MSGUSRINBOX","href":"/CV_{domainKey}_MSGUSRINBOX","helpCode":"INBOX"},{"featureCode":"MSGUSRDRAFT","href":"/CV_{domainKey}_MSGUSRDRAFT","helpCode":"INBOX"},{"featureCode":"MSGUSRSENT","href":"/CV_{domainKey}_MSGUSRSENT","helpCode":"INBOX"},{"featureCode":"MSGUSRTRASH","href":"/CV_{domainKey}_MSGUSRTRASH","helpCode":"INBOX"},{"featureCode":"MSGORGINBOX","href":"/CV_{domainKey}_MSGORGINBOX","helpCode":"INBOX"},{"featureCode":"MSGORGDRAFT","href":"/CV_{domainKey}_MSGORGDRAFT","helpCode":"INBOX"},{"featureCode":"MSGORGSENT","href":"/CV_{domainKey}_MSGORGSENT","helpCode":"INBOX"},{"featureCode":"MSGORGTRASH","href":"/CV_{domainKey}_MSGORGTRASH","helpCode":"INBOX"}]},{"featureCode":"ADMIN","href":"/CV_{domainKey}_ADMIN","features":[{"featureCode":"PASSCHG1","href":"/CV_{domainKey}_PASSCHG1","helpCode":"PASSCHG1"},{"featureCode":"USERPROFILE","href":"/CV_{domainKey}_USERPROFILE","helpCode":"USERPROFILE"},{"featureCode":"MYDONATIONS","href":"/CV_{domainKey}_MYDONATIONS","helpCode":"MYDONATIONS"},{"featureCode":"USERVERIFY","href":"/CV_{domainKey}_USERVERIFY","helpCode":"USERVERIFY"},{"featureCode":"USERADD1","href":"/CV_{domainKey}_USERADD1","helpCode":"USERADD1"},{"featureCode":"USERCHG1","href":"/CV_{domainKey}_USERCHG1","helpCode":"USERCHG1"},{"featureCode":"USERREVIEW","href":"/CV_{domainKey}_USERREVIEW","helpCode":"USERREVIEW"},{"featureCode":"USERIDENTIFY","href":"/CV_{domainKey}_USERIDENTIFY","helpCode":"USERIDENTIFY"},{"featureCode":"USERIDENTIFYEX","href":"/CV_{domainKey}_USERIDENTIFYEX","helpCode":"USERIDENTIFYEX"},{"featureCode":"USERIMP1","href":"/CV_{domainKey}_USERIMP1","helpCode":"USERIMP1"},{"featureCode":"USERIMPHIST","href":"/CV_{domainKey}_USERIMPHIST","helpCode":"USERIMPHIST"},{"featureCode":"NEWWIKIDOC","href":"/CV_{domainKey}_NEWWIKIDOC","helpCode":"NEWWIKIDOC"},{"featureCode":"EDITWIKIDOC","href":"/CV_{domainKey}_EDITWIKIDOC","helpCode":"EDITWIKIDOC"},{"featureCode":"REVIEWWIKIDOC","href":"/CV_{domainKey}_REVIEWWIKIDOC","helpCode":"REVIEWWIKIDOC"},{"featureCode":"MAINTWIKICAT","href":"/CV_{domainKey}_MAINTWIKICAT","helpCode":"MAINTWIKICAT"},{"featureCode":"MAINTFILE","href":"/uploads/CV_{domainKey}_MAINTFILE","helpCode":"MAINTFILE"},{"featureCode":"VIEWFILE","href":"/CV_{domainKey}_VIEWFILE","helpCode":"VIEWFILE"},{"featureCode":"EDITPREFPRNT","href":"/CV_{domainKey}_EDITPREFPRNT","helpCode":"EDITPREFPRNT"},{"featureCode":"EDITPREFSRVC","href":"/CV_{domainKey}_EDITPREFSRVC","helpCode":"EDITPREFSRVC"},{"featureCode":"PREFXFERFNDS","href":"/CV_{domainKey}_PREFXFERFNDS","helpCode":"PREFXFERFNDS"},{"featureCode":"EDITPREFORG","href":"/CV_{domainKey}_EDITPREFORG","helpCode":"EDITPREFORG"},{"featureCode":"EDITPREFSITE","href":"/CV_{domainKey}_EDITPREFSITE","helpCode":"EDITPREFSITE"},{"featureCode":"EDITPREFTRANSLANG","href":"/CV_{domainKey}_EDITPREFTRANSLANG","helpCode":"EDITPREFTRANSLANG"},{"featureCode":"EDITPREFCNTCT","href":"/CV_{domainKey}_EDITPREFCNTCT","helpCode":"EDITPREFCNTCT"},{"featureCode":"MANAGEDONATIONS","href":"/CV_{domainKey}_MANAGEDONATIONS","helpCode":"MANAGEDONATIONS"},{"featureCode":"SITERPTLIST","href":"/CV_{domainKey}_SITERPTLIST","helpCode":"SITERPTLIST"},{"featureCode":"WIKIDOCPREF","href":"/ui/CV/administration.html#/{domainKey}/administration/document-publishing-settings/branches/1/doc-types/1/audiences/1"},{"featureCode":"EDITPREFLGL","href":"/ui/CV/legal-statements-settings.html#/{domainKey}/dashboard"}]}]</script>
+<script id="language" type="application/json">{"languageCode":"CV","languageLocalName":"Cebuano","jwoLocaleCode":"ceb","scriptDirection":"ltr","languageISO2Code":"","publicSiteActiveFlag":true}</script>
+<script id="globalizeAssets" type="application/json">{"am":"https://assets1.jw.org/ui/javascripts/globalize-am-3d4482d430.js","bg":"https://assets1.jw.org/ui/javascripts/globalize-bg-eb80249a2c.js","cs":"https://assets1.jw.org/ui/javascripts/globalize-cs-890538e041.js","da":"https://assets1.jw.org/ui/javascripts/globalize-da-8c22e808c5.js","da-gl":"https://assets1.jw.org/ui/javascripts/globalize-da-gl-26ba6392d1.js","de":"https://assets1.jw.org/ui/javascripts/globalize-de-03d18fd80b.js","de-at":"https://assets1.jw.org/ui/javascripts/globalize-de-at-0c83ee1953.js","de-ch":"https://assets1.jw.org/ui/javascripts/globalize-de-ch-1e8a0eeb53.js","de-li":"https://assets1.jw.org/ui/javascripts/globalize-de-li-114a7f102a.js","de-lu":"https://assets1.jw.org/ui/javascripts/globalize-de-lu-b35fc2f286.js","el":"https://assets1.jw.org/ui/javascripts/globalize-el-4f1a868caf.js","el-cy":"https://assets1.jw.org/ui/javascripts/globalize-el-cy-40cfb66f14.js","en":"https://assets1.jw.org/ui/javascripts/globalize-en-3730046f59.js","en-ag":"https://assets1.jw.org/ui/javascripts/globalize-en-ag-d91e239688.js","en-ai":"https://assets1.jw.org/ui/javascripts/globalize-en-ai-1cab05939e.js","en-as":"https://assets1.jw.org/ui/javascripts/globalize-en-as-caa5e9b4ce.js","en-at":"https://assets1.jw.org/ui/javascripts/globalize-en-at-5d3d410836.js","en-au":"https://assets1.jw.org/ui/javascripts/globalize-en-au-d8c8379e49.js","en-bb":"https://assets1.jw.org/ui/javascripts/globalize-en-bb-546729c1d6.js","en-be":"https://assets1.jw.org/ui/javascripts/globalize-en-be-56c5c38e22.js","en-bi":"https://assets1.jw.org/ui/javascripts/globalize-en-bi-b32785d4e1.js","en-bm":"https://assets1.jw.org/ui/javascripts/globalize-en-bm-b618621293.js","en-bs":"https://assets1.jw.org/ui/javascripts/globalize-en-bs-fd4777ef6e.js","en-bw":"https://assets1.jw.org/ui/javascripts/globalize-en-bw-8d475b9e69.js","en-bz":"https://assets1.jw.org/ui/javascripts/globalize-en-bz-798ea4a1ad.js","en-ca":"https://assets1.jw.org/ui/javascripts/globalize-en-ca-bb4ec98602.js","en-cc":"https://assets1.jw.org/ui/javascripts/globalize-en-cc-a644d66804.js","en-ch":"https://assets1.jw.org/ui/javascripts/globalize-en-ch-857e2380fd.js","en-ck":"https://assets1.jw.org/ui/javascripts/globalize-en-ck-df7290ae85.js","en-cm":"https://assets1.jw.org/ui/javascripts/globalize-en-cm-46083f3150.js","en-cx":"https://assets1.jw.org/ui/javascripts/globalize-en-cx-00a2d91c98.js","en-cy":"https://assets1.jw.org/ui/javascripts/globalize-en-cy-99e1769ac9.js","en-de":"https://assets1.jw.org/ui/javascripts/globalize-en-de-c2b2335a4b.js","en-dk":"https://assets1.jw.org/ui/javascripts/globalize-en-dk-498d4478bb.js","en-dm":"https://assets1.jw.org/ui/javascripts/globalize-en-dm-77e4944fb1.js","en-er":"https://assets1.jw.org/ui/javascripts/globalize-en-er-9288eb53e5.js","en-fi":"https://assets1.jw.org/ui/javascripts/globalize-en-fi-c0049a9d03.js","en-fj":"https://assets1.jw.org/ui/javascripts/globalize-en-fj-82bc31535f.js","en-fk":"https://assets1.jw.org/ui/javascripts/globalize-en-fk-dabcae6cc9.js","en-fm":"https://assets1.jw.org/ui/javascripts/globalize-en-fm-89bbefbd3e.js","en-gb":"https://assets1.jw.org/ui/javascripts/globalize-en-gb-d40bf48d12.js","en-gd":"https://assets1.jw.org/ui/javascripts/globalize-en-gd-519147e980.js","en-gg":"https://assets1.jw.org/ui/javascripts/globalize-en-gg-97f2066bf6.js","en-gh":"https://assets1.jw.org/ui/javascripts/globalize-en-gh-71bb3e7c66.js","en-gi":"https://assets1.jw.org/ui/javascripts/globalize-en-gi-2eed4decf2.js","en-gm":"https://assets1.jw.org/ui/javascripts/globalize-en-gm-82affc04c9.js","en-gu":"https://assets1.jw.org/ui/javascripts/globalize-en-gu-c95e5707a7.js","en-gy":"https://assets1.jw.org/ui/javascripts/globalize-en-gy-c06c9703e3.js","en-hk":"https://assets1.jw.org/ui/javascripts/globalize-en-hk-e4f3b6a16a.js","en-ie":"https://assets1.jw.org/ui/javascripts/globalize-en-ie-78a2a06ba5.js","en-il":"https://assets1.jw.org/ui/javascripts/globalize-en-il-0f3e0e4c64.js","en-im":"https://assets1.jw.org/ui/javascripts/globalize-en-im-f880eae88f.js","en-in":"https://assets1.jw.org/ui/javascripts/globalize-en-in-50b09b2458.js","en-je":"https://assets1.jw.org/ui/javascripts/globalize-en-je-bca5f7639a.js","en-jm":"https://assets1.jw.org/ui/javascripts/globalize-en-jm-c23e05cede.js","en-ke":"https://assets1.jw.org/ui/javascripts/globalize-en-ke-1381da134b.js","en-ki":"https://assets1.jw.org/ui/javascripts/globalize-en-ki-dcca9f0bb4.js","en-kn":"https://assets1.jw.org/ui/javascripts/globalize-en-kn-11fb200f6e.js","en-ky":"https://assets1.jw.org/ui/javascripts/globalize-en-ky-7990025960.js","en-lc":"https://assets1.jw.org/ui/javascripts/globalize-en-lc-d9e6d29619.js","en-lr":"https://assets1.jw.org/ui/javascripts/globalize-en-lr-d99024bbe4.js","en-ls":"https://assets1.jw.org/ui/javascripts/globalize-en-ls-dc774b30bf.js","en-mg":"https://assets1.jw.org/ui/javascripts/globalize-en-mg-5f628e6eec.js","en-mh":"https://assets1.jw.org/ui/javascripts/globalize-en-mh-85b9a26a7d.js","en-mo":"https://assets1.jw.org/ui/javascripts/globalize-en-mo-2edd611a06.js","en-mp":"https://assets1.jw.org/ui/javascripts/globalize-en-mp-346a4a0415.js","en-ms":"https://assets1.jw.org/ui/javascripts/globalize-en-ms-89f14dadcf.js","en-mt":"https://assets1.jw.org/ui/javascripts/globalize-en-mt-64695d1870.js","en-mu":"https://assets1.jw.org/ui/javascripts/globalize-en-mu-76555f666c.js","en-mw":"https://assets1.jw.org/ui/javascripts/globalize-en-mw-856ec15dd4.js","en-my":"https://assets1.jw.org/ui/javascripts/globalize-en-my-e499386ec7.js","en-na":"https://assets1.jw.org/ui/javascripts/globalize-en-na-35da790a6f.js","en-nf":"https://assets1.jw.org/ui/javascripts/globalize-en-nf-2db74e5751.js","en-ng":"https://assets1.jw.org/ui/javascripts/globalize-en-ng-bcc080ad36.js","en-nl":"https://assets1.jw.org/ui/javascripts/globalize-en-nl-0d0a115645.js","en-nr":"https://assets1.jw.org/ui/javascripts/globalize-en-nr-aeaa84204d.js","en-nu":"https://assets1.jw.org/ui/javascripts/globalize-en-nu-fb12ca12aa.js","en-nz":"https://assets1.jw.org/ui/javascripts/globalize-en-nz-7acfcf5cfa.js","en-pg":"https://assets1.jw.org/ui/javascripts/globalize-en-pg-a49a5377e4.js","en-ph":"https://assets1.jw.org/ui/javascripts/globalize-en-ph-1c94908843.js","en-pk":"https://assets1.jw.org/ui/javascripts/globalize-en-pk-16c455279e.js","en-pn":"https://assets1.jw.org/ui/javascripts/globalize-en-pn-f8f0e88096.js","en-pr":"https://assets1.jw.org/ui/javascripts/globalize-en-pr-ef198e641f.js","en-pw":"https://assets1.jw.org/ui/javascripts/globalize-en-pw-c8a226039a.js","en-rw":"https://assets1.jw.org/ui/javascripts/globalize-en-rw-10036560c1.js","en-sb":"https://assets1.jw.org/ui/javascripts/globalize-en-sb-33bf88339b.js","en-sc":"https://assets1.jw.org/ui/javascripts/globalize-en-sc-224ea5716a.js","en-sd":"https://assets1.jw.org/ui/javascripts/globalize-en-sd-fbea7cb867.js","en-se":"https://assets1.jw.org/ui/javascripts/globalize-en-se-8b6a2e88ec.js","en-sg":"https://assets1.jw.org/ui/javascripts/globalize-en-sg-7315843f38.js","en-sh":"https://assets1.jw.org/ui/javascripts/globalize-en-sh-df005ead72.js","en-si":"https://assets1.jw.org/ui/javascripts/globalize-en-si-9dcea3bc50.js","en-sl":"https://assets1.jw.org/ui/javascripts/globalize-en-sl-ea57e81f43.js","en-ss":"https://assets1.jw.org/ui/javascripts/globalize-en-ss-1e3462141b.js","en-sx":"https://assets1.jw.org/ui/javascripts/globalize-en-sx-8fdbeda99d.js","en-sz":"https://assets1.jw.org/ui/javascripts/globalize-en-sz-86a467878b.js","en-tc":"https://assets1.jw.org/ui/javascripts/globalize-en-tc-b27a820224.js","en-tk":"https://assets1.jw.org/ui/javascripts/globalize-en-tk-3bab01e492.js","en-to":"https://assets1.jw.org/ui/javascripts/globalize-en-to-f830d3a3dd.js","en-tt":"https://assets1.jw.org/ui/javascripts/globalize-en-tt-510a4ecb19.js","en-tv":"https://assets1.jw.org/ui/javascripts/globalize-en-tv-ecb34ee23c.js","en-tz":"https://assets1.jw.org/ui/javascripts/globalize-en-tz-dcab262ec9.js","en-ug":"https://assets1.jw.org/ui/javascripts/globalize-en-ug-61161ebb8a.js","en-um":"https://assets1.jw.org/ui/javascripts/globalize-en-um-0b0fdf8649.js","en-vc":"https://assets1.jw.org/ui/javascripts/globalize-en-vc-4fc72d1a9b.js","en-vg":"https://assets1.jw.org/ui/javascripts/globalize-en-vg-e5297dd249.js","en-vi":"https://assets1.jw.org/ui/javascripts/globalize-en-vi-07d4056611.js","en-vu":"https://assets1.jw.org/ui/javascripts/globalize-en-vu-00e08f1d16.js","en-ws":"https://assets1.jw.org/ui/javascripts/globalize-en-ws-217274d647.js","en-za":"https://assets1.jw.org/ui/javascripts/globalize-en-za-e8335c2461.js","en-zm":"https://assets1.jw.org/ui/javascripts/globalize-en-zm-a70fc3da36.js","en-zw":"https://assets1.jw.org/ui/javascripts/globalize-en-zw-f0981b652e.js","es":"https://assets1.jw.org/ui/javascripts/globalize-es-1d244f8e7e.js","es-ar":"https://assets1.jw.org/ui/javascripts/globalize-es-ar-bae640d6d9.js","es-bo":"https://assets1.jw.org/ui/javascripts/globalize-es-bo-1eb48d9159.js","es-co":"https://assets1.jw.org/ui/javascripts/globalize-es-co-41c00914d1.js","es-cr":"https://assets1.jw.org/ui/javascripts/globalize-es-cr-ed9e639ab1.js","es-do":"https://assets1.jw.org/ui/javascripts/globalize-es-do-f7f782e38d.js","es-ec":"https://assets1.jw.org/ui/javascripts/globalize-es-ec-b716a5015e.js","es-gq":"https://assets1.jw.org/ui/javascripts/globalize-es-gq-d6235250fd.js","es-gt":"https://assets1.jw.org/ui/javascripts/globalize-es-gt-56e1e12547.js","es-hn":"https://assets1.jw.org/ui/javascripts/globalize-es-hn-64355737ba.js","es-mx":"https://assets1.jw.org/ui/javascripts/globalize-es-mx-8aa67d3f84.js","es-ni":"https://assets1.jw.org/ui/javascripts/globalize-es-ni-4c92436ac0.js","es-pa":"https://assets1.jw.org/ui/javascripts/globalize-es-pa-2a49d4e041.js","es-pe":"https://assets1.jw.org/ui/javascripts/globalize-es-pe-d0581bef20.js","es-pr":"https://assets1.jw.org/ui/javascripts/globalize-es-pr-9f4be7a17c.js","es-py":"https://assets1.jw.org/ui/javascripts/globalize-es-py-8ae7710647.js","es-us":"https://assets1.jw.org/ui/javascripts/globalize-es-us-6409048372.js","es-uy":"https://assets1.jw.org/ui/javascripts/globalize-es-uy-3aaccf126e.js","es-ve":"https://assets1.jw.org/ui/javascripts/globalize-es-ve-70a2276174.js","et":"https://assets1.jw.org/ui/javascripts/globalize-et-28db45c400.js","fi":"https://assets1.jw.org/ui/javascripts/globalize-fi-ee6352f8e2.js","fr":"https://assets1.jw.org/ui/javascripts/globalize-fr-f4693572fa.js","fr-be":"https://assets1.jw.org/ui/javascripts/globalize-fr-be-6e51f4788d.js","fr-bf":"https://assets1.jw.org/ui/javascripts/globalize-fr-bf-cda24f8ab0.js","fr-bi":"https://assets1.jw.org/ui/javascripts/globalize-fr-bi-a3b3a22691.js","fr-bj":"https://assets1.jw.org/ui/javascripts/globalize-fr-bj-46345adcf5.js","fr-bl":"https://assets1.jw.org/ui/javascripts/globalize-fr-bl-192a9684d9.js","fr-ca":"https://assets1.jw.org/ui/javascripts/globalize-fr-ca-900a433c0a.js","fr-cd":"https://assets1.jw.org/ui/javascripts/globalize-fr-cd-d042ccb60d.js","fr-cf":"https://assets1.jw.org/ui/javascripts/globalize-fr-cf-819ca8ed03.js","fr-cg":"https://assets1.jw.org/ui/javascripts/globalize-fr-cg-39803d9212.js","fr-ch":"https://assets1.jw.org/ui/javascripts/globalize-fr-ch-cb71359516.js","fr-ci":"https://assets1.jw.org/ui/javascripts/globalize-fr-ci-f63ae64455.js","fr-cm":"https://assets1.jw.org/ui/javascripts/globalize-fr-cm-ea2e62441a.js","fr-dz":"https://assets1.jw.org/ui/javascripts/globalize-fr-dz-da7047f84b.js","fr-ga":"https://assets1.jw.org/ui/javascripts/globalize-fr-ga-cebf487062.js","fr-gf":"https://assets1.jw.org/ui/javascripts/globalize-fr-gf-d2dc66e24b.js","fr-gn":"https://assets1.jw.org/ui/javascripts/globalize-fr-gn-479120234a.js","fr-gp":"https://assets1.jw.org/ui/javascripts/globalize-fr-gp-a28936bca8.js","fr-gq":"https://assets1.jw.org/ui/javascripts/globalize-fr-gq-3fe99638ab.js","fr-ht":"https://assets1.jw.org/ui/javascripts/globalize-fr-ht-b1a6184788.js","fr-km":"https://assets1.jw.org/ui/javascripts/globalize-fr-km-c1a692289d.js","fr-lu":"https://assets1.jw.org/ui/javascripts/globalize-fr-lu-6f8b482664.js","fr-mc":"https://assets1.jw.org/ui/javascripts/globalize-fr-mc-553be5bcbe.js","fr-mf":"https://assets1.jw.org/ui/javascripts/globalize-fr-mf-3a258a6496.js","fr-ml":"https://assets1.jw.org/ui/javascripts/globalize-fr-ml-2241bdd376.js","fr-mq":"https://assets1.jw.org/ui/javascripts/globalize-fr-mq-74bf4d5343.js","fr-mr":"https://assets1.jw.org/ui/javascripts/globalize-fr-mr-9f0c735b49.js","fr-mu":"https://assets1.jw.org/ui/javascripts/globalize-fr-mu-2a4750b064.js","fr-nc":"https://assets1.jw.org/ui/javascripts/globalize-fr-nc-f6786eff28.js","fr-ne":"https://assets1.jw.org/ui/javascripts/globalize-fr-ne-e60e0cbaea.js","fr-pf":"https://assets1.jw.org/ui/javascripts/globalize-fr-pf-b5dca71db1.js","fr-pm":"https://assets1.jw.org/ui/javascripts/globalize-fr-pm-f6ead33791.js","fr-re":"https://assets1.jw.org/ui/javascripts/globalize-fr-re-06595625e5.js","fr-rw":"https://assets1.jw.org/ui/javascripts/globalize-fr-rw-b9bb6e4d45.js","fr-sc":"https://assets1.jw.org/ui/javascripts/globalize-fr-sc-41751682f9.js","fr-sn":"https://assets1.jw.org/ui/javascripts/globalize-fr-sn-c38a571d29.js","fr-td":"https://assets1.jw.org/ui/javascripts/globalize-fr-td-19c2da965a.js","fr-tg":"https://assets1.jw.org/ui/javascripts/globalize-fr-tg-82d4f0d7a1.js","fr-tn":"https://assets1.jw.org/ui/javascripts/globalize-fr-tn-24414edc08.js","fr-vu":"https://assets1.jw.org/ui/javascripts/globalize-fr-vu-e601206347.js","fr-wf":"https://assets1.jw.org/ui/javascripts/globalize-fr-wf-26e2f0cafd.js","fr-yt":"https://assets1.jw.org/ui/javascripts/globalize-fr-yt-bda8db7595.js","hr":"https://assets1.jw.org/ui/javascripts/globalize-hr-54ff85eca3.js","hr-ba":"https://assets1.jw.org/ui/javascripts/globalize-hr-ba-df8cb23d15.js","hu":"https://assets1.jw.org/ui/javascripts/globalize-hu-c06cf314c7.js","hy":"https://assets1.jw.org/ui/javascripts/globalize-hy-84546fb57e.js","id":"https://assets1.jw.org/ui/javascripts/globalize-id-0beccc11fb.js","it":"https://assets1.jw.org/ui/javascripts/globalize-it-cb652e1b2c.js","it-ch":"https://assets1.jw.org/ui/javascripts/globalize-it-ch-5e0a4d7050.js","it-sm":"https://assets1.jw.org/ui/javascripts/globalize-it-sm-b2d627026f.js","ja":"https://assets1.jw.org/ui/javascripts/globalize-ja-cce51aaf70.js","ka":"https://assets1.jw.org/ui/javascripts/globalize-ka-97b54edd16.js","ko":"https://assets1.jw.org/ui/javascripts/globalize-ko-6c6f6dfd3f.js","ko-kp":"https://assets1.jw.org/ui/javascripts/globalize-ko-kp-5967f79fe4.js","lt":"https://assets1.jw.org/ui/javascripts/globalize-lt-5d2742b590.js","lv":"https://assets1.jw.org/ui/javascripts/globalize-lv-e5ae35e85d.js","ml":"https://assets1.jw.org/ui/javascripts/globalize-ml-1d7587f3f2.js","ne":"https://assets1.jw.org/ui/javascripts/globalize-ne-859d57e3a5.js","nl":"https://assets1.jw.org/ui/javascripts/globalize-nl-0b98a04f44.js","nl-aw":"https://assets1.jw.org/ui/javascripts/globalize-nl-aw-72b4b69633.js","nl-be":"https://assets1.jw.org/ui/javascripts/globalize-nl-be-a6158c9963.js","nl-bq":"https://assets1.jw.org/ui/javascripts/globalize-nl-bq-e95e1ed824.js","nl-sr":"https://assets1.jw.org/ui/javascripts/globalize-nl-sr-b9f9d1730e.js","pl":"https://assets1.jw.org/ui/javascripts/globalize-pl-c6e8aa9271.js","pt":"https://assets1.jw.org/ui/javascripts/globalize-pt-e94a36868d.js","pt-ao":"https://assets1.jw.org/ui/javascripts/globalize-pt-ao-4dae1f1f99.js","pt-cv":"https://assets1.jw.org/ui/javascripts/globalize-pt-cv-c88d93b20d.js","pt-gw":"https://assets1.jw.org/ui/javascripts/globalize-pt-gw-1a93569c45.js","pt-mz":"https://assets1.jw.org/ui/javascripts/globalize-pt-mz-1185203c12.js","pt-pt":"https://assets1.jw.org/ui/javascripts/globalize-pt-pt-4d73d35b27.js","pt-st":"https://assets1.jw.org/ui/javascripts/globalize-pt-st-83cc691205.js","ro":"https://assets1.jw.org/ui/javascripts/globalize-ro-50233c6601.js","ro-md":"https://assets1.jw.org/ui/javascripts/globalize-ro-md-be4a054543.js","ru":"https://assets1.jw.org/ui/javascripts/globalize-ru-b326f5f7d0.js","ru-by":"https://assets1.jw.org/ui/javascripts/globalize-ru-by-841603d318.js","ru-kg":"https://assets1.jw.org/ui/javascripts/globalize-ru-kg-4beefbc439.js","ru-kz":"https://assets1.jw.org/ui/javascripts/globalize-ru-kz-c2b2274210.js","ru-md":"https://assets1.jw.org/ui/javascripts/globalize-ru-md-ca7e0187a4.js","ru-ua":"https://assets1.jw.org/ui/javascripts/globalize-ru-ua-88f8f186fc.js","sk":"https://assets1.jw.org/ui/javascripts/globalize-sk-46559aff3a.js","sl":"https://assets1.jw.org/ui/javascripts/globalize-sl-e1541d3bb5.js","sq":"https://assets1.jw.org/ui/javascripts/globalize-sq-55743cc8b6.js","sr":"https://assets1.jw.org/ui/javascripts/globalize-sr-caef059a78.js","sr-cyrl":"https://assets1.jw.org/ui/javascripts/globalize-sr-cyrl-fb16ce4d91.js","sr-cyrl-me":"https://assets1.jw.org/ui/javascripts/globalize-sr-cyrl-me-6cd1681993.js","sv":"https://assets1.jw.org/ui/javascripts/globalize-sv-53840c784d.js","sv-ax":"https://assets1.jw.org/ui/javascripts/globalize-sv-ax-40c32a1aea.js","sv-fi":"https://assets1.jw.org/ui/javascripts/globalize-sv-fi-c977f8ad9a.js","sw":"https://assets1.jw.org/ui/javascripts/globalize-sw-b7247e671d.js","sw-ke":"https://assets1.jw.org/ui/javascripts/globalize-sw-ke-468a796c95.js","te":"https://assets1.jw.org/ui/javascripts/globalize-te-01777a6799.js","th":"https://assets1.jw.org/ui/javascripts/globalize-th-1651be363f.js","tr":"https://assets1.jw.org/ui/javascripts/globalize-tr-5d988d4b36.js","uk":"https://assets1.jw.org/ui/javascripts/globalize-uk-3542d72b32.js","zh":"https://assets1.jw.org/ui/javascripts/globalize-zh-09fc992c95.js","zh-hans":"https://assets1.jw.org/ui/javascripts/globalize-zh-hans-0b53a5c747.js","zh-hans-hk":"https://assets1.jw.org/ui/javascripts/globalize-zh-hans-hk-c49c914faf.js","zh-hans-mo":"https://assets1.jw.org/ui/javascripts/globalize-zh-hans-mo-171adf5aa9.js","zh-hant":"https://assets1.jw.org/ui/javascripts/globalize-zh-hant-52bf1f25b2.js","zh-hant-hk":"https://assets1.jw.org/ui/javascripts/globalize-zh-hant-hk-52aa5ac25f.js","zh-hant-mo":"https://assets1.jw.org/ui/javascripts/globalize-zh-hant-mo-10162b1d25.js"}</script>
+<script id="resourceMap" type="application/json">{"css":"stylesheets","js":"javascripts","png":"images","svg":"images","gif":"images","jpg":"images","jpeg":"images","ico":"images"}</script>
+<script src="https://assets1.jw.org/ui/javascripts/shared-b6c7399f62.js"></script>
+<script src="https://assets1.jw.org/ui/javascripts/vendors-8d4bd86dea.js"></script>
+
+<script src="https://assets1.jw.org/ui/javascripts/public-donations-29fc994c16.js"></script>
+
+<script>
+    setTimeout(function(){
+        function setClassAndDisplay(id, className, display){
+            var el = document.getElementById(id);
+            if(!el) return;
+            el.className = className;
+            el.style.display = display;
+        }
+        setClassAndDisplay('loadingIndicator', 'hide', 'none');
+        setClassAndDisplay('systemFailureMessage', '', 'block');
+    }, 45000);
+</script>
+</body>
+</html>
