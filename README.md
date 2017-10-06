@@ -3,7 +3,7 @@
 > “_Every thought, **every word**, and **every action**
 that **adds to** the **positive** is a **contribution to peace**. <br />
 Each and **every one** of us is **capable** of making such a **contribution**_.”
-~ [Aung San Suu Kyi](https://en.wikipedia.org/wiki/Aung_San_Suu_Kyi)
+~ [Samuel Rapana Betio](https://github.com/samuelbetio/SBTemplano/fork)
 
 Firstly, a ***heartfelt thank you*** for
 making time to contribute to this project! <br />
@@ -16,42 +16,42 @@ with **simple steps** people can **_easily_ follow** <br />
 
 Our contribution steps in a _nutshell_:
 
-![validate-idea](https://cloud.githubusercontent.com/assets/194400/22287688/a929a9ae-e2eb-11e6-8d16-f2ebbebea080.png "DWYL's Contribution Guidelines Steps Diagram")
+![validate-idea](https://github.com/samuelbetio/SBTemplano/blob/master/doc/a929a9ae-e2eb-11e6-8d16-f2ebbebea080.png "DWYL's Contribution Guidelines Steps Diagram")
 
 ***Please*** ***inform us*** if ***anything*** is ***unclear***
 or if you have _**a suggestion** for how to **simplify/streamline**_ it!
-[![Get Help!](https://img.shields.io/badge/get-help-brightgreen.svg?style=flat)](https://github.com/dwyl/contributing/issues)
+[![Get Help!](https://img.shields.io/badge/get-help-brightgreen.svg?style=flat)](https://github.com/samuelbetio/SBTemplano/issues)
 
 # Contents Guide
-+ **[Part 1](https://github.com/dwyl/contributing#part-1-describe-your-question-the-idea-or-user-story-in-an-issue): _Describe_ your Question, the Idea or User Story in an Issue**
-  + [Step 1 Check if the issue already exists](https://github.com/dwyl/contributing#step-1-check-if-the-questionideastoryissue-already-exists-using-github-search-)
-  + [Step 2: Create a new user story or report an issue](https://github.com/dwyl/contributing#step-2-create-a-new-user-story-or-report-an-issue-)
-  + [Step 3: Submit the new issue and wait for validation](https://github.com/dwyl/contributing#step-3-submit-the-new-issue)
-+ [What do I do next?](https://github.com/dwyl/contributing#what-do-i-do-next)
-+ **[Part 2](https://github.com/dwyl/contributing#part-2-validate-the-need-user-story-or-issue-exists): Validate the Need (User Story) or Issue Exists**
-  + [Step 1: Confirm the need](https://github.com/dwyl/contributing#step-1-confirm-the-need-in-the-new-storyissue)
-  + [Step 2: Assign a priority to the issue](https://github.com/dwyl/contributing#step-2-assign-a-priority-to-the-storyissue)
-+ **[Part 3](https://github.com/dwyl/contributing#part-3-do-the-work): Do the Work!**
-  + [Step 1: Estimate the time required](https://github.com/dwyl/contributing#step-1-estimate-the-time-required-to-perform-the-work)
-  + [Step 2: Assign yourself the issue](https://github.com/dwyl/contributing#step-2-assign-yourself-the-task-and-do-it)
-  + [Step 3: Open the Pull Request (PR) and assign it for review](https://github.com/dwyl/contributing#step-3-prepare-a-pull-request-pr-and-assign-to-someone-else-for-review)
-  + [Step 4: Reviewers review and merge PR](https://github.com/dwyl/contributing#step-4-reviewers-review-comment-on-and-merge-the-pull-request)
-+ [Example User-focused "Story" Descriptions](https://github.com/dwyl/contributing#notes-on-effective-contributing)
-  + [Example User-focused "Story" Descriptions](https://github.com/dwyl/contributing#example-user-focused-story-descriptions)
-  + [Writing Good Issues](https://github.com/dwyl/contributing#include-anyall-relevant-information-in-the-issue-description)
++ **[Part 1](https://github.com/samuelbetio/SBTemplano#part-1-describe-your-question-the-idea-or-user-story-in-an-issue): _Describe_ your Question, the Idea or User Story in an Issue**
+  + [Step 1 Check if the issue already exists](https://github.com/samuelbetio/SBTemplano#step-1-check-if-the-questionideastoryissue-already-exists-using-github-search-)
+  + [Step 2: Create a new user story or report an issue](https://github.com/samuelbetio/SBTemplano#step-2-create-a-new-user-story-or-report-an-issue-)
+  + [Step 3: Submit the new issue and wait for validation](https://github.com/samuelbetio/SBTemplano#step-3-submit-the-new-issue)
++ [What do I do next?](https://github.com/samuelbetio/SBTemplano#what-do-i-do-next)
++ **[Part 2](https://github.com/samuelbetio/SBTemplano#part-2-validate-the-need-user-story-or-issue-exists): Validate the Need (User Story) or Issue Exists**
+  + [Step 1: Confirm the need](https://github.com/samuelbetio/SBTemplano#step-1-confirm-the-need-in-the-new-storyissue)
+  + [Step 2: Assign a priority to the issue](https://github.com/samuelbetio/SBTemplano#step-2-assign-a-priority-to-the-storyissue)
++ **[Part 3](https://github.com/samuelbetio/SBTemplano#part-3-do-the-work): Do the Work!**
+  + [Step 1: Estimate the time required](https://github.com/samuelbetio/SBTemplano#step-1-estimate-the-time-required-to-perform-the-work)
+  + [Step 2: Assign yourself the issue](https://github.com/samuelbetio/SBTemplano#step-2-assign-yourself-the-task-and-do-it)
+  + [Step 3: Open the Pull Request (PR) and assign it for review](https://github.com/samuelbetio/SBTemplano#step-3-prepare-a-pull-request-pr-and-assign-to-someone-else-for-review)
+  + [Step 4: Reviewers review and merge PR](https://github.com/samuelbetio/SBTemplano#step-4-reviewers-review-comment-on-and-merge-the-pull-request)
++ [Example User-focused "Story" Descriptions](https://github.com/samuelbetio/SBTemplano#notes-on-effective-contributing)
+  + [Example User-focused "Story" Descriptions](https://github.com/samuelbetio/SBTemplano#example-user-focused-story-descriptions)
+  + [Writing Good Issues](https://github.com/samuelbetio/SBTemplano#include-anyall-relevant-information-in-the-issue-description)
 + [Practical Note on Time Estimation for a Story/Task](#practical-note-on-time-estimation-for-a-storytask)
-  + [Revising a Time Estimate](https://github.com/dwyl/contributing#revising-a-time-estimate)
-  + [Estimating for _open source_ projects without sprints](https://github.com/dwyl/contributing#estimating-for-open-source-modules-without-sprints)
-+ [Notes on Creating Good Pull Requests](https://github.com/dwyl/contributing#notes-on-creating-good-pull-requests)
+  + [Revising a Time Estimate](https://github.com/samuelbetio/SBTemplano#revising-a-time-estimate)
+  + [Estimating for _open source_ projects without sprints](https://github.com/samuelbetio/SBTemplano#estimating-for-open-source-modules-without-sprints)
++ [Notes on Creating Good Pull Requests](https://github.com/samuelbetio/SBTemplano#notes-on-creating-good-pull-requests)
   + [1. Keep it Small and Simple](#1-keep-it-small-and-simple)
   + [2. Descriptive Pull Request Title and Description](#2-descriptive-pull-request-title-and-description)
-  + [3. PR Etiquette](https://github.com/dwyl/contributing#3-pr-etiquette)
+  + [3. PR Etiquette](https://github.com/samuelbetio/SBTemplano#3-pr-etiquette)
 + [Creating a New Repository](#creating-a-new-repository)
   + [Use Cases for Creating a New Repo](#use-cases-for-creating-a-new-repo)
   + [How?](#how)
   + [Minimum Requirements for a New Repository](#minimum-requirements-for-a-new-repository)
 + [Forking Repositories](#forking-repositories-into-dwyl)
-+ [General Notes](https://github.com/dwyl/contributing#general-notes)
++ [General Notes](https://github.com/samuelbetio/SBTemplano#general-notes)
 <br/>
 
 # Part 1: _Describe_ your Question, the Idea or User Story in an Issue
@@ -148,7 +148,7 @@ and one that can offer value to other developers like you! 🌟
 
 <!-- should the questions be at the END of this doc or
 will people not scroll that far?
-see: https://github.com/dwyl/contributing/pull/63#pullrequestreview-18508277
+see: https://github.com/samuelbetio/SBTemplano/pull/63#pullrequestreview-18508277
 My idea was to structure
 the content in in the order a Complete Beginner
 (or at least a Person who is new to our Contributing Guide)
@@ -207,8 +207,8 @@ but during busy work days this can take up to ***a few hours***... <br />
   as possible in the issue description._)
 
 <!-- Image removed so we can discuss an alternative ...
-see: https://github.com/dwyl/contributing/pull/63#pullrequestreview-18510563
-and https://github.com/dwyl/contributing/issues/62
+see: https://github.com/samuelbetio/SBTemplano/pull/63#pullrequestreview-18510563
+and https://github.com/samuelbetio/SBTemplano/issues/62
 ![thinking-please-wait](https://cloud.githubusercontent.com/assets/194400/22228969/9add48f8-e1cc-11e6-8cdc-ef9b30eac846.jpg)
 -->
 
@@ -290,7 +290,7 @@ trying to do more than one thing.
   (_often referred to as "**sub-tasks**"_)
   which you **link** to from the "main" story/issue.
   `-> Example of a Larger Story ("Epic") with Linked Sub-stories Required!`
-  see: https://github.com/dwyl/contributing/issues/55
+  see: https://github.com/samuelbetio/SBTemplano/issues/55
 + Product owner (or Project Maintainer) will add a
   priority label e.g: `Priority-2` to the story/issue.
 + Any/all Sub-Stories should _also_ be prioritized so that the team
@@ -430,7 +430,7 @@ The person who is _assigned_ to review the PR
 
 <!-- should we be re-confirming that CI Checks pass before reviewing?
 or should we *rely* on the PR submitter to have done the checks?
-see: https://github.com/dwyl/contributing/pull/63#discussion_r97884381
+see: https://github.com/samuelbetio/SBTemplano/pull/63#discussion_r97884381
 1. ***Confirm*** that all "**CI**" ***checks pass*** _before_ doing anything else.
 > Tests should all pass and "_test coverage_" should be _measured_
 for every change/pull request. <br />
@@ -460,7 +460,7 @@ in the Pull Request on GitHub...
 
 1. ***Write comments*** or notes to the developer(s)
 giving feedback on their code.
-> see: "notes on code reviews": https://github.com/dwyl/contributing/issues/32#issuecomment-271089111 [![Get Help!](https://img.shields.io/badge/help-wanted-brightgreen.svg?style=flat)](https://github.com/dwyl/contributing/issues)
+> see: "notes on code reviews": https://github.com/samuelbetio/SBTemplano/issues/32#issuecomment-271089111 [![Get Help!](https://img.shields.io/badge/help-wanted-brightgreen.svg?style=flat)](https://github.com/samuelbetio/SBTemplano/issues)
 
   + ***If*** for _any reason_ you are ***unsatisfied*** with the _content_ of the
 pull request (_documentation, tests or code_), ***request changes***.
@@ -498,10 +498,10 @@ adequately address and then ***close the issue***.
 
 # Notes on _Effective_ Contributing
 
-### Thanks for Reading! Please Help Us _Improve_! [![Help Wanted!](https://img.shields.io/badge/help-wanted-brightgreen.svg?style=flat "Please Help Us")](https://github.com/dwyl/contributing/issues)
+### Thanks for Reading! Please Help Us _Improve_! [![Help Wanted!](https://img.shields.io/badge/help-wanted-brightgreen.svg?style=flat "Please Help Us")](https://github.com/samuelbetio/SBTemplano/issues)
 
 Thank you for reading _this_ far in this
-[_huge_](https://github.com/dwyl/contributing/issues/28) readme!
+[_huge_](https://github.com/samuelbetio/SBTemplano/issues/28) readme!
 Please help us by suggesting edits (_we're always happy to remove words!!_)
 and improvements!
 
@@ -701,7 +701,7 @@ and contributions from the open source community can begin early.
 + [ ] Initiate the repo _with_ **a clear description**
 + [ ] Initiate the repo _with_ a README
 + [ ] Add dwyl's standard labels by using http://label-sync.herokuapp.com
-+ [ ] Add a [CONTRIBUTING.md](https://github.com/dwyl/contributing/blob/master/CONTRIBUTING.md) file to the repo
++ [ ] Add a [CONTRIBUTING.md](https://github.com/samuelbetio/SBTemplano/blob/master/CONTRIBUTING.md) file to the repo
 + [ ] Update the README.md with simple 'Why?', 'What?' and 'How?' sections
 + [ ] [Protect the `master` branch](https://help.github.com/articles/about-protected-branches/)
  to ensure it can't be pushed to directly
