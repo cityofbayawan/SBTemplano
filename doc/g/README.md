@@ -1,11 +1,11 @@
 # GitHub for non-technical people
 
-![GitHub-logo](http://doc.rultor.com/images/github-logo.png)
+![GitHub-logo](https://github.com/samuelbetio/SBTemplano/blob/master/doc/github-logo.png)
 <br/>
 <br/>
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/github-reference/issues)    
+[![contributions welcome](http://samuelbetio.github.io/SBTemplano/doc/s/contributions.svg)] (https://github.com/samuelbetio/SBTemplano/issues)    
 
-If you have questions, please [open an issue](https://github.com/dwyl/github-reference/issues) and let us know so we can share that knowledge with the world - we _guarantee_ you're not the only one with that question! :blush:
+If you have questions, please [open an issue](https://github.com/samuelbetio/SBTemplano/issues) and let us know so we can share that knowledge with the world - we _guarantee_ you're not the only one with that question! :blush:
 
 ## Contents Guide
 + [What?](#what)
@@ -39,13 +39,13 @@ Some sections here are *intended* to be a walkthrough. Feel free to explore Gith
 
 ### How to sign up
 
-<!-- <img width="350" alt="sign-up-box" src="https://cloud.githubusercontent.com/assets/13098199/12653686/8ca8713c-c5e8-11e5-9f9b-e37fa49f7d58.png"> -->
+<!-- <img width="350" alt="sign-up-box" src="https://raw.githubusercontent.com/samuelbetio/SBTemplano/master/doc/8ca8713c-c5e8-11e5-9f9b-e37fa49f7d58.png"> -->
 
 1. Go to https://github.com and click 'Sign Up' in the top right!
 2. Enter your **username**, **email address** and **password** to create an account.
 3. Choose the **free tier**, which will be *selected by default*
 
-<img width="600" alt="free-tier" src="https://cloud.githubusercontent.com/assets/13098199/12653664/801f1998-c5e8-11e5-8064-70be739a2d74.png">
+<img width="600" alt="free-tier" src="https://raw.githubusercontent.com/samuelbetio/SBTemplano/master/doc/801f1998-c5e8-11e5-8064-70be739a2d74.png">
 
 ...and then you'll **officially be a Github user!**
 
@@ -53,7 +53,7 @@ Next, you'll have to **verify your email address**, otherwise you will not be al
 
 1. Click on your profile picture in the **top-right** of the screen:
 
-  <img width="200" alt="user-menu" src="https://help.github.com/assets/images/help/settings/userbar-account-settings.png">
+  <img width="200" alt="user-menu" src="https://raw.githubusercontent.com/samuelbetio/SBTemplano/master/doc/userbar-account-settings.png">
 
 2. In the left sidebar, click **Emails**:   <img width="250" alt="emails" src="https://help.github.com/assets/images/help/settings/settings-sidebar-emails.png">
 
