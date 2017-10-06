@@ -1,6 +1,6 @@
 # GitHub for non-technical people
 
-![GitHub-logo](https://github.com/samuelbetio/SBTemplano/blob/master/doc/github-logo.png)
+[![GitHub-logo](https://github.com/samuelbetio/SBTemplano/blob/master/doc/github-logo.png)]
 <br/>
 <br/>
 [![contributions welcome] (http://samuelbetio.github.io/SBTemplano/doc/s/contributions.svg)] (https://github.com/samuelbetio/SBTemplano/issues)    
