@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+         <!--[if (gt IE 9)|!(IE)]>--> <html class="w3c" lang="ceb" xml:lang="ceb" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">    <!--[endif]-->
+         <!--[if IE 9]>    <html class="ieAny ie9" lang="ceb" xml:lang="ceb" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">    <![endif]-->
+         <!--[if IE 8]>    <html class="ieAny ie8" lang="ceb" xml:lang="ceb" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">    <![endif]-->
+         <!--[if lt IE 8]> <html class="ieAny ie7" lang="ceb" xml:lang="ceb" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">    <![endif]-->
+         <head>
+            <meta charset="utf-8">
+            <!-- For IE 9 and below. ICO should be 32x32 -->
+            <!--[if IE]><link rel="shortcut icon" href="//assets1.jw.org/images/favicon.ico" type="image/x-icon" /><![endif]-->
+            <!-- Touch Icons - iOS and Android 2.1+ 180x180 -->
+            <link rel="apple-touch-icon" href="//assets1.jw.org/images/icon_homeButton.png"/>
+            <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 -->
+            <link rel="icon" href="//assets1.jw.org/images/icon_favicon.png" />
+            <title>Kon Unsaon Pag-donate Ngadto sa Tibuok Kalibotang Buluhaton :: Mga Saksi ni Jehova</title>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <meta name="description" content="Kini maoy awtorisado nga Web site sa mga Saksi ni Jehova alang sa pagpasag mga publikasyon ug uban pang impormasyon ngadto sa mga Saksi ni Jehova sa tibuok kalibotan." />
+            <meta name="keywords" content=" saksi ni jehova, bantayanang torre, pagmata!, mp3, m4b, download, podcast, audio file, magasin, kristohanon"  />
+            <meta name="viewport"  content="width=device-width, initial-scale=1" />
+            <meta name="google" content="notranslate" />
+            <link type='text/css' rel='stylesheet' href='//assets1.jw.org/css/main-0aa673f167.css' /><link type='text/css' rel='stylesheet' href='//assets1.jw.org/css/jquery-ui-1-f763a67c62.9.2.custom.css' /><link type='text/css' rel='stylesheet' href='//assets1.jw.org/css/public-57c91f0354.css' /><link type='text/css' rel='stylesheet' href='//assets1.jw.org/css/foundation-grid-5f7fac5666.css' />
+         </head>
+<body data-ui-core-settings='{"BASE_URL": "https://www.jw.org/"}' data-assetroot='//assets1.jw.org/' data-base-uri='/' data-current-domain='' data-lang='CV' class='cols-1 lang-ceb dir-ltr' lang="ceb" xml:lang="ceb" dir="ltr"><a name="winTop"></a>
+<p class="aural">
+                     <a href="#accessibilitySetting">Accessibility setting</a>
+                  </p>
+                  <p class="aural">
+                     <a href="#primaryNav">Adto sa main menu</a></p>
+                  <p class="aural"><a href="#secondaryNav">Adto sa secondary menu</a></p>
+                  <p class="aural">
+                     <a href="#content-apps">Adto sa content</a>
+                  </p>
+        <noscript>
+          <div id="JScriptEnabled">
+             <p>Ang JavaScript (active scripting) kinahanglang i-enable para ani nga site aron dili ni mopalyar.</p>
+          </div>
+        </noscript>
+        <div id="ie8Support" class="ie8Show">
+           <p>Ang imong Web browser karaan na ug wala mag-support sa tanang feature niini nga website. <a href="/CV_HELP?txtHelp=LOGIN1#browsers" target="objCCJWHelp" >Pagkat-og dugang</a></p>
+        </div>
+        <div id="regionsiteMark">
+           <div class="wrapper">
+              <div class="wrapperPage">
+                 <a id="siteMark" title="Adto sa sinugdan" href="https://www.jw.org/ceb/" ><img src="//assets1.jw.org/images/siteMarkApps_web.png"></a>
+              </div>
+           </div>
+        </div>
+        <div id="regionHeader" class="showObj">
+            <div class="wrapper clearfix">
+              <div class="wrapperPage clearfix">
+                <header>
+                  <h2 id="siteName">Mga Saksi ni Jehova</h2>
+                </header>
+              </div>
+            </div>
+        </div>
+         <div id="regionPrimaryNav" class="showObj">
+            <div class="wrapper clearfix">
+              <div class="wrapperPage clearfix">
+                <div id="mobileSiteLinks" class="handheldOnly">
+                  <ul class="clearfix"><li class="siteLinks lnkHelp"><a href="/CV_HELP" target="objCCJWHelp" >GIYA</a></li>
+                  
+                  <li class="siteLinks lnkLogin"><a href="/CV_LOGIN1">LOG IN</a></li>
+                  
+</ul>
+                </div>
+                <div id="primaryNav" class="clearfix">
+                  <nav>
+                    <ul id="mainNavLinks" class="clearfix">
+                      <li class=""><a href="/CV_LOOKUP">PANGITAA</a></li>
+
+                      <li class="siteLinks lnkHelp"><a href="/CV_HELP" target="objCCJWHelp" >GIYA</a></li>
+                  
+                  <li class="siteLinks lnkLogin"><a href="/CV_LOGIN1">LOG IN</a></li>
+                  
+
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+         </div>
+<div id="regionMain"><div class="wrapper clearfix"><div class="wrapperPage clearfix"><div id="content-apps" class="clearfix">
+                 <a name="docTop"></a>
+                 
+                 
+      <div data-ng-app="donDonations" ng-controller="DonationsController as vm">
+         <div class="loading page lrg" ng-if="!vm.appInitComplete"><div></div></div>
+         <div ng-cloak>
+            <jwo-congregation-picker data-api="vm.congregationPicker"></jwo-congregation-picker>
+            <jwo-convention-picker data-api="vm.conventionPicker"></jwo-convention-picker>
+            <jwo-account-modal data-api="vm.accountModal"></jwo-account-modal>
+            
+      
+      <h2>Kon Unsaon Pag-donate Ngadto sa Tibuok Kalibotang Buluhaton</h2>
+      <p>Ang among relihiyoso ug humanitarian nga mga kalihokan sa tibuok kalibotan gisuportahan ug boluntaryong mga donasyon. Pinaagi niini ang tanan makahatag ug donasyon “sumala sa iyang gihukom diha sa iyang kasingkasing, dili nga kontragusto o pinugos.” (2&nbsp;Corinto 9:7) Ang mga paagi sa pag-donate nga gipili sa uban gilista sa artikulo nga  <span class="italic"><a href="https://www.jw.org/finder?docid=2016842&amp;wtlocale=CV" target="_blank">“Dako ang Buluhaton”</a></span>.</p>
+      <form id="frmDonations" action="/CV_DONATE" method="post" accept-charset="utf - 8" class="" novalidate>
+                  <label class="don-location__label" for="selCntctCountryID">Pilia ang imong nasod aron imong makita ang mga kapilian sa pag-donate diha sa inyong lugar.</label>
+                  <div class="don-location__input-block"><select id="selCntctCountryID" name="selCntctCountryID"><option  value="0"></option>
+<option  value="2">Afghanistan</option>
+<option  value="5">Åland Islands</option>
+<option  value="6">Albania</option>
+<option  value="64">Algeria</option>
+<option  value="12">American Samoa</option>
+<option  value="7">Andorra</option>
+<option  value="3">Angola</option>
+<option  value="4">Anguilla</option>
+<option  value="13">Antarctica</option>
+<option  value="15">Antigua and Barbuda</option>
+<option  value="10">Argentina</option>
+<option  value="11">Armenia</option>
+<option  value="1">Aruba</option>
+<option  value="16">Australia</option>
+<option  value="17">Austria</option>
+<option  value="18">Azerbaijan</option>
+<option  value="26">Bahamas</option>
+<option  value="25">Bahrain</option>
+<option  value="23">Bangladesh</option>
+<option  value="34">Barbados</option>
+<option  value="29">Belarus</option>
+<option  value="20">Belgium</option>
+<option  value="30">Belize</option>
+<option  value="21">Benin</option>
+<option  value="31">Bermuda</option>
+<option  value="36">Bhutan</option>
+<option  value="32">Bolivia</option>
+<option  value="247">Bonaire, Saint Eustatius and Saba</option>
+<option  value="27">Bosnia and Herzegovina</option>
+<option  value="38">Botswana</option>
+<option  value="33">Brazil</option>
+<option  value="35">Brunei Darussalam</option>
+<option  value="24">Bulgaria</option>
+<option  value="22">Burkina Faso</option>
+<option  value="19">Burundi</option>
+<option  value="119">Cambodia</option>
+<option  value="46">Cameroon</option>
+<option  value="40">Canada</option>
+<option  value="52">Cape Verde</option>
+<option  value="56">Cayman Islands</option>
+<option  value="39">Central African Republic</option>
+<option  value="214">Chad</option>
+<option  value="43">Chile</option>
+<option  value="44">China</option>
+<option  value="55">Christmas Island</option>
+<option  value="41">Cocos (Keeling) Islands</option>
+<option  value="50">Colombia</option>
+<option  value="51">Comoros</option>
+<option  value="48">Congo</option>
+<option  value="47">Congo, The Democratic Republic of the</option>
+<option  value="49">Cook Islands</option>
+<option  value="53">Costa Rica</option>
+<option  value="45">Côte d'Ivoire</option>
+<option  value="99">Croatia</option>
+<option  value="54">Cuba</option>
+<option  value="248">Curaçao</option>
+<option  value="57">Cyprus</option>
+<option  value="58">Czech Republic</option>
+<option  value="62">Denmark</option>
+<option  value="60">Djibouti</option>
+<option  value="61">Dominica</option>
+<option  value="63">Dominican Republic</option>
+<option  value="65">Ecuador</option>
+<option  value="66">Egypt</option>
+<option  value="200">El Salvador</option>
+<option  value="88">Equatorial Guinea</option>
+<option  value="67">Eritrea</option>
+<option  value="70">Estonia</option>
+<option  value="71">Ethiopia</option>
+<option  value="74">Falkland Islands (Malvinas)</option>
+<option  value="76">Faroe Islands</option>
+<option  value="73">Fiji</option>
+<option  value="72">Finland</option>
+<option  value="75">France</option>
+<option  value="93">French Guiana</option>
+<option  value="185">French Polynesia</option>
+<option  value="14">French Southern Territories</option>
+<option  value="78">Gabon</option>
+<option  value="86">Gambia</option>
+<option  value="80">Georgia</option>
+<option  value="59">Germany</option>
+<option  value="82">Ghana</option>
+<option  value="83">Gibraltar</option>
+<option  value="89">Greece</option>
+<option  value="91">Greenland</option>
+<option  value="90">Grenada</option>
+<option  value="85">Guadeloupe</option>
+<option  value="94">Guam</option>
+<option  value="92">Guatemala</option>
+<option  value="81">Guernsey</option>
+<option  value="84">Guinea</option>
+<option  value="87">Guinea-Bissau</option>
+<option  value="95">Guyana</option>
+<option  value="100">Haiti</option>
+<option  value="98">Honduras</option>
+<option  value="96">Hong Kong</option>
+<option  value="101">Hungary</option>
+<option  value="109">Iceland</option>
+<option  value="104">India</option>
+<option  value="102">Indonesia</option>
+<option  value="107">Iran, Islamic Republic of</option>
+<option  value="108">Iraq</option>
+<option  value="106">Ireland</option>
+<option  value="103">Isle of Man</option>
+<option  value="110">Israel</option>
+<option  value="111">Italy</option>
+<option  value="112">Jamaica</option>
+<option  value="115">Japan</option>
+<option  value="113">Jersey</option>
+<option  value="114">Jordan</option>
+<option  value="116">Kazakhstan</option>
+<option  value="117">Kenya</option>
+<option  value="120">Kiribati</option>
+<option  value="181">Korea, Democratic People's Republic of</option>
+<option  value="122">Korea, Republic of</option>
+<option  value="253">Kosovo</option>
+<option  value="123">Kuwait</option>
+<option  value="118">Kyrgyzstan</option>
+<option  value="124">Lao People's Democratic Republic</option>
+<option  value="134">Latvia</option>
+<option  value="125">Lebanon</option>
+<option  value="131">Lesotho</option>
+<option  value="126">Liberia</option>
+<option  value="127">Libya</option>
+<option  value="129">Liechtenstein</option>
+<option  value="132">Lithuania</option>
+<option  value="133">Luxembourg</option>
+<option  value="135">Macao</option>
+<option  value="144">Macedonia, The Former Yugoslav Republic of</option>
+<option  value="140">Madagascar</option>
+<option  value="156">Malawi</option>
+<option  value="157">Malaysia</option>
+<option  value="141">Maldives</option>
+<option  value="145">Mali</option>
+<option  value="146">Malta</option>
+<option  value="143">Marshall Islands</option>
+<option  value="154">Martinique</option>
+<option  value="152">Mauritania</option>
+<option  value="155">Mauritius</option>
+<option  value="158">Mayotte</option>
+<option  value="142">Mexico</option>
+<option  value="77">Micronesia, Federated States of</option>
+<option  value="139">Moldova, Republic of</option>
+<option  value="138">Monaco</option>
+<option  value="149">Mongolia</option>
+<option  value="148">Montenegro</option>
+<option  value="153">Montserrat</option>
+<option  value="137">Morocco</option>
+<option  value="151">Mozambique</option>
+<option  value="147">Myanmar</option>
+<option  value="159">Namibia</option>
+<option  value="169">Nauru</option>
+<option  value="168">Nepal</option>
+<option  value="166">Netherlands</option>
+<option  value="160">New Caledonia</option>
+<option  value="170">New Zealand</option>
+<option  value="164">Nicaragua</option>
+<option  value="161">Niger</option>
+<option  value="163">Nigeria</option>
+<option  value="165">Niue</option>
+<option  value="162">Norfolk Island</option>
+<option  value="150">Northern Mariana Islands</option>
+<option  value="167">Norway</option>
+<option  value="171">Oman</option>
+<option  value="172">Pakistan</option>
+<option  value="177">Palau</option>
+<option  value="184">Palestinian Territory, Occupied</option>
+<option  value="173">Panama</option>
+<option  value="178">Papua New Guinea</option>
+<option  value="183">Paraguay</option>
+<option  value="175">Peru</option>
+<option selected=\"selected\" value="176">Philippines</option>
+<option  value="174">Pitcairn</option>
+<option  value="179">Poland</option>
+<option  value="182">Portugal</option>
+<option  value="180">Puerto Rico</option>
+<option  value="186">Qatar</option>
+<option  value="250">Republic of South Sudan</option>
+<option  value="187">Réunion</option>
+<option  value="188">Romania</option>
+<option  value="189">Russian Federation</option>
+<option  value="190">Rwanda</option>
+<option  value="28">Saint Barthélemy</option>
+<option  value="196">Saint Helena</option>
+<option  value="121">Saint Kitts and Nevis</option>
+<option  value="128">Saint Lucia</option>
+<option  value="136">Saint Martin (French part)</option>
+<option  value="203">Saint Pierre and Miquelon</option>
+<option  value="235">Saint Vincent and the Grenadines</option>
+<option  value="242">Samoa</option>
+<option  value="201">San Marino</option>
+<option  value="205">São Tomé and Príncipe</option>
+<option  value="191">Saudi Arabia</option>
+<option  value="193">Senegal</option>
+<option  value="204">Serbia</option>
+<option  value="211">Seychelles</option>
+<option  value="199">Sierra Leone</option>
+<option  value="194">Singapore</option>
+<option  value="249">Sint Maarten (Dutch Part)</option>
+<option  value="207">Slovakia</option>
+<option  value="208">Slovenia</option>
+<option  value="198">Solomon Islands</option>
+<option  value="202">Somalia</option>
+<option  value="244">South Africa</option>
+<option  value="69">Spain</option>
+<option  value="130">Sri Lanka</option>
+<option  value="192">Sudan</option>
+<option  value="206">Suriname</option>
+<option  value="210">Swaziland</option>
+<option  value="209">Sweden</option>
+<option  value="42">Switzerland</option>
+<option  value="212">Syrian Arab Republic</option>
+<option  value="226">Taiwan</option>
+<option  value="217">Tajikistan</option>
+<option  value="227">Tanzania, United Republic of</option>
+<option  value="216">Thailand</option>
+<option  value="220">Timor-Leste</option>
+<option  value="215">Togo</option>
+<option  value="218">Tokelau</option>
+<option  value="221">Tonga</option>
+<option  value="222">Trinidad and Tobago</option>
+<option  value="223">Tunisia</option>
+<option  value="224">Turkey</option>
+<option  value="219">Turkmenistan</option>
+<option  value="213">Turks and Caicos Islands</option>
+<option  value="225">Tuvalu</option>
+<option  value="228">Uganda</option>
+<option  value="229">Ukraine</option>
+<option  value="9">United Arab Emirates</option>
+<option  value="79">United Kingdom</option>
+<option  value="232">United States</option>
+<option  value="230">United States Minor Outlying Islands</option>
+<option  value="231">Uruguay</option>
+<option  value="233">Uzbekistan</option>
+<option  value="240">Vanuatu</option>
+<option  value="236">Venezuela</option>
+<option  value="239">Viet Nam</option>
+<option  value="237">Virgin Islands, British</option>
+<option  value="238">Virgin Islands, U.S.</option>
+<option  value="241">Wallis and Futuna</option>
+<option  value="68">Western Sahara</option>
+<option  value="243">Yemen</option>
+<option  value="245">Zambia</option>
+<option  value="246">Zimbabwe</option>
+</select>
+               <input type="hidden" name="txtAction" id="txtAction" value ="" />
+               <input type="submit" value="Pilia"/>
+               <p class="notation italic">Palihog pag-donate lang sa inyong dapit.</p>
+               </div></form><h2 class="subhead-divider">Philippines</h2><div class="hideObj">{{ vm.forceExpandOnlineDonation = true }}</div>
+                     <article class="accordion">
+                         <h3 class="accordion__header">
+                            <a href="" class="accordion__header-link"
+                                  ng-class="{'accordion__header-link--expanded': !vm.sectionCollapsed[1], 'accordion__header-link--collapsed': vm.sectionCollapsed[1]}"
+                                  ng-click="vm.toggleCollapse(1)">
+                                  Online Donation
+                               <i class="accordion__icon"
+                                  ng-class="{'accordion__icon--expanded': !vm.sectionCollapsed[1], 'accordion__icon--collapsed': vm.sectionCollapsed[1]}"></i>
+                            </a>
+                          </h3>
+                         <div class="accordion__content"
+                            ng-show="!vm.sectionCollapsed[1]">
+                            <p>Pag-donate sa mga Saksi ni Jehova pinaagi sa usa niini nga mga credit o debit card:<br><span id="methodIcons"><img src="images/cc_visa_small.gif" alt="Visa" /> &nbsp;<img src="images/cc_mastercard_small.gif" alt="MasterCard" /> &nbsp;</span></p><jwo-tabset data-selected-tab="1" class="jwo-tabset--onpage">
+         <jwo-tab data-title="Tibuok Kalibotang Buluhaton" data-show-tab="true" role="tabpanel">
+            <h3 class="tab-content__title">Pagdonar Ngadto sa Tibuok Kalibotang Buluhaton sa mga Saksi ni Jehova</h3>
+            <p class="contextTtle">Beneficiary of Gift</p>
+            <h4 class="tab-content__title--beneficiary">Watch Tower Bible and Tract Society of Pennsylvania</h4>
+            <p>Suportahi ang religious and humanitarian activities sa mga Saksi ni Jehova sa tibuok kalibotan.</p>
+            <div class="grid grid--main-between">
+               <div class="grid__item">
+                  <button ng-click="vm.donateWorldwideOnce()">Pag-donate Karon</button>
+                  <button ng-click="vm.donateWorldwideRecurr()" ng-if="!vm.hasRecurringDonationWW">Mohatag Kada Bulan</button>
+               </div>
+               <div class="grid__item">
+                  
+               </div>
+            </div>
+         </jwo-tab>
+         <jwo-tab data-title="Akong Rehiyonal nga Kombensiyon" data-show-tab="true" role="tabpanel">
+            <h3 class="tab-content__title">Donasyon Para sa Inyong Rehiyonal nga Kombensiyon</h3>
+            <p class="contextTtle">Beneficiary of Gift</p>
+            <h4 class="tab-content__title--beneficiary">Watch Tower Bible and Tract Society of Pennsylvania</h4>
+            <p>Ang dagkong tinuig nga kombensiyon sa mga Saksi ni Jehova ginahimo sa tibuok kalibotan. Maka-donate ka sa tibuok kalibotang buluhaton para sa kombensiyon nga imong gitambongan aron makatabang sa mga galastohan.</p>
+            <div class="grid grid--main-between">
+               <div class="grid__item">
+                  <button ng-click="vm.donateConvention()" ng-bind-html="vm.convention == null ? t.labelFindConvention : t.labelDonateNow"></button>
+               </div>
+               <div class="grid__item">
+                  
+               </div>
+            </div>
+         </jwo-tab></jwo-tabset>
+      <form id="frmDonationType" action="/CV_DONATE" method="post" accept-charset="utf-8" class="" novalidate>
+         <input type="hidden" name="txtAction" id="txtAction" value="">
+         <input type="hidden" id="TransOrgUnitGUID" name="TransOrgUnitGUID" />
+         <input type="hidden" id="CircuitCongGUID" name="CircuitCongGUID" />
+      </form><p>Kon may account na ka, <strong><a href="/CV_MYDONATIONS">palihog log in</a></strong> aron ma-donate o ma-proseso ang imong mga donation.</p>
+                         </div>
+                         </article><article class="accordion">
+                        <h3 class="accordion__header">
+                           <a href="" class="accordion__header-link"
+                                 ng-class="{'accordion__header-link--expanded': !vm.sectionCollapsed[2], 'accordion__header-link--collapsed': vm.sectionCollapsed[2]}"
+                                 ng-click="vm.toggleCollapse(2)">
+                                 Electronic Bank Transfer
+                              <i class="accordion__icon"
+                                 ng-class="{'accordion__icon--expanded': !vm.sectionCollapsed[2], 'accordion__icon--collapsed': vm.sectionCollapsed[2]}"></i>
+                           </a>
+                        </h3>
+                        <div class="accordion__content" ng-show="!vm.sectionCollapsed[2]">
+                           <p>Maka-donate ka sa lokal nga sangang buhatan sa mga Saksi ni Jehova pinaagig electronic bank transfer gamit ang mosunod:</p>
+                           <div class="boxGray">
+                              <p><span class="bold">Beneficiary Name</span><br>Watch Tower Bible And Tract Society Of The Philippines Inc.</p>
+                              <p><span class="bold">Bank Name</span><br>Security Bank</p>
+                              <p><span class="bold">Bank Account Number</span><br>
+                              0649-033780001</p>
+                              <p><span class="bold">Banking Codes</span><br>SETCPHMM</p>
+                           </div>
+                           <p><a href="/ui/CV/public-donations.html#/information-request?location=PHL&method=EBC&selCntctCountryID=176">Pangayog Dugang Impormasyon</a></p>
+                        </div>
+                        </article><article class="accordion">
+                     <h3 class="accordion__header">
+                        <a href="" class="accordion__header-link"
+                              ng-class="{'accordion__header-link--expanded': !vm.sectionCollapsed[3], 'accordion__header-link--collapsed': vm.sectionCollapsed[3]}"
+                              ng-click="vm.toggleCollapse(3)">
+                              Tseke o Money Order
+                           <i class="accordion__icon"
+                                    ng-class="{'accordion__icon--expanded': !vm.sectionCollapsed[3], 'accordion__icon--collapsed': vm.sectionCollapsed[3]}"></i>
+                        </a>
+                     </h3>
+                     <div class="accordion__content" ng-show="!vm.sectionCollapsed[3]">
+                        <p>Pag-donate sa lokal nga sangang buhatan sa mga Saksi ni Jehova pinaagi sa pagpadalag tseke o money order sa:</p>
+                        <div class="boxGray">
+                           <p><span class="bold">Ang mga Tseke Payable To</span><br>
+                           Watch Tower Society</p>
+                           <p><span class="bold">I-mail Sa</span><br>186 Roosevelt Avenue <br /> San Francisco del Monte <br /> QUEZON CITY 1105</p>
+                        </div>
+                        <p><a href="/ui/CV/public-donations.html#/information-request?location=PHL&method=CHECK&selCntctCountryID=176">Pangayog Dugang Impormasyon</a></p>
+                     </div>
+                     </article><article class="accordion">
+                     <h3 class="accordion__header">
+                        <a href="" class="accordion__header-link"
+                              ng-class="{'accordion__header-link--expanded': !vm.sectionCollapsed[4], 'accordion__header-link--collapsed': vm.sectionCollapsed[4]}"
+                              ng-click="vm.toggleCollapse(4)">
+                              Local Kingdom Hall
+                           <i class="accordion__icon"
+                                    ng-class="{'accordion__icon--expanded': !vm.sectionCollapsed[4], 'accordion__icon--collapsed': vm.sectionCollapsed[4]}"></i>
+                        </a>
+                     </h3>
+                     <div class="accordion__content" ng-show="!vm.sectionCollapsed[4]">
+                        <p>Maka-donate ka pinaagi sa paghulog ug donasyon sa donation box sa kongregasyon nga gimarkahag “Worldwide Work.” Ipadala kini sa kongregasyon ngadto sa sangang buhatan sa mga Saksi ni Jehova sa maong nasod. Ang tanang mobisita sa Kingdom Hall ug gustong mo-donate makahulog sa ilang donasyon didto.</p>
+                        <a class="txtFormButton" href="/CV_SRCHMTGMAPS">Pangitag Kingdom Hall</a>
+                     </div>
+                     </article><article class="accordion">
+                     <h3 class="accordion__header">
+                        <a href="" class="accordion__header-link"
+                              ng-class="{'accordion__header-link--expanded': !vm.sectionCollapsed[6], 'accordion__header-link--collapsed': vm.sectionCollapsed[6]}"
+                              ng-click="vm.toggleCollapse(6)">
+                              Conditional Donation Arrangement
+                           <i class="accordion__icon"
+                                    ng-class="{'accordion__icon--expanded': !vm.sectionCollapsed[6], 'accordion__icon--collapsed': vm.sectionCollapsed[6]}"></i>
+                        </a>
+                     </h3>
+                     <div class="accordion__content" ng-show="!vm.sectionCollapsed[6]">
+                        <p>Pag-donate sa lokal nga sangang buhatan sa mga Saksi ni Jehova ubos sa kondisyon nga ibalik kanimo ang imong donasyon kon kinahanglanon nimo ni. Para sa dugang impormasyon, tawagi ang o pagsulat sa:</p>
+                        <div class="boxGray"><p><span class="bold">Adres</span><br>Watch Tower Bible and Tract Society of the Philippines, Inc.<br>186 Roosevelt Avenue <br /> San Francisco del Monte <br /> QUEZON CITY 1105</p>
+                           <p><span class="bold">Telepono</span><br>+63 2-224-4484</p>
+                        </div>
+                        <p><a href="/ui/CV/public-donations.html#/information-request?location=PHL&method=CNDDONARR&selCntctCountryID=176">Pangayog Dugang Impormasyon</a></p>
+                     </div>
+                     </article><article class="accordion">
+                     <h3 class="accordion__header">
+                        <a href="" class="accordion__header-link"
+                              ng-class="{'accordion__header-link--expanded': !vm.sectionCollapsed[7], 'accordion__header-link--collapsed': vm.sectionCollapsed[7]}"
+                              ng-click="vm.toggleCollapse(7)">
+                              Charitable Planning
+                           <i class="accordion__icon"
+                                    ng-class="{'accordion__icon--expanded': !vm.sectionCollapsed[7], 'accordion__icon--collapsed': vm.sectionCollapsed[7]}"></i>
+                        </a>
+                     </h3>
+                     <div class="accordion__content" ng-show="!vm.sectionCollapsed[7]">
+                        <p>Ang mga donasyon mahimong ihatag karon o sa ulahi pa, sama sa pag-donate ug propidad o kabtangan pinaagig pagpanunod niini human mamatay ang tagtungod. Mahimong dako ang makunhod sa buluhisan pinaagi niini nga paagi sa pag-donate. Kay lainlain man ang mga kinahanglanon sa balaod ug ang mga balaod sa buhis, pagkonsulta unag abogado o tax advisor sa dili pa mopilig kinamaayohang paagi sa pag-donate. Para sa dugang impormasyon, tawagi ang o pagsulat sa:</p>
+                        <div class="boxGray"><p><span class="bold">Adres</span><br>Watch Tower Bible and Tract Society of the Philippines, Inc.<br>186 Roosevelt Avenue <br /> San Francisco del Monte <br /> QUEZON CITY 1105</p>
+                           <p><span class="bold">Telepono</span><br>+63 2-224-4484</p>
+                        </div>
+                        <p><a href="/ui/CV/public-donations.html#/information-request?location=PHL&method=CHARPLAN&selCntctCountryID=176">Pangayog Dugang Impormasyon</a></p>
+                     </div>
+                     </article><p>Makita usab nimo ang contact information sa mga Saksi ni Jehova sa tibuok kalibotan diha sa among website.</p><p><a href="https://www.jw.org/finder?wtlocale=CV&docid=502012331" target="_blank">Tan-awa ang Contact Information</a></p>
+         </div>
+      </div>
+                 <br />
+              </div>
+<div id="regionFooter" class="noPrint clearfix">
+                    <div id="footerNav" class="clearfix">
+                       <div id="footerLang"><label for="selLang">PINULONGAN SA SITE</label>
+         <select name='selLang' id='selLang' class='jsAutoComplete'>
+         <option  lang="af" xml:lang="af" dir="ltr" class="lang-af dir-ltr" value="/AF_DONATE">Afrikaans</option>
+<option  lang="ay" xml:lang="ay" dir="ltr" class="lang-ay dir-ltr" value="/AP_DONATE">Aymara</option>
+<option  lang="cat" xml:lang="cat" dir="ltr" class="lang-cat dir-ltr" value="/AN_DONATE">català</option>
+<option selected="selected" lang="ceb" xml:lang="ceb" dir="ltr" class="lang-ceb dir-ltr" value="/CV_DONATE">Cebuano</option>
+<option  lang="cs" xml:lang="cs" dir="ltr" class="lang-cs dir-ltr" value="/B_DONATE">čeština</option>
+<option  lang="ny" xml:lang="ny" dir="ltr" class="lang-ny dir-ltr" value="/CN_DONATE">Chichewa</option>
+<option  lang="tum" xml:lang="tum" dir="ltr" class="lang-tum dir-ltr" value="/TB_DONATE">Chitumbuka</option>
+<option  lang="nya" xml:lang="nya" dir="ltr" class="lang-nya dir-ltr" value="/CIN_DONATE">Cinyanja</option>
+<option  lang="cy" xml:lang="cy" dir="ltr" class="lang-cy dir-ltr" value="/W_DONATE">Cymraeg</option>
+<option  lang="da" xml:lang="da" dir="ltr" class="lang-da dir-ltr" value="/D_DONATE">Dansk</option>
+<option  lang="de" xml:lang="de" dir="ltr" class="lang-de dir-ltr" value="/X_DONATE">Deutsch</option>
+<option  lang="et" xml:lang="et" dir="ltr" class="lang-et dir-ltr" value="/ST_DONATE">eesti</option>
+<option  lang="en" xml:lang="en" dir="ltr" class="lang-en dir-ltr" value="/E_DONATE">English</option>
+<option  lang="es" xml:lang="es" dir="ltr" class="lang-es dir-ltr" value="/S_DONATE">español</option>
+<option  lang="eu" xml:lang="eu" dir="ltr" class="lang-eu dir-ltr" value="/BQ_DONATE">Euskara</option>
+<option  lang="fr" xml:lang="fr" dir="ltr" class="lang-fr dir-ltr" value="/F_DONATE">Français</option>
+<option  lang="gl" xml:lang="gl" dir="ltr" class="lang-gl dir-ltr" value="/GLC_DONATE">Galego</option>
+<option  lang="gug" xml:lang="gug" dir="ltr" class="lang-gug dir-ltr" value="/GI_DONATE">guarani</option>
+<option  lang="hr" xml:lang="hr" dir="ltr" class="lang-hr dir-ltr" value="/C_DONATE">hrvatski</option>
+<option  lang="rw" xml:lang="rw" dir="ltr" class="lang-rw dir-ltr" value="/YW_DONATE">Ikinyarwanda</option>
+<option  lang="run" xml:lang="run" dir="ltr" class="lang-run dir-ltr" value="/RU_DONATE">Ikirundi</option>
+<option  lang="ilo" xml:lang="ilo" dir="ltr" class="lang-ilo dir-ltr" value="/IL_DONATE">Iloko</option>
+<option  lang="id" xml:lang="id" dir="ltr" class="lang-id dir-ltr" value="/IN_DONATE">Indonesia</option>
+<option  lang="it" xml:lang="it" dir="ltr" class="lang-it dir-ltr" value="/I_DONATE">Italiano</option>
+<option  lang="jv" xml:lang="jv" dir="ltr" class="lang-jv dir-ltr" value="/JA_DONATE">Jawa</option>
+<option  lang="sw" xml:lang="sw" dir="ltr" class="lang-sw dir-ltr" value="/SW_DONATE">Kiswahili</option>
+<option  lang="swc" xml:lang="swc" dir="ltr" class="lang-swc dir-ltr" value="/ZS_DONATE">Kiswahili (Congo)</option>
+<option  lang="lv" xml:lang="lv" dir="ltr" class="lang-lv dir-ltr" value="/LT_DONATE">Latviešu</option>
+<option  lang="lt" xml:lang="lt" dir="ltr" class="lang-lt dir-ltr" value="/L_DONATE">lietuvių</option>
+<option  lang="ve" xml:lang="ve" dir="ltr" class="lang-ve dir-ltr" value="/VE_DONATE">Luvenda</option>
+<option  lang="hu" xml:lang="hu" dir="ltr" class="lang-hu dir-ltr" value="/H_DONATE">magyar</option>
+<option  lang="mg" xml:lang="mg" dir="ltr" class="lang-mg dir-ltr" value="/MG_DONATE">Malagasy</option>
+<option  lang="mt" xml:lang="mt" dir="ltr" class="lang-mt dir-ltr" value="/MT_DONATE">Malti</option>
+<option  lang="arn" xml:lang="arn" dir="ltr" class="lang-arn dir-ltr" value="/MPD_DONATE">mapudungun</option>
+<option  lang="ms" xml:lang="ms" dir="ltr" class="lang-ms dir-ltr" value="/ML_DONATE">Melayu</option>
+<option  lang="nl" xml:lang="nl" dir="ltr" class="lang-nl dir-ltr" value="/O_DONATE">Nederlands</option>
+<option  lang="no" xml:lang="no" dir="ltr" class="lang-no dir-ltr" value="/N_DONATE">Norsk</option>
+<option  lang="nzi" xml:lang="nzi" dir="ltr" class="lang-nzi dir-ltr" value="/NZ_DONATE">Nzema</option>
+<option  lang="kj" xml:lang="kj" dir="ltr" class="lang-kj dir-ltr" value="/KY_DONATE">Oshikwanyama</option>
+<option  lang="pl" xml:lang="pl" dir="ltr" class="lang-pl dir-ltr" value="/P_DONATE">polski</option>
+<option  lang="pt" xml:lang="pt" dir="ltr" class="lang-pt dir-ltr" value="/T_DONATE">Português</option>
+<option  lang="qu" xml:lang="qu" dir="ltr" class="lang-qu dir-ltr" value="/QUB_DONATE">Quechua (Bolivia)</option>
+<option  lang="ro" xml:lang="ro" dir="ltr" class="lang-ro dir-ltr" value="/M_DONATE">Română</option>
+<option  lang="sn" xml:lang="sn" dir="ltr" class="lang-sn dir-ltr" value="/CA_DONATE">Shona</option>
+<option  lang="sq" xml:lang="sq" dir="ltr" class="lang-sq dir-ltr" value="/AL_DONATE">shqip</option>
+<option  lang="sk" xml:lang="sk" dir="ltr" class="lang-sk dir-ltr" value="/V_DONATE">slovenčina</option>
+<option  lang="sl" xml:lang="sl" dir="ltr" class="lang-sl dir-ltr" value="/SV_DONATE">slovenščina</option>
+<option  lang="sr-latn" xml:lang="sr-latn" dir="ltr" class="lang-sr-latn dir-ltr" value="/SBO_DONATE">srpski (latinica)</option>
+<option  lang="fi" xml:lang="fi" dir="ltr" class="lang-fi dir-ltr" value="/FI_DONATE">suomi</option>
+<option  lang="sv" xml:lang="sv" dir="ltr" class="lang-sv dir-ltr" value="/Z_DONATE">Svenska</option>
+<option  lang="ty" xml:lang="ty" dir="ltr" class="lang-ty dir-ltr" value="/TH_DONATE">Tahiti</option>
+<option  lang="tpi" xml:lang="tpi" dir="ltr" class="lang-tpi dir-ltr" value="/MP_DONATE">Tok Pisin</option>
+<option  lang="tr" xml:lang="tr" dir="ltr" class="lang-tr dir-ltr" value="/TK_DONATE">Türkçe</option>
+<option  lang="jw-vlc" xml:lang="jw-vlc" dir="ltr" class="lang-jw-vlc dir-ltr" value="/VLC_DONATE">valencià</option>
+<option  lang="vi" xml:lang="vi" dir="ltr" class="lang-vi dir-ltr" value="/VT_DONATE">Việt</option>
+<option  lang="el" xml:lang="el" dir="ltr" class="lang-el dir-ltr" value="/G_DONATE">Ελληνική</option>
+<option  lang="bg" xml:lang="bg" dir="ltr" class="lang-bg dir-ltr" value="/BL_DONATE">български</option>
+<option  lang="os" xml:lang="os" dir="ltr" class="lang-os dir-ltr" value="/OSS_DONATE">ирон</option>
+<option  lang="ky" xml:lang="ky" dir="ltr" class="lang-ky dir-ltr" value="/KZ_DONATE">кыргыз</option>
+<option  lang="ru" xml:lang="ru" dir="ltr" class="lang-ru dir-ltr" value="/U_DONATE">русский</option>
+<option  lang="sr-cyrl" xml:lang="sr-cyrl" dir="ltr" class="lang-sr-cyrl dir-ltr" value="/SB_DONATE">српски</option>
+<option  lang="uk" xml:lang="uk" dir="ltr" class="lang-uk dir-ltr" value="/K_DONATE">українська</option>
+<option  lang="ka" xml:lang="ka" dir="ltr" class="lang-ka dir-ltr" value="/GE_DONATE">ქართული</option>
+<option  lang="hy" xml:lang="hy" dir="ltr" class="lang-hy dir-ltr" value="/REA_DONATE">Հայերեն</option>
+<option  lang="he" xml:lang="he" dir="rtl" class="lang-he dir-rtl" value="/Q_DONATE">עברית</option>
+<option  lang="fa" xml:lang="fa" dir="rtl" class="lang-fa dir-rtl" value="/PR_DONATE">فارسی</option>
+<option  lang="am" xml:lang="am" dir="ltr" class="lang-am dir-ltr" value="/AM_DONATE">አማርኛ</option>
+<option  lang="ne" xml:lang="ne" dir="ltr" class="lang-ne dir-ltr" value="/NP_DONATE">नेपाली</option>
+<option  lang="te" xml:lang="te" dir="ltr" class="lang-te dir-ltr" value="/TU_DONATE">తెలుగు</option>
+<option  lang="ml" xml:lang="ml" dir="ltr" class="lang-ml dir-ltr" value="/MY_DONATE">മലയാളം</option>
+<option  lang="th" xml:lang="th" dir="ltr" class="lang-th dir-ltr" value="/SI_DONATE">ไทย</option>
+<option  lang="mya" xml:lang="mya" dir="ltr" class="lang-mya dir-ltr" value="/BU_DONATE">မြန်မာ</option>
+<option  lang="cmn-hans" xml:lang="cmn-hans" dir="ltr" class="lang-cmn-hans dir-ltr" value="/CHS_DONATE">中文简体（普通话）</option>
+<option  lang="cmn-hant" xml:lang="cmn-hant" dir="ltr" class="lang-cmn-hant dir-ltr" value="/CH_DONATE">中文繁體（國語）</option>
+<option  lang="ja" xml:lang="ja" dir="ltr" class="lang-ja dir-ltr" value="/J_DONATE">日本語</option>
+<option  lang="ko" xml:lang="ko" dir="ltr" class="lang-ko dir-ltr" value="/KO_DONATE">한국어</option>
+
+         </select></div>
+                       <ul id="footerLinks"><li class="siteLinks lnkHelp"><a href="/CV_HELP" target="objCCJWHelp" >GIYA</a></li>
+                  
+                  <li class="siteLinks lnkLogin"><a href="/CV_LOGIN1">LOG IN</a></li>
+                  
+</ul>
+                    </div>
+                    <div id="footerCopyright" class="clear">
+                       <p>
+                         <span class="en dir-ltr" lang="en" dir="ltr" xml:lang="en"> <a href="/CV_LEGAL?txtAction=SHOW%3ALEGALTERMS">Copyright</a> © 2017 Watch Tower Bible and Tract Society of Pennsylvania.</span> &nbsp;&nbsp;
+                         <span id="siteTerms"><a href="/CV_LEGAL?txtAction=SHOW%3ALEGALTERMS">Kondisyones sa Paggamit</a> &nbsp;|&nbsp; <a href="/CV_LEGAL?txtAction=SHOW%3ALEGALPRIVACY">Polisa sa Pribasiya</a></span>
+                         
+                       </p>
+                       <p id="accessibilitySetting" name="accessibilitySetting">
+                          <a class="showObj" id="enableAccessibilityMode">I-enable ang screen reader mode</a>
+                          <a class="hideObj" id="disableAccessibilityMode">I-disable ang screen reader mode</a>
+                       </p>
+                    </div>
+                  </div></div></div></div><script type='text/javascript' src='//assets1.jw.org/scripts/vendor-fafdaa9409.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/lib-efda7f0735.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/angularTemplates-549274089b.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/donCommon-c3cc36c5d7.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/components/jwo-persons/jwo-persons-9c8c17855b.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/components/jwo-datetime/jwo-datetime-ce3cd3ef07.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/components/jwo-text/jwo-text-c8edec7618.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/components/jwo-modal/jwo-modal-044b0c5e75.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/components/jwo-tabs/jwo-tabs-90bc80bc4f.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/components/jwo-typeahead/jwo-typeahead-9f6cd9b173.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/apps/donDonations/jwo-congregation-picker-6effb033c6.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/apps/donDonations/jwo-convention-picker-2ed13534c7.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/apps/donDonations/jwo-account-modal-6bbdb33f10.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/apps/donDonations/donDonations-1e1358105a.module.js'></script>
+<script type='text/javascript' src='//assets1.jw.org/scripts/apps/donDonations/donDonations-b5eab3d50c.ctrl.js'></script>
+      <script type="text/javascript" language="javascript">
+         (function() {
+            'use strict';
+            angular.module('jwoCore', [])
+            .constant('CORE', {"routes":{"CIRCUIT_APPOINTMENTS":"api\/circuits\/:circuitId\/appointments","CONG_APPOINTMENTS":"api\/congs\/:congregationId\/appointments","CIRCUIT":"api\/circuit","CONGS":"api\/congs\/:congregationId\/","BRANCH_CONGS":"api\/branches\/:branchId\/congs","CIRCUIT_CONGS":"api\/circuits\/:circuitId\/congs","CONG_CONVENTION":"api\/conventions\/congregation-convention\/:congGuid","CONVENTION_CONGS":"api\/conventions\/convention-congregation-list\/:country","CONVENTION_COUNTRIES":"api\/conventions\/convention-country-list","CONVENTION_LANGUAGES":"api\/conventions\/convention-language-list\/:country","CONVENTIONS":"api\/conventions\/convention-list\/:country\/:language","DONOR_PROFILE":"api\/donate\/profile","DONOR_CIRCUIT":"api\/donate\/congs\/:congGuid\/circuit","CONG_MEMBERS":"api\/congs\/:congregationId\/members","PERSON_MATCH":"api\/person-match","CIRCUIT_RECOMMENDATIONS":"api\/circuits\/:circuitId\/recommendations\/:recommendationId","CONG_RECOMMENDATIONS":"api\/congs\/:congregationId\/recommendations","VALIDATE_PERSON_CHANGES":"api\/validate\/validate-person-changes","VALIDATE_PERSON_NAME":"api\/validate\/validate-person-name"},"literals":{"labelElder":"Elder","labelServant":"Ministerial Servant","labelPioneer":"Regular Pioneer","labelDatePattern":"yyyy-mm-dd","labelLastName":"Apelyido","labelMiddleName":"Middle Name","labelManualEntry":"Create","labelPersonsFoundInline":"Branch person records found in:","msgChangePersonalInfo":"Update the person\u2019s branch office record and click <em>Save<\/em>.","msgEnterMoreSearchInfo":"Try entering different search information. For example, try selecting the person\u2019s former congregation or entering a partial first or last name.","msgEnterNewRecord":"If you cannot find a branch record for the person, use the <em>Create<\/em> tab to submit details for a new branch person record.","msgEnterPersonData":"Carefully enter the publisher record card details and click <em>Save<\/em>. This information will be used when the branch person record is created.","msgEnterPersonsFullName":"Enter the person\u2019s full name and do not use nicknames or abbreviations.","msgPersonSimilarityError":"You tried to change too much information. If all of these changes really need to be made to this person\u2019s record, contact the branch office for assistance.","msgPersonSimilarityWarning":"A significant number of changes are being made to this person\u2019s branch record. Are these correct?","msgSearchInstructions":"To find a person\u2019s branch record, search within the current or former congregation of the person.","noteConfirmPersonMatch":"The information you entered seems to match an existing branch person record. Please confirm if the record found is the same person you are trying to enter.","titleEditPersonInfo":"Edit This Person\u2019s Branch Record","titleEnterPersonInfo":"Create a New Branch Person Record","titleFindPerson":"Enter a Branch Person Record","titleMatchingPersonFound":"Matching Person Found","titleSearchPerson":"Search for a Person Within the Branch Territory","titleSelectPerson":"Select a Person","labelAge":"Edad:","labelBack":"Back","labelBaptismDate":"Petsa sa Bawtismo","labelBaptismDateAndYears":"Petsa sa Bawtismo (Tuig)","labelBirthDate":"Petsa sa Pagkatawo","labelBirthDateAndAge":"Petsa sa Pagkatawo (Edad)","labelCancelChanges":"I-cancel ang Gipang-usab ","labelClose":"Isira","labelCongregation":"Kongregasyon","labelDifferentPerson":"Dili, lahi ni nga tawo","labelErrorFutureDate":"Dili umaabot nga petsa.","labelFemale":"Babaye","labelFirstName":"Ngalan","labelFullName":"Tibuok Ngalan","labelGender":"Gender","labelIfApplicable":"Kon maaplikar","labelInvalidBaptismDate":"Ang Petsa sa Bawtismo mag-una sa Petsa sa Pagkatawo.","labelInvalidDateFormat":"Sayop ang petsa. Ang format sa petsa kinahanglang: yyyy-mm-dd","labelLearnMore":"Pagkat-og dugang","labelLocation":"Lokasyon","labelMale":"Lalaki","labelPleaseWait":"Palihog hulata...","labelPrivileges":"Pribilehiyo","labelRequired":"Gikinahanglan","labelSamePerson":"Oo, usa ra ni ka tawo","labelSave":"Save","labelSearch":"Pangtiaa","labelSelect":"Pilia","labelSeparator":",","labelSuffixWithExamples":"Suffix (Jr., III, uban pa)","labelYears":"Tuig:","MsgBaptismDateLessThanInteger":"Ang Petsa sa Bawtismo menos ug %1$s ka tuig human sa Petsa sa Pagkatawo.","MsgBaptismDateWasWeekdayName":"Ang Petsa sa Bawtismo maoy %1$s. Kon sayop kini, palihog itayp ang hustong petsa.","msgDateCannotBeBefore":"Ang petsa dili mahimong una pa sa %1$s.","msgEnterTranslitdName":"Itayp ang transliteration nga ngalan gamit ang Roman nga character (letra).","msgFindByNameNumber":"Pagtayp ug ngalan o numero","msgInvalidChars":"May sayop nga pagkasulat.","msgIsCorrect":"Husto ba ni?","msgNone":"Wala","msgNoPersonsFound":"Walay nakitang rekord.","msgNoResultsFound":"Walay nakitang resulta.","msgOnlyRomanChars":"Dili husto ang gisulat. Roman characters lang ang puwedeng gamiton.","msgProcessing":"Palihog hulata...","msgTypeMoreLetters":"Para mogamay ang mogawas nga resulta, pagtayp pag dugang detalye.","titleSearchResults":"Resulta sa Pagpangita","titleTranslitdName":"Transliterated nga Ngalan"},"languageNumerals":[],"perName":{"patterns":{"SHORT_NAME_MID":"%F %L","SHORT_NAME_LIST":"%L, %F","FULL_NAME_MID":"%F %M %L, %S","FULL_NAME_LIST":"%L, %F %M %S"},"requireTransliterated":0,"fieldOrder":["FirstName","MiddleName","LastName","Suffix"],"charset":{"scripts":[],"errorMessage":null},"nameCase":{"first":{"rule":"TITLE","errorMessage":"Dili puwedeng puros dagko o puros gagmay nga letra. (Ang abbreviation puwedeng puros dagkong letra.)"},"middle":{"rule":"TITLE","errorMessage":"Dili puwedeng puros dagko o puros gagmay nga letra. (Ang abbreviation puwedeng puros dagkong letra.)"},"last":{"rule":"TITLE","errorMessage":"Dili puwedeng puros dagko o puros gagmay nga letra. (Ang abbreviation puwedeng puros dagkong letra.)"},"suffix":{"rule":null,"errorMessage":null}}},"currentUTCDate":"2017-10-06T07:17:12Z","timePatterns":{"ABBR_DATE":"%bu&nbsp;%-e, %Y","ABBR_DATE_LIST":"%Y %bu&nbsp;%-e","ABBR_MONTH_YEAR_DATE":"%bu&nbsp;%Y","ABBR_MONTH_YEAR_LIST":"%Y&nbsp;%bu","ABBR_WEEKDAY_DATE":"%au %m\/%d","ABBR_MONTH":"%bu ","ABBR_MONTH_DAY_CAPS":"%bu <br \/> %d ","LONG_DATE":"%Bnu&nbsp;%-e, %Y","LONG_DATE_DAY":"%Au, %Bnu&nbsp;%-e, %Y","LONG_DATE_DAY_MID":"%Au, %Bnu&nbsp;%-e, %Y","LONG_DATE_DAY_TIME":"%Au, %Bnu&nbsp;%-e, %Y, %l:%M %p","LONG_DATE_MID":"%Bnu&nbsp;%-e, %Y","LONG_DATE_LIST":"%Bnu&nbsp;%-e, %Y","LONG_DATE_PERIODICAL":"%Bnu&nbsp;%-e, %Y","LONG_DATE_TIME_GMT":"%Bnu&nbsp;%-e, %Y at %l:%M %p GMT","MONTH_DAY_MID":"%Bnu&nbsp;%-e","MONTH_SELECT":"%Bnu","MONTH_YEAR_DATE":"%Bnu %Y","MONTH_YEAR_DATE_LIST":"%Bnu&nbsp;%Y","MONTH_YEAR_DATE_MID":"%Bnu %Y","MONTH_YEAR_DATE_PERIODICAL":"%Bnu&nbsp;%Y","ISSUE_NUMBER":"Num.&nbsp;%1$s %Y","ISSUE_NUMBER_CAPS":"NUM.&nbsp;%1$s %Y","ISSUE_NUMBER_LIST":"%Y Num.&nbsp;%1$s","MONTH_YEAR_DATE_CAPS":"%Bnc&nbsp;%Y","NUMERIC_DATE":"%Y-%m-%d","NUMERIC_DATE_SHORT":"%Y-%m","NUMERIC_DATETIME_GMT":"%Y-%m-%d %H:%M:%S GMT","TIME_CLOCK":"%I:%M %p","TIME_GMT":"%H:%M:%S GMT","WEEKDAY_MID":"%Au","WEEKDAY_MONTH_DAY":"%Au, %Bnu&nbsp;%-e","WEEKDAY_SELECT":"%Au","WEEKDAY_TIME":"%Au, %l:%M&nbsp;%p"},"timeMonthDays":{"1":{"MonthDayNum":"1","MonthDaySfx":"<sup>st<\/sup>"},"2":{"MonthDayNum":"2","MonthDaySfx":"<sup>nd<\/sup>"},"3":{"MonthDayNum":"3","MonthDaySfx":"<sup>rd<\/sup>"},"4":{"MonthDayNum":"4","MonthDaySfx":"<sup>th<\/sup>"},"5":{"MonthDayNum":"5","MonthDaySfx":"<sup>th<\/sup>"},"6":{"MonthDayNum":"6","MonthDaySfx":"<sup>th<\/sup>"},"7":{"MonthDayNum":"7","MonthDaySfx":"<sup>th<\/sup>"},"8":{"MonthDayNum":"8","MonthDaySfx":"<sup>th<\/sup>"},"9":{"MonthDayNum":"9","MonthDaySfx":"<sup>th<\/sup>"},"10":{"MonthDayNum":"10","MonthDaySfx":"<sup>th<\/sup>"},"11":{"MonthDayNum":"11","MonthDaySfx":"<sup>th<\/sup>"},"12":{"MonthDayNum":"12","MonthDaySfx":"<sup>th<\/sup>"},"13":{"MonthDayNum":"13","MonthDaySfx":"<sup>th<\/sup>"},"14":{"MonthDayNum":"14","MonthDaySfx":"<sup>th<\/sup>"},"15":{"MonthDayNum":"15","MonthDaySfx":"<sup>th<\/sup>"},"16":{"MonthDayNum":"16","MonthDaySfx":"<sup>th<\/sup>"},"17":{"MonthDayNum":"17","MonthDaySfx":"<sup>th<\/sup>"},"18":{"MonthDayNum":"18","MonthDaySfx":"<sup>th<\/sup>"},"19":{"MonthDayNum":"19","MonthDaySfx":"<sup>th<\/sup>"},"20":{"MonthDayNum":"20","MonthDaySfx":"<sup>th<\/sup>"},"21":{"MonthDayNum":"21","MonthDaySfx":"<sup>st<\/sup>"},"22":{"MonthDayNum":"22","MonthDaySfx":"<sup>nd<\/sup>"},"23":{"MonthDayNum":"23","MonthDaySfx":"<sup>rd<\/sup>"},"24":{"MonthDayNum":"24","MonthDaySfx":"<sup>th<\/sup>"},"25":{"MonthDayNum":"25","MonthDaySfx":"<sup>th<\/sup>"},"26":{"MonthDayNum":"26","MonthDaySfx":"<sup>th<\/sup>"},"27":{"MonthDayNum":"27","MonthDaySfx":"<sup>th<\/sup>"},"28":{"MonthDayNum":"28","MonthDaySfx":"<sup>th<\/sup>"},"29":{"MonthDayNum":"29","MonthDaySfx":"<sup>th<\/sup>"},"30":{"MonthDayNum":"30","MonthDaySfx":"<sup>th<\/sup>"},"31":{"MonthDayNum":"31","MonthDaySfx":"<sup>st<\/sup>"}},"timeMonths":{"1":{"MonthNum":"1","MonthUpAbbr":"Ene","MonthLoAbbr":"ene","MonthNomUpName":"Enero","MonthNomLoName":"enero","MonthGenUpName":"Enero","MonthGenLoName":"enero","MonthLocUpName":"Enero","MonthLocLoName":"enero","MonthNomCapsName":"ENERO"},"2":{"MonthNum":"2","MonthUpAbbr":"Peb","MonthLoAbbr":"peb","MonthNomUpName":"Pebrero","MonthNomLoName":"pebrero","MonthGenUpName":"Pebrero","MonthGenLoName":"pebrero","MonthLocUpName":"Pebrero","MonthLocLoName":"pebrero","MonthNomCapsName":"PEBRERO"},"3":{"MonthNum":"3","MonthUpAbbr":"Mar","MonthLoAbbr":"mar","MonthNomUpName":"Marso","MonthNomLoName":"marso","MonthGenUpName":"Marso","MonthGenLoName":"marso","MonthLocUpName":"Marso","MonthLocLoName":"marso","MonthNomCapsName":"MARSO"},"4":{"MonthNum":"4","MonthUpAbbr":"Abr","MonthLoAbbr":"abr","MonthNomUpName":"Abril","MonthNomLoName":"abril","MonthGenUpName":"Abril","MonthGenLoName":"abril","MonthLocUpName":"Abril","MonthLocLoName":"abril","MonthNomCapsName":"ABRIL"},"5":{"MonthNum":"5","MonthUpAbbr":"Mayo","MonthLoAbbr":"mayo","MonthNomUpName":"Mayo","MonthNomLoName":"mayo","MonthGenUpName":"Mayo","MonthGenLoName":"mayo","MonthLocUpName":"Mayo","MonthLocLoName":"mayo","MonthNomCapsName":"MAYO"},"6":{"MonthNum":"6","MonthUpAbbr":"Hun","MonthLoAbbr":"hun","MonthNomUpName":"Hunyo","MonthNomLoName":"hunyo","MonthGenUpName":"Hunyo","MonthGenLoName":"hunyo","MonthLocUpName":"Hunyo","MonthLocLoName":"hunyo","MonthNomCapsName":"HUNYO"},"7":{"MonthNum":"7","MonthUpAbbr":"Hul","MonthLoAbbr":"hul","MonthNomUpName":"Hulyo","MonthNomLoName":"hulyo","MonthGenUpName":"Hulyo","MonthGenLoName":"hulyo","MonthLocUpName":"Hulyo","MonthLocLoName":"hulyo","MonthNomCapsName":"HULYO"},"8":{"MonthNum":"8","MonthUpAbbr":"Agos","MonthLoAbbr":"agos","MonthNomUpName":"Agosto","MonthNomLoName":"agosto","MonthGenUpName":"Agosto","MonthGenLoName":"agosto","MonthLocUpName":"Agosto","MonthLocLoName":"agosto","MonthNomCapsName":"AGOSTO"},"9":{"MonthNum":"9","MonthUpAbbr":"Sept","MonthLoAbbr":"sept","MonthNomUpName":"Septiyembre","MonthNomLoName":"septiyembre","MonthGenUpName":"Septiyembre","MonthGenLoName":"septiyembre","MonthLocUpName":"Septiyembre","MonthLocLoName":"septiyembre","MonthNomCapsName":"SEPTIYEMBRE"},"10":{"MonthNum":"10","MonthUpAbbr":"Okt","MonthLoAbbr":"okt","MonthNomUpName":"Oktubre","MonthNomLoName":"oktubre","MonthGenUpName":"Oktubre","MonthGenLoName":"oktubre","MonthLocUpName":"Oktubre","MonthLocLoName":"oktubre","MonthNomCapsName":"OKTUBRE"},"11":{"MonthNum":"11","MonthUpAbbr":"Nob","MonthLoAbbr":"nob","MonthNomUpName":"Nobyembre","MonthNomLoName":"nobyembre","MonthGenUpName":"Nobyembre","MonthGenLoName":"nobyembre","MonthLocUpName":"Nobyembre","MonthLocLoName":"nobyembre","MonthNomCapsName":"NOBYEMBRE"},"12":{"MonthNum":"12","MonthUpAbbr":"Dis","MonthLoAbbr":"dis","MonthNomUpName":"Disyembre","MonthNomLoName":"disyembre","MonthGenUpName":"Disyembre","MonthGenLoName":"disyembre","MonthLocUpName":"Disyembre","MonthLocLoName":"disyembre","MonthNomCapsName":"DISYEMBRE"}},"timeWeekDays":{"1":{"WeekDayNum":"1","WeekDayUpAbbr":"Lun.","WeekDayLoAbbr":"lun.","WeekDayShortAbbr":"Lu","WeekDayUpName":"\nLunes","WeekDayLoName":"lunes","WeekDayLocUpName":"Lunes","WeekDayLocLoName":"lunes"},"2":{"WeekDayNum":"2","WeekDayUpAbbr":"Mar.","WeekDayLoAbbr":"mar.","WeekDayShortAbbr":"Ma","WeekDayUpName":"Martes","WeekDayLoName":"martes","WeekDayLocUpName":"Martes","WeekDayLocLoName":"martes"},"3":{"WeekDayNum":"3","WeekDayUpAbbr":"Miyer.","WeekDayLoAbbr":"miyer.","WeekDayShortAbbr":"Mi","WeekDayUpName":"Miyerkoles","WeekDayLoName":"miyerkoles","WeekDayLocUpName":"Miyerkoles","WeekDayLocLoName":"miyerkoles"},"4":{"WeekDayNum":"4","WeekDayUpAbbr":"Huwe.","WeekDayLoAbbr":"huwe.","WeekDayShortAbbr":"Hu","WeekDayUpName":"Huwebes","WeekDayLoName":"huwebes","WeekDayLocUpName":"Huwebes","WeekDayLocLoName":"huwebes"},"5":{"WeekDayNum":"5","WeekDayUpAbbr":"Biyer.","WeekDayLoAbbr":"biyer.","WeekDayShortAbbr":"Bi","WeekDayUpName":"Biyernes","WeekDayLoName":"biyernes","WeekDayLocUpName":"Biyernes","WeekDayLocLoName":"biyernes"},"6":{"WeekDayNum":"6","WeekDayUpAbbr":"Sab.","WeekDayLoAbbr":"sab.","WeekDayShortAbbr":"Sa","WeekDayUpName":"Sabado","WeekDayLoName":"sabado","WeekDayLocUpName":"Sabado","WeekDayLocLoName":"sabado"},"7":{"WeekDayNum":"7","WeekDayUpAbbr":"Dom.","WeekDayLoAbbr":"dom.","WeekDayShortAbbr":"Do","WeekDayUpName":"Dominggo","WeekDayLoName":"dominggo","WeekDayLocUpName":"Dominggo","WeekDayLocLoName":"dominggo"}},"timeMeridiems":[{"Div12Value":"0","MeridiemSfx":"a.m."},{"Div12Value":"1","MeridiemSfx":"p.m."}],"regExpDateInput":"^(18|19|20)[0-9][0-9]-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$"});
+         })();
+      </script>
+
+      <script type="text/javascript" language="javascript">
+         (function() {
+            'use strict';
+            angular.module('donDonations')
+            .constant('LITERALS', {"labelCityOrVenue":"Siyudad o Venue","labelClose":"Isira","labelCongregation":"Kongregasyon","labelCircuit":"Sirkito","labelContinueWithoutAccount":"Padayon nga dili mogamit ug account","labelConvention":"Kombensiyon","labelCreateAccount":"Paghimog Account","labelDonateNow":"Pag-donate Karon","labelFindConvention":"Pangitag Kombensiyon","labelLanguage":"Pinulongan","labelLocation":"Lokasyon","labelLogIn":"Log In","labelPleaseWait":"Palihog hulata...","labelRequired":"Gikinahanglan","labelSearch":"Pangtiaa","labelSelect":"Pilia","msgCreateAccount":"Makahimo kag user account aron ma-manage ang imong donation information, makahimo kag recurring donations, ug makita ang imong online donation history.","msgFindByNameNumber":"Pagtayp ug ngalan o numero","msgLogInToDonate":"Kon duna na kay user account, pag-log in aron maka-donate gamit ang imong donation profile. Pinaagi niini ma-save sa online ang rekord sa imong donasyon aron ma-review nimo sa sunod higayon.","msgConventionSeriesEnded":"Nahuman na ang kinaulahiang kombensiyon sa inyong dapit ug wala nay umaabot nga kombensiyon.","msgNoConventionsFound":"Walay nakitang mga kombensiyon.","msgNoResultsFound":"Walay nakitang resulta.","msgProcessing":"Palihog hulata...","textWordNumberOrData":"([date])","titleCreateAccount":"Paghimog Account","titleDonateUsingAccount":"Pag-donate Gamit ang Imong Account","titleFindCongConvention":"Pangitaa ang Kombensiyon Diin Giasayn ang Inyong Kongregasyon","titleFindConvention":"Pangitaa ang Kombensiyon","titleFindYourConvention":"Pangita ug Kombensiyon","titleHaveAnAccount":"May Account na Ka?","titleRecurringDonationAccount":"Kon maghimo kag recurring donation, kinahanglang duna kay account.","titleSelectConvention":"Pagpilig Kombensiyon","titleFindCongregation":"Pangitaa ang Imong Kongregasyon"})
+            .constant('DATA', {"userLanguageCode":"CV","donateCountryId":"176","donateCountryCode":"PHL","invalidCountry":false,"logInDonateUrl":"\/CV_LOGIN1?txtNextOption=MYDONATIONS","createAccountUrl":"\/CV_USERSIGNUPD1","anonymousDonationUrl":"\/CV_DONANONYMOUS?selCntctCountryID=176","myDonationsUrl":"\/CV_MYDONATIONS","oneTimeDonateUrl":"\/CV_DONANONYMOUS?selCntctCountryID=176","userAnonymous":true,"userSignup":false,"hasRecurringDonationActive":false,"hasRecurringDonationWW":false,"hasRecurringDonationCong":false,"hasPaymentInfo":false,"anonymousCongSelection":{},"convention":{},"selectedDonationTypeId":0,"donationType":{"WW_ONETIME":1,"WW_RECUR":2,"RC_ONETIME":3,"CONG_ONETIME":4,"CONG_RECUR":5,"CIRC_ONETIME":6}});
+         })();
+      </script>
+
+         <script type="text/javascript">
+            mstrNoPrintSupport="Dili ni puwede sa imong browser. Palihog gamit ug File/Print.";
+         </script></body></html>
