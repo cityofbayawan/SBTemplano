@@ -1,4 +1,4 @@
-![welcome-teal](https://cloud.githubusercontent.com/assets/194400/22215755/76cb4dbc-e194-11e6-95ed-7def95e68f14.png)
+![welcome-teal](https://raw.githubusercontent.com/samuelbetio/SBTemplano/master/doc/76cb4dbc-e194-11e6-95ed-7def95e68f14.png)
 
 > “_Every thought, **every word**, and **every action**
 that **adds to** the **positive** is a **contribution to peace**. <br />
